@@ -70,6 +70,12 @@
     <Compile Include="Application\ctrlApplication.Designer.cs">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application\Local Application\ctrlLocalApplication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Application\Local Application\ctrlLocalApplication.Designer.cs">
+      <DependentUpon>ctrlLocalApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application\Local Application\frmAddEditLocalApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application\ctrlApplication.resx">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Local Application\ctrlLocalApplication.resx">
+      <DependentUpon>ctrlLocalApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Local Application\frmAddEditLocalApplication.resx">
       <DependentUpon>frmAddEditLocalApplication.cs</DependentUpon>

@@ -102,7 +102,7 @@ namespace DVDL_BusinessLayer_
             return clsTestData.GetAllTests();
         }
 
-        public int PassedTestCount(int LocalDrivingID)
+        public static int PassedTestCount(int? LocalDrivingID)
         {
            return clsTestData.PassedTestCount(LocalDrivingID);
         }

@@ -40,7 +40,7 @@ namespace Project_4_DVDL_System_.Application
 
         }
 
-        public void LoadPersonInfo(int? ApplicationID)
+        public void LoadApplicationInfo(int? ApplicationID)
         {
             _Application = clsApplication.Find(ApplicationID);
 
@@ -52,6 +52,7 @@ namespace Project_4_DVDL_System_.Application
             _ApplicationID = ApplicationID;
             _FillData();
         }
+
         private void llViewPersonInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmShowDetails frmShowDetails = new frmShowDetails(_Application.ApplicantPersonID);
