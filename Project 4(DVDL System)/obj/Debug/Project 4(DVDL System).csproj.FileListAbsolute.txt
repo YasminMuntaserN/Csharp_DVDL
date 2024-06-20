@@ -1,0 +1,35 @@
+G:\C#\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.AssemblyReference.cache
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.AssemblyReference.cache
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmApplicationTypesList.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmEditApplicationType.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.ctrlApplication.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Custom_Controls.cucTextBox.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Form1.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.ctrlPersonCard.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmAddEditPerson.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmListPeople.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmShowDetails.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.User_Controls.ctrlPersonCardWithFilter.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Properties.Resources.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestTypes.frmEditTest.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestTypes.frmTestTypesList.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.ctrlUserCard.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmAddEditUser.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmChangePassword.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmShowUserDetails.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmUsersList.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.GenerateResource.cache
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.CoreCompileInputs.cache
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).exe.config
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).exe
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).pdb
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(BusinessLayer).dll
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(HelperLayer).dll
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\Guna.UI2.dll
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(DataAccess).dll
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(BusinessLayer).pdb
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(HelperLayer).pdb
+G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(DataAccess).pdb
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project .8553855A.Up2Date
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).exe
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).pdb

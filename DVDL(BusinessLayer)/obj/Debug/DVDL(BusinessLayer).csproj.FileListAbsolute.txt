@@ -1,0 +1,11 @@
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(BusinessLayer).dll
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(BusinessLayer).pdb
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(DataAccess).dll
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(HelperLayer).dll
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(DataAccess).pdb
+G:\C#\DVDL(BusinessLayer)\bin\Debug\DVDL(HelperLayer).pdb
+G:\C#\DVDL(BusinessLayer)\obj\Debug\DVDL(BusinessLayer).csproj.AssemblyReference.cache
+G:\C#\DVDL(BusinessLayer)\obj\Debug\DVDL(BusinessLayer).csproj.CoreCompileInputs.cache
+G:\C#\DVDL(BusinessLayer)\obj\Debug\DVDL(Bus.F36A7C4F.Up2Date
+G:\C#\DVDL(BusinessLayer)\obj\Debug\DVDL(BusinessLayer).dll
+G:\C#\DVDL(BusinessLayer)\obj\Debug\DVDL(BusinessLayer).pdb
