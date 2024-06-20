@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Project 4(DVDL System)",
-    "\\Project 4(DVDL System)\\Application"
+    "\\Project 4(DVDL System)\\Application",
+    "\\Project 4(DVDL System)\\Application\\Local Driving License Application"
   ],
-  "SelectedNode": "\\Project 4(DVDL System)\\Application\\ctrlApplication.cs",
+  "SelectedNode": "\\Project 4(DVDL System)\\Application\\Local Driving License Application\\frmAddEditLocalApplication.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

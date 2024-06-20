@@ -33,3 +33,38 @@ G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\DVDL(DataAccess).pdb
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project .8553855A.Up2Date
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).exe
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).pdb
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).exe.config
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).exe
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\Project 4(DVDL System).pdb
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(BusinessLayer).dll
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(HelperLayer).dll
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\Guna.UI2.dll
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(DataAccess).dll
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(BusinessLayer).pdb
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(HelperLayer).pdb
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\bin\Debug\DVDL(DataAccess).pdb
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.AssemblyReference.cache
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmApplicationTypesList.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmEditApplicationType.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.ctrlApplication.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Local_Application.frmAddEditLocalApplication.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Custom_Controls.cucTextBox.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Form1.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.ctrlPersonCard.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmAddEditPerson.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmListPeople.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmShowDetails.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.User_Controls.ctrlPersonCardWithFilter.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Properties.Resources.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestTypes.frmEditTest.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestTypes.frmTestTypesList.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.ctrlUserCard.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmAddEditUser.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmChangePassword.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmShowUserDetails.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Users.frmUsersList.resources
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.GenerateResource.cache
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.CoreCompileInputs.cache
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project .8553855A.Up2Date
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).exe
+C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).pdb
