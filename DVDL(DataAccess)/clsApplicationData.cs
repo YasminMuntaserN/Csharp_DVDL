@@ -160,5 +160,36 @@ namespace DVDL_DataAccess_
         {
             return clsDataAccessHelper.All("select * from Applications");
         }
+
+        public static bool UpdateStatus(int? ApplicationID ,byte ApplicationStatus)
+        {
+            int RowAffected = 0;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"Update Applications
+                                     set 
+                                     ApplicationStatus = @ApplicationStatus
+                                     where ApplicationID = @ApplicationID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ApplicationID", (object)ApplicationID ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@ApplicationStatus", ApplicationStatus);
+                        RowAffected = command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+
+            return (RowAffected > 0);
+        }
     }
 }

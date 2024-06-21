@@ -82,6 +82,18 @@
     <Compile Include="Application\Local Application\frmAddEditLocalApplication.Designer.cs">
       <DependentUpon>frmAddEditLocalApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application\Local Application\frmListLocalApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Local Application\frmListLocalApplications.Designer.cs">
+      <DependentUpon>frmListLocalApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Local Application\frmLocalApplicationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Local Application\frmLocalApplicationDetails.Designer.cs">
+      <DependentUpon>frmLocalApplicationDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Controls\cucTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -185,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Local Application\frmAddEditLocalApplication.resx">
       <DependentUpon>frmAddEditLocalApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Local Application\frmListLocalApplications.resx">
+      <DependentUpon>frmListLocalApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Local Application\frmLocalApplicationDetails.resx">
+      <DependentUpon>frmLocalApplicationDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Controls\cucTextBox.resx">
       <DependentUpon>cucTextBox.cs</DependentUpon>

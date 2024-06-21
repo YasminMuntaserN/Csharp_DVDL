@@ -125,6 +125,11 @@ namespace DVDL_BusinessLayer_
             return clsApplicationData.GetAllApplications();
         }
 
+        public static bool UpdateStatus(int ?ApplicationID , byte NewStatus)
+        {
+            return clsApplicationData.UpdateStatus(ApplicationID, NewStatus);
+        }
+
     }
 
 }

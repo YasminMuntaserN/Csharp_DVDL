@@ -88,6 +88,8 @@ namespace Project_4_DVDL_System_.Person.User_Controls
             cbFilter.SelectedIndex = 1;
             txtFilterValue.Text = PersonID.ToString();
             ctrlPersonCard1.LoadPersonInfo(PersonID);
+            _Person = ctrlPersonCard1.Person;
+            _PersonID = _Person.PersonID;
         }
 
         private void FindNow()
@@ -134,7 +136,6 @@ namespace Project_4_DVDL_System_.Person.User_Controls
             frmAddEditPerson frmAddEditPerson = new frmAddEditPerson();
             frmAddEditPerson.PersonIDBack += DataBackEvent;
             frmAddEditPerson.ShowDialog();
-            _Person = ctrlPersonCard1.Person;
         }
 
         private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)

@@ -162,7 +162,7 @@ namespace DVDL_DataAccess_
 
         public static DataTable GetAllLocalDrivingLicenseApplications()
         {
-            return clsDataAccessHelper.All("select * from LocalDrivingLicenseApplications");
+            return clsDataAccessHelper.All("select * from LocalDrivingLicenseApplicationInfo");
         }
 
         public static int GetActiveApplicationIDForLicenseClass(int? licenseClassID, int? ApplicationPersonID, int? ApplicationTypeID)

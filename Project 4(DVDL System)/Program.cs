@@ -21,6 +21,6 @@ static class Program
     {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
-        Application.Run(new frmAddEditLocalApplication());
+        Application.Run(new frmListLocalApplications());
     }
 }

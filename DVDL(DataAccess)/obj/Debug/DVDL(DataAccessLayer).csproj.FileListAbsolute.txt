@@ -7,3 +7,12 @@ G:\C#\DVDL(DataAccess)\obj\Debug\DVDL(DataAccessLayer).csproj.CoreCompileInputs.
 G:\C#\DVDL(DataAccess)\obj\Debug\DVDL(Dat.4403499B.Up2Date
 G:\C#\DVDL(DataAccess)\obj\Debug\DVDL(DataAccess).dll
 G:\C#\DVDL(DataAccess)\obj\Debug\DVDL(DataAccess).pdb
+G:\C#\DVDL\DVDL(DataAccess)\bin\Debug\DVDL(DataAccess).dll
+G:\C#\DVDL\DVDL(DataAccess)\bin\Debug\DVDL(DataAccess).pdb
+G:\C#\DVDL\DVDL(DataAccess)\bin\Debug\DVDL(HelperLayer).dll
+G:\C#\DVDL\DVDL(DataAccess)\bin\Debug\DVDL(HelperLayer).pdb
+G:\C#\DVDL\DVDL(DataAccess)\obj\Debug\DVDL(DataAccessLayer).csproj.AssemblyReference.cache
+G:\C#\DVDL\DVDL(DataAccess)\obj\Debug\DVDL(DataAccessLayer).csproj.CoreCompileInputs.cache
+G:\C#\DVDL\DVDL(DataAccess)\obj\Debug\DVDL(Dat.4403499B.Up2Date
+G:\C#\DVDL\DVDL(DataAccess)\obj\Debug\DVDL(DataAccess).dll
+G:\C#\DVDL\DVDL(DataAccess)\obj\Debug\DVDL(DataAccess).pdb

@@ -68,3 +68,7 @@ C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 
 C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project .8553855A.Up2Date
 C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).exe
 C:\Users\TOP\Desktop\Csharp_DVDL--main\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).pdb
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Local_Application.frmAddEditLocalApplication.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Local_Application.frmListLocalApplications.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Local_Application.frmLocalApplicationDetails.resources
