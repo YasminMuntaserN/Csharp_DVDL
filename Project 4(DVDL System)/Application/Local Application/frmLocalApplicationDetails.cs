@@ -22,5 +22,6 @@ namespace Project_4_DVDL_System_.Application.Local_Application
         {
             this.Close();
         }
+
     }
 }

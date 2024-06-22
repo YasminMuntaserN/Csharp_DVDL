@@ -28,7 +28,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
 
         private void _FillData()
         {
-            ctrlApplication1.LoadApplicationInfo(1);
+            ctrlApplication1.LoadApplicationInfo(_LocalApplication.ApplicationID);
             lblLocalDrivingLicenseApplicationID.Text = _LocalApplicationID.ToString();
             lblAppliedFor.Text =clsLicenseClass.Find(_LocalApplication.LicenseClassID).ClassName;
             lblPassedTests.Text = clsTest.PassedTestCount(_LocalApplicationID).ToString()+"/3";

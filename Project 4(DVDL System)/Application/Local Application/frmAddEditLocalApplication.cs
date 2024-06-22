@@ -100,6 +100,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
         private void _FillApplicationObjectWithFieldsData()
         {
             _LocalApplication.ApplicantPersonID = ctrlPersonCardWithFilter1.PersonID; 
+            _LocalApplication.ApplicationID= _LocalApplication.ApplicationID;
             _LocalApplication.ApplicationDate = DateTime.Now;
             _LocalApplication.ApplicationTypeID = 1;
             _LocalApplication.ApplicationStatus = (byte)clsApplication.enStatus.New;

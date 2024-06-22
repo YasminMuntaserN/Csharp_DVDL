@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.llShowLicenceInfo = new System.Windows.Forms.LinkLabel();
             this.lblPassedTests = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,11 +37,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblLocalDrivingLicenseApplicationID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ctrlApplication1 = new Project_4_DVDL_System_.Application.ctrlApplication();
             this.guna2GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox2
@@ -65,26 +65,6 @@
             this.guna2GroupBox2.Size = new System.Drawing.Size(580, 224);
             this.guna2GroupBox2.TabIndex = 3;
             this.guna2GroupBox2.Text = " Applications Info :";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
-            this.pictureBox6.Location = new System.Drawing.Point(222, 107);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 195;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(146, 60);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 189;
-            this.pictureBox2.TabStop = false;
             // 
             // llShowLicenceInfo
             // 
@@ -180,11 +160,31 @@
             this.label4.TabIndex = 196;
             this.label4.Text = "D.L.App ID:";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
+            this.pictureBox6.Location = new System.Drawing.Point(222, 107);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 195;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(146, 60);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 189;
+            this.pictureBox2.TabStop = false;
+            // 
             // ctrlApplication1
             // 
-            this.ctrlApplication1.Location = new System.Drawing.Point(0, 215);
+            this.ctrlApplication1.Location = new System.Drawing.Point(0, 216);
             this.ctrlApplication1.Name = "ctrlApplication1";
-            this.ctrlApplication1.Size = new System.Drawing.Size(583, 253);
+            this.ctrlApplication1.Size = new System.Drawing.Size(583, 327);
             this.ctrlApplication1.TabIndex = 4;
             // 
             // ctrlLocalApplication
@@ -194,12 +194,12 @@
             this.Controls.Add(this.ctrlApplication1);
             this.Controls.Add(this.guna2GroupBox2);
             this.Name = "ctrlLocalApplication";
-            this.Size = new System.Drawing.Size(583, 469);
+            this.Size = new System.Drawing.Size(583, 546);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

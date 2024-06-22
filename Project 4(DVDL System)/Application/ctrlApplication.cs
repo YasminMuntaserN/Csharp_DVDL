@@ -33,7 +33,7 @@ namespace Project_4_DVDL_System_.Application
             lblApplicant.Text =_Application.ApplicationStatus.ToString();
             lblCreatedByUser.Text = clsUser.Find(_Application.CreatedByUserID).UserName;
             lblDate.Text=clsFormat.DateToShort(_Application.ApplicationDate);
-            lblStatus.Text = _Application.ApplicationStatus == 0 ? "New" : _Application.ApplicationStatus == 1 ? "Cancelled" : "Completed";
+            lblStatus.Text = _Application.ApplicationStatus == 1? "New" : _Application.ApplicationStatus == 2 ? "Cancelled" : "Completed";
             lblStatusDate.Text = clsFormat.DateToShort(_Application.LastStatusDate);
             lblFees.Text =_Application.PaidFees.ToString();
             lblType.Text = clsApplicationType.Find(_Application.ApplicationTypeID).ApplicationTypeTitle;

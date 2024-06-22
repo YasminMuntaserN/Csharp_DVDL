@@ -35,25 +35,25 @@
             this.cbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvApplications = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.cmsAddApplication = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsShowDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsCancelApplication = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSechduleVisionTest = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSechduleStreetTest = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsWrittenTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.Menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFilterValue
@@ -162,6 +162,127 @@
             this.dgvApplications.Size = new System.Drawing.Size(952, 359);
             this.dgvApplications.TabIndex = 370;
             // 
+            // Menu
+            // 
+            this.Menu.AutoSize = false;
+            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsAddApplication,
+            this.cmsEdit,
+            this.cmsShowDetails,
+            this.cmsDelete,
+            this.toolStripSeparator1,
+            this.cmsCancelApplication,
+            this.toolStripSeparator2,
+            this.toolStripMenuItem1});
+            this.Menu.Name = "Menu";
+            this.Menu.RenderStyle.ArrowColor = System.Drawing.Color.White;
+            this.Menu.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.Menu.RenderStyle.ColorTable = null;
+            this.Menu.RenderStyle.RoundedEdges = true;
+            this.Menu.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.Menu.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Menu.Size = new System.Drawing.Size(292, 224);
+            // 
+            // cmsAddApplication
+            // 
+            this.cmsAddApplication.ForeColor = System.Drawing.Color.White;
+            this.cmsAddApplication.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
+            this.cmsAddApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmsAddApplication.Name = "cmsAddApplication";
+            this.cmsAddApplication.Size = new System.Drawing.Size(291, 30);
+            this.cmsAddApplication.Text = "Add New Application";
+            this.cmsAddApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmsAddApplication.Click += new System.EventHandler(this.cmsAddApplication_Click);
+            // 
+            // cmsEdit
+            // 
+            this.cmsEdit.ForeColor = System.Drawing.Color.White;
+            this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
+            this.cmsEdit.Name = "cmsEdit";
+            this.cmsEdit.Size = new System.Drawing.Size(291, 30);
+            this.cmsEdit.Text = "Edit Application";
+            this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
+            // 
+            // cmsShowDetails
+            // 
+            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
+            this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
+            this.cmsShowDetails.Name = "cmsShowDetails";
+            this.cmsShowDetails.Size = new System.Drawing.Size(291, 30);
+            this.cmsShowDetails.Text = "Show Application Detatils";
+            this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
+            // 
+            // cmsDelete
+            // 
+            this.cmsDelete.ForeColor = System.Drawing.Color.White;
+            this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
+            this.cmsDelete.Name = "cmsDelete";
+            this.cmsDelete.Size = new System.Drawing.Size(291, 30);
+            this.cmsDelete.Text = "Delete Application";
+            this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(288, 6);
+            // 
+            // cmsCancelApplication
+            // 
+            this.cmsCancelApplication.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmsCancelApplication.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
+            this.cmsCancelApplication.Name = "cmsCancelApplication";
+            this.cmsCancelApplication.Size = new System.Drawing.Size(291, 30);
+            this.cmsCancelApplication.Text = "Cancel Application";
+            this.cmsCancelApplication.Click += new System.EventHandler(this.cmsCancelApplication_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(288, 6);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsSechduleVisionTest,
+            this.cmsSechduleStreetTest,
+            this.cmsWrittenTest});
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem1.Image = global::Project_4_DVDL_System_.Properties.Resources.Schedule_Test_32;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(291, 30);
+            this.toolStripMenuItem1.Text = "Sechdule Tests";
+            // 
+            // cmsSechduleVisionTest
+            // 
+            this.cmsSechduleVisionTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsSechduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
+            this.cmsSechduleVisionTest.Name = "cmsSechduleVisionTest";
+            this.cmsSechduleVisionTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsSechduleVisionTest.Text = "Sechdule Vision Test";
+            // 
+            // cmsSechduleStreetTest
+            // 
+            this.cmsSechduleStreetTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsSechduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
+            this.cmsSechduleStreetTest.Name = "cmsSechduleStreetTest";
+            this.cmsSechduleStreetTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsSechduleStreetTest.Text = "Sechdule Street Test";
+            // 
+            // cmsWrittenTest
+            // 
+            this.cmsWrittenTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
+            this.cmsWrittenTest.Name = "cmsWrittenTest";
+            this.cmsWrittenTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsWrittenTest.Text = "Sechdule Written Test";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -216,126 +337,6 @@
             this.guna2CirclePictureBox1.TabIndex = 367;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // Menu
-            // 
-            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsAddApplication,
-            this.cmsEdit,
-            this.cmsShowDetails,
-            this.cmsDelete,
-            this.toolStripSeparator1,
-            this.cmsCancelApplication,
-            this.toolStripSeparator2,
-            this.toolStripMenuItem1});
-            this.Menu.Name = "Menu";
-            this.Menu.RenderStyle.ArrowColor = System.Drawing.Color.White;
-            this.Menu.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.Menu.RenderStyle.ColorTable = null;
-            this.Menu.RenderStyle.RoundedEdges = true;
-            this.Menu.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.Menu.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(292, 196);
-            // 
-            // cmsAddApplication
-            // 
-            this.cmsAddApplication.ForeColor = System.Drawing.Color.White;
-            this.cmsAddApplication.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
-            this.cmsAddApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmsAddApplication.Name = "cmsAddApplication";
-            this.cmsAddApplication.Size = new System.Drawing.Size(291, 30);
-            this.cmsAddApplication.Text = "Add New Application";
-            this.cmsAddApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmsAddApplication.Click += new System.EventHandler(this.cmsAddApplication_Click);
-            // 
-            // cmsEdit
-            // 
-            this.cmsEdit.ForeColor = System.Drawing.Color.White;
-            this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
-            this.cmsEdit.Name = "cmsEdit";
-            this.cmsEdit.Size = new System.Drawing.Size(291, 30);
-            this.cmsEdit.Text = "Edit Application";
-            this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
-            // 
-            // cmsShowDetails
-            // 
-            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
-            this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
-            this.cmsShowDetails.Name = "cmsShowDetails";
-            this.cmsShowDetails.Size = new System.Drawing.Size(291, 30);
-            this.cmsShowDetails.Text = "Show Application Detatils";
-            this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
-            // 
-            // cmsDelete
-            // 
-            this.cmsDelete.ForeColor = System.Drawing.Color.White;
-            this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
-            this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(291, 30);
-            this.cmsDelete.Text = "Delete Application";
-            this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(288, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(288, 6);
-            // 
-            // cmsCancelApplication
-            // 
-            this.cmsCancelApplication.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmsCancelApplication.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
-            this.cmsCancelApplication.Name = "cmsCancelApplication";
-            this.cmsCancelApplication.Size = new System.Drawing.Size(291, 30);
-            this.cmsCancelApplication.Text = "Cancel Application";
-            this.cmsCancelApplication.Click += new System.EventHandler(this.cmsCancelApplication_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsSechduleVisionTest,
-            this.cmsSechduleStreetTest,
-            this.cmsWrittenTest});
-            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem1.Image = global::Project_4_DVDL_System_.Properties.Resources.Schedule_Test_32;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(291, 30);
-            this.toolStripMenuItem1.Text = "Sechdule Tests";
-            // 
-            // cmsSechduleVisionTest
-            // 
-            this.cmsSechduleVisionTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsSechduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
-            this.cmsSechduleVisionTest.Name = "cmsSechduleVisionTest";
-            this.cmsSechduleVisionTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsSechduleVisionTest.Text = "Sechdule Vision Test";
-            // 
-            // cmsSechduleStreetTest
-            // 
-            this.cmsSechduleStreetTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsSechduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
-            this.cmsSechduleStreetTest.Name = "cmsSechduleStreetTest";
-            this.cmsSechduleStreetTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsSechduleStreetTest.Text = "Sechdule Street Test";
-            // 
-            // cmsWrittenTest
-            // 
-            this.cmsWrittenTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
-            this.cmsWrittenTest.Name = "cmsWrittenTest";
-            this.cmsWrittenTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsWrittenTest.Text = "Sechdule Written Test";
-            // 
             // frmListLocalApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -354,8 +355,8 @@
             this.Text = "frmListLocalApplications";
             this.Load += new System.EventHandler(this.frmListLocalApplications_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.Menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

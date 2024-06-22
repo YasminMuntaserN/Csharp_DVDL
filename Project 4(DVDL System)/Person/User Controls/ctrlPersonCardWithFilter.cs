@@ -69,6 +69,7 @@ namespace Project_4_DVDL_System_.Person.User_Controls
             if (OnPersonSelectedEvent != null)
                 OnPersonSelected(ctrlPersonCard1?.PersonID);
             _Person = ctrlPersonCard1.Person;
+            _PersonID = PersonID;
 
         }
 
@@ -80,6 +81,7 @@ namespace Project_4_DVDL_System_.Person.User_Controls
             if (OnPersonSelectedEvent != null)
                 OnPersonSelected(ctrlPersonCard1?.PersonID);
             _Person = ctrlPersonCard1.Person;
+            _PersonID =_Person.PersonID;
 
         }
 

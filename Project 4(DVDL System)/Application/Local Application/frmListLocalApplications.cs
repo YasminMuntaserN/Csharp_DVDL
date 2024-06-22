@@ -172,7 +172,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication =
                 clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(_ApplicationIDFromDGV);
 
-            if (clsLocalDrivingLicenseApplication.UpdateStatus(LocalDrivingLicenseApplication.ApplicationID, (byte)clsApplication.enStatus.New))
+            if (clsLocalDrivingLicenseApplication.UpdateStatus(LocalDrivingLicenseApplication.ApplicationID, (byte)clsApplication.enStatus.Cancelled))
             {
                 clsMessages.GeneralSuccessMessage("Application Cancelled Successfully.");
                 _RefreshList();

@@ -22,7 +22,7 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"select * from LocalDrivingLicenseApplications where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID";
+                    string query = @"select * from LocalDrivingLicenseApplication where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

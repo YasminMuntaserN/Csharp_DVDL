@@ -11,7 +11,7 @@ namespace DVDL_DataAccess_
 {
     public class clsApplicationData
     {
-        public static bool GetApplicationInfoByID(int? ApplicationID, ref int? ApplicantPersonID, ref DateTime ApplicationDate, ref int ApplicationTypeID, ref byte ApplicationStatus, ref DateTime LastStatusDate, ref decimal PaidFees, ref int UserID)
+        public static bool GetApplicationInfoByID(int? ApplicationID, ref int? ApplicationPersonID, ref DateTime ApplicationDate, ref int ApplicationTypeID, ref byte ApplicationStatus, ref DateTime LastStatusDate, ref decimal PaidFees, ref int UserID)
         {
             bool IsFound = false;
 
@@ -21,7 +21,7 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"select * from Applications where ApplicationID = @ApplicationID";
+                    string query = @"select * from Application where ApplicationID = @ApplicationID";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -34,7 +34,7 @@ namespace DVDL_DataAccess_
                                 // The record was found
                                 IsFound = true;
 
-                                ApplicantPersonID = (int)reader["ApplicantPersonID"];
+                                ApplicationPersonID = (int)reader["ApplicationPersonID"];
                                 ApplicationDate = (DateTime)reader["ApplicationDate"];
                                 ApplicationTypeID = (int)reader["ApplicationTypeID"];
                                 ApplicationStatus = (byte)reader["ApplicationStatus"];
@@ -103,7 +103,7 @@ namespace DVDL_DataAccess_
             return ApplicationID;
         }
 
-        public static bool UpdateApplication(int? ApplicationID, int? ApplicantPersonID, DateTime ApplicationDate, int? ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int UserID)
+        public static bool UpdateApplication(int? ApplicationID, int? ApplicationPersonID, DateTime ApplicationDate, int? ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int UserID)
         {
             int RowAffected = 0;
 
@@ -113,8 +113,8 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"Update Applications
-                                     set ApplicantPersonID = @ApplicantPersonID,
+                    string query = @"Update Application
+                                     set ApplicationPersonID = @ApplicationPersonID,
                                      ApplicationDate = @ApplicationDate,
                                      ApplicationTypeID = @ApplicationTypeID,
                                      ApplicationStatus = @ApplicationStatus,
@@ -126,7 +126,7 @@ namespace DVDL_DataAccess_
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@ApplicationID", (object)ApplicationID ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@ApplicantPersonID", ApplicantPersonID);
+                        command.Parameters.AddWithValue("@ApplicationPersonID", ApplicationPersonID);
                         command.Parameters.AddWithValue("@ApplicationDate", ApplicationDate);
                         command.Parameters.AddWithValue("@ApplicationTypeID", ApplicationTypeID);
                         command.Parameters.AddWithValue("@ApplicationStatus", ApplicationStatus);
@@ -148,17 +148,17 @@ namespace DVDL_DataAccess_
 
         public static bool DeleteApplication(int? ApplicationID)
         {
-            return clsDataAccessHelper.Delete("delete Applications where ApplicationID = @ApplicationID", "ApplicationID", ApplicationID);
+            return clsDataAccessHelper.Delete("delete Application where ApplicationID = @ApplicationID", "ApplicationID", ApplicationID);
         }
 
         public static bool DoesApplicationExist(int? ApplicationID)
         {
-            return clsDataAccessHelper.Exists("select IsFound =1 from Applications where ApplicationID = @ApplicationID", "ApplicationID", ApplicationID);
+            return clsDataAccessHelper.Exists("select IsFound =1 from Application where ApplicationID = @ApplicationID", "ApplicationID", ApplicationID);
         }
 
         public static DataTable GetAllApplications()
         {
-            return clsDataAccessHelper.All("select * from Applications");
+            return clsDataAccessHelper.All("select * from Application");
         }
 
         public static bool UpdateStatus(int? ApplicationID ,byte ApplicationStatus)
@@ -171,7 +171,7 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"Update Applications
+                    string query = @"Update Application
                                      set 
                                      ApplicationStatus = @ApplicationStatus
                                      where ApplicationID = @ApplicationID";
