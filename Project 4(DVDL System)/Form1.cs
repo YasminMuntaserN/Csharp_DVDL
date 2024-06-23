@@ -19,14 +19,5 @@ namespace Project_4_DVDL_System_
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            clsCountry Country = new clsCountry();
-            Country.CountryName = guna2TextBox1.Text;
-            if (Country.Save())
-            {
-                clsMessages.OperationDoneSuccessfully("Save");
-            }
-        }
     }
 }

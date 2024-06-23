@@ -94,7 +94,7 @@ namespace DVDL_DataAccess_
             return LocalDrivingLicenseApplicationID;
         }
 
-        public static bool UpdateLocalDrivingLicenseApplication(int? LocalDrivingLicenseApplicationID, int ?ApplicationID, int? LicenseClassID)
+        public static bool UpdateLocalDrivingLicenseApplication(int? LocalDrivingLicenseApplicationID, int? ApplicationID, int? LicenseClassID)
         {
             int RowAffected = 0;
 
@@ -167,7 +167,7 @@ namespace DVDL_DataAccess_
 
         public static int GetActiveApplicationIDForLicenseClass(int? licenseClassID, int? ApplicationPersonID, int? ApplicationTypeID)
         {
-                int ActiveApplicationID = -1;
+            int ActiveApplicationID = -1;
 
             try
             {
@@ -202,9 +202,178 @@ namespace DVDL_DataAccess_
             }
             catch (Exception ex)
             {
-                  clsLogError.LogError(ex);
+                clsLogError.LogError(ex);
             }
             return ActiveApplicationID;
+        }
+
+        public static bool DoesAttendTestType(int? LocalDrivingLicenseApplicationID, int TestTypeID)
+
+        {
+            bool IsFound = false;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+                    string query = @" SELECT top 1 Found=1
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+                        connection.Open();
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            IsFound = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+            return IsFound;
+        }
+
+        public static byte TotalTrialsPerTest(int? LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+
+
+            byte TotalTrialsPerTest = 0;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+
+                    string query = @" SELECT TotalTrialsPerTest = count(TestID)
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                       ";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && byte.TryParse(result.ToString(), out byte Trials))
+                        {
+                            TotalTrialsPerTest = Trials;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+            return TotalTrialsPerTest;
+        }
+
+        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+
+            bool Result = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+
+                    string query = @" SELECT top 1 Found=1
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID 
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)  
+                            AND(TestAppointments.TestTypeID = @TestTypeID) and isLocked=0
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            Result = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+
+            return Result;
+
+        }
+
+        public static bool DoesPassTestType(int? LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+            bool Result = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+
+                    string query = @" SELECT top 1 TestResult
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && bool.TryParse(result.ToString(), out bool returnedResult))
+                        {
+                            Result = returnedResult;
+                        }
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+
+            return Result;
         }
     }
 }

@@ -18,6 +18,7 @@ namespace DVDL_BusinessLayer_
         public string TestTypeDescription { get; set; }
         public decimal TestTypeFees { get; set; }
 
+        public enum enTestType { VisionTest=0 , WrittenTest =1 , StreetTest =2 };
         public clsTestType()
         {
             this.TestTypeID = null;

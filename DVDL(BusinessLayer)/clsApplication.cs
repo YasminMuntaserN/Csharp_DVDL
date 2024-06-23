@@ -32,7 +32,7 @@ namespace DVDL_BusinessLayer_
         public DateTime LastStatusDate { get; set; }
         public decimal PaidFees { get; set; }
         public int CreatedByUserID { get; set; }
-
+        public string PersonName => clsPerson.Find(ApplicantPersonID).FullName;
         public clsApplication()
         {
             this.ApplicationID = null;
