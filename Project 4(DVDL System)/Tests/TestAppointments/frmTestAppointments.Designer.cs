@@ -30,22 +30,22 @@
         {
             this.tpAppointmentsList = new System.Windows.Forms.TabControl();
             this.tpApplicayionInfo = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAddNewAppointment = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblRecordsCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAddNewAppointment = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvLicenseTestAppointments = new System.Windows.Forms.DataGridView();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.pbTestTypeImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.tpAppointmentsList.SuspendLayout();
             this.tpApplicayionInfo.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
             this.SuspendLayout();
             // 
             // tpAppointmentsList
@@ -71,63 +71,6 @@
             this.tpApplicayionInfo.Text = "Application Info";
             this.tpApplicayionInfo.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.lblRecordsCount);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.btnAddNewAppointment);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(587, 541);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Appointments List";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.BorderRadius = 50;
-            this.guna2CustomGradientPanel1.BorderThickness = 20;
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.lblTitle);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-13, -23);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(621, 88);
-            this.guna2CustomGradientPanel1.TabIndex = 178;
-            // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(30, 27);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(89, 58);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 245;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(136, 27);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(423, 45);
-            this.lblTitle.TabIndex = 165;
-            this.lblTitle.Text = "Vision Test Appointments";
-            // 
             // ctrlLocalApplication1
             // 
             this.ctrlLocalApplication1.Location = new System.Drawing.Point(1, 6);
@@ -135,36 +78,20 @@
             this.ctrlLocalApplication1.Size = new System.Drawing.Size(583, 546);
             this.ctrlLocalApplication1.TabIndex = 0;
             // 
-            // dataGridView1
+            // tabPage2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 102);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(576, 210);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 25);
-            this.label1.TabIndex = 136;
-            this.label1.Text = "Appointments:";
-            // 
-            // btnAddNewAppointment
-            // 
-            this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewAppointment.Image = global::Project_4_DVDL_System_.Properties.Resources.appointments;
-            this.btnAddNewAppointment.Location = new System.Drawing.Point(473, 34);
-            this.btnAddNewAppointment.Name = "btnAddNewAppointment";
-            this.btnAddNewAppointment.Size = new System.Drawing.Size(76, 62);
-            this.btnAddNewAppointment.TabIndex = 138;
-            this.btnAddNewAppointment.UseVisualStyleBackColor = true;
-            this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click);
+            this.tabPage2.Controls.Add(this.lblRecordsCount);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.btnAddNewAppointment);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.dgvLicenseTestAppointments);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(587, 541);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Appointments List";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // lblRecordsCount
             // 
@@ -185,6 +112,79 @@
             this.label2.TabIndex = 139;
             this.label2.Text = "# Records:";
             // 
+            // btnAddNewAppointment
+            // 
+            this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewAppointment.Image = global::Project_4_DVDL_System_.Properties.Resources.appointments;
+            this.btnAddNewAppointment.Location = new System.Drawing.Point(473, 34);
+            this.btnAddNewAppointment.Name = "btnAddNewAppointment";
+            this.btnAddNewAppointment.Size = new System.Drawing.Size(76, 62);
+            this.btnAddNewAppointment.TabIndex = 138;
+            this.btnAddNewAppointment.UseVisualStyleBackColor = true;
+            this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 25);
+            this.label1.TabIndex = 136;
+            this.label1.Text = "Appointments:";
+            // 
+            // dgvLicenseTestAppointments
+            // 
+            this.dgvLicenseTestAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLicenseTestAppointments.Location = new System.Drawing.Point(9, 102);
+            this.dgvLicenseTestAppointments.Name = "dgvLicenseTestAppointments";
+            this.dgvLicenseTestAppointments.RowHeadersWidth = 51;
+            this.dgvLicenseTestAppointments.RowTemplate.Height = 26;
+            this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(576, 210);
+            this.dgvLicenseTestAppointments.TabIndex = 0;
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.BorderRadius = 50;
+            this.guna2CustomGradientPanel1.BorderThickness = 20;
+            this.guna2CustomGradientPanel1.Controls.Add(this.pbTestTypeImage);
+            this.guna2CustomGradientPanel1.Controls.Add(this.lblTitle);
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-13, -23);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(621, 88);
+            this.guna2CustomGradientPanel1.TabIndex = 178;
+            // 
+            // pbTestTypeImage
+            // 
+            this.pbTestTypeImage.BackColor = System.Drawing.Color.Transparent;
+            this.pbTestTypeImage.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
+            this.pbTestTypeImage.ImageRotate = 0F;
+            this.pbTestTypeImage.Location = new System.Drawing.Point(30, 27);
+            this.pbTestTypeImage.Name = "pbTestTypeImage";
+            this.pbTestTypeImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbTestTypeImage.Size = new System.Drawing.Size(89, 58);
+            this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTestTypeImage.TabIndex = 245;
+            this.pbTestTypeImage.TabStop = false;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(136, 27);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(423, 45);
+            this.lblTitle.TabIndex = 165;
+            this.lblTitle.Text = "Vision Test Appointments";
+            // 
             // frmTestAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -199,10 +199,10 @@
             this.tpApplicayionInfo.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,13 +213,13 @@
         private System.Windows.Forms.TabPage tpApplicayionInfo;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbTestTypeImage;
         private System.Windows.Forms.Label lblTitle;
         private Application.Local_Application.ctrlLocalApplication ctrlLocalApplication1;
         private System.Windows.Forms.Label lblRecordsCount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddNewAppointment;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLicenseTestAppointments;
     }
 }

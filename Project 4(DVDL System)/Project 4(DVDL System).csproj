@@ -147,11 +147,11 @@
     <Compile Include="Tests\TestAppointments\ctrlScheduleTest.Designer.cs">
       <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tests\TestAppointments\frmAddEditSchedualeTest.cs">
+    <Compile Include="Tests\TestAppointments\frmAddEditScheduleTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tests\TestAppointments\frmAddEditSchedualeTest.Designer.cs">
-      <DependentUpon>frmAddEditSchedualeTest.cs</DependentUpon>
+    <Compile Include="Tests\TestAppointments\frmAddEditScheduleTest.Designer.cs">
+      <DependentUpon>frmAddEditScheduleTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\TestAppointments\frmTestAppointments.cs">
       <SubType>Form</SubType>
@@ -256,8 +256,8 @@
     <EmbeddedResource Include="Tests\TestAppointments\ctrlScheduleTest.resx">
       <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tests\TestAppointments\frmAddEditSchedualeTest.resx">
-      <DependentUpon>frmAddEditSchedualeTest.cs</DependentUpon>
+    <EmbeddedResource Include="Tests\TestAppointments\frmAddEditScheduleTest.resx">
+      <DependentUpon>frmAddEditScheduleTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\TestAppointments\frmTestAppointments.resx">
       <DependentUpon>frmTestAppointments.cs</DependentUpon>

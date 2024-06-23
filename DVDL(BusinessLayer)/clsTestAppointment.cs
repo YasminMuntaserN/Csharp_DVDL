@@ -116,6 +116,12 @@ namespace DVDL_BusinessLayer_
             return clsTestAppointmentData.GetAllTestAppointments();
         }
 
+        public static DataTable GetApplicationTestAppointmentsPerTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+            return clsTestAppointmentData.GetApplicationTestAppointmentsPerTestType(LocalDrivingLicenseApplicationID, TestTypeID);
+        }
+
+
     }
 
 }

@@ -72,6 +72,41 @@ namespace DVDL_HelperLayer_
             return dt;
         }
 
+        public static DataTable All<T>(string storedProcedureName, string parameterName, T value,
+            string parameterName2, T value2)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(storedProcedureName, connection))
+                    {
+                        command.Parameters.AddWithValue($"@{parameterName}", (object)value ?? DBNull.Value);
+                        command.Parameters.AddWithValue($"@{parameterName2}", (object)value2 ?? DBNull.Value);
+
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                dt.Load(reader);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+
+            return dt;
+        }
+
         public static bool Delete<T>(string storedProcedureName, string parameterName, T value)
         {
             int rowAffected = 0;
