@@ -43,10 +43,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsCancelApplication = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsSechduleVisionTest = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsSechduleStreetTest = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsWrittenTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsTests = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsScheduleVisionTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsScheduleStreetTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsScheduleWrittenTest = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -176,7 +176,7 @@
             this.toolStripSeparator1,
             this.cmsCancelApplication,
             this.toolStripSeparator2,
-            this.toolStripMenuItem1});
+            this.cmsTests});
             this.Menu.Name = "Menu";
             this.Menu.RenderStyle.ArrowColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -188,6 +188,7 @@
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.Menu.Size = new System.Drawing.Size(292, 224);
+            this.Menu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening);
             // 
             // cmsAddApplication
             // 
@@ -247,41 +248,44 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(288, 6);
             // 
-            // toolStripMenuItem1
+            // cmsTests
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsSechduleVisionTest,
-            this.cmsSechduleStreetTest,
-            this.cmsWrittenTest});
-            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItem1.Image = global::Project_4_DVDL_System_.Properties.Resources.Schedule_Test_32;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(291, 30);
-            this.toolStripMenuItem1.Text = "Sechdule Tests";
+            this.cmsTests.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsScheduleVisionTest,
+            this.cmsScheduleWrittenTest,
+            this.cmsScheduleStreetTest});
+            this.cmsTests.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmsTests.Image = global::Project_4_DVDL_System_.Properties.Resources.Schedule_Test_32;
+            this.cmsTests.Name = "cmsTests";
+            this.cmsTests.Size = new System.Drawing.Size(291, 30);
+            this.cmsTests.Text = "Sechdule Tests";
             // 
-            // cmsSechduleVisionTest
+            // cmsScheduleVisionTest
             // 
-            this.cmsSechduleVisionTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsSechduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
-            this.cmsSechduleVisionTest.Name = "cmsSechduleVisionTest";
-            this.cmsSechduleVisionTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsSechduleVisionTest.Text = "Sechdule Vision Test";
+            this.cmsScheduleVisionTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsScheduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
+            this.cmsScheduleVisionTest.Name = "cmsScheduleVisionTest";
+            this.cmsScheduleVisionTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsScheduleVisionTest.Text = "Schedule Vision Test";
+            this.cmsScheduleVisionTest.Click += new System.EventHandler(this.cmsSechduleVisionTest_Click);
             // 
-            // cmsSechduleStreetTest
+            // cmsScheduleStreetTest
             // 
-            this.cmsSechduleStreetTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsSechduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
-            this.cmsSechduleStreetTest.Name = "cmsSechduleStreetTest";
-            this.cmsSechduleStreetTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsSechduleStreetTest.Text = "Sechdule Street Test";
+            this.cmsScheduleStreetTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsScheduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
+            this.cmsScheduleStreetTest.Name = "cmsScheduleStreetTest";
+            this.cmsScheduleStreetTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsScheduleStreetTest.Text = "Schedule Street Test";
+            this.cmsScheduleStreetTest.Click += new System.EventHandler(this.cmsScheduleStreetTest_Click);
             // 
-            // cmsWrittenTest
+            // cmsScheduleWrittenTest
             // 
-            this.cmsWrittenTest.BackColor = System.Drawing.Color.Silver;
-            this.cmsWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
-            this.cmsWrittenTest.Name = "cmsWrittenTest";
-            this.cmsWrittenTest.Size = new System.Drawing.Size(267, 30);
-            this.cmsWrittenTest.Text = "Sechdule Written Test";
+            this.cmsScheduleWrittenTest.BackColor = System.Drawing.Color.Silver;
+            this.cmsScheduleWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
+            this.cmsScheduleWrittenTest.Name = "cmsScheduleWrittenTest";
+            this.cmsScheduleWrittenTest.Size = new System.Drawing.Size(267, 30);
+            this.cmsScheduleWrittenTest.Text = "Schedule Written Test";
+            this.cmsScheduleWrittenTest.Click += new System.EventHandler(this.cmsScheduleWrittenTest_Click);
             // 
             // label1
             // 
@@ -380,9 +384,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem cmsCancelApplication;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cmsSechduleVisionTest;
-        private System.Windows.Forms.ToolStripMenuItem cmsSechduleStreetTest;
-        private System.Windows.Forms.ToolStripMenuItem cmsWrittenTest;
+        private System.Windows.Forms.ToolStripMenuItem cmsTests;
+        private System.Windows.Forms.ToolStripMenuItem cmsScheduleVisionTest;
+        private System.Windows.Forms.ToolStripMenuItem cmsScheduleStreetTest;
+        private System.Windows.Forms.ToolStripMenuItem cmsScheduleWrittenTest;
     }
 }

@@ -292,7 +292,7 @@ namespace DVDL_DataAccess_
             return TotalTrialsPerTest;
         }
 
-        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        public static bool IsThereAnActiveScheduledTest(int? LocalDrivingLicenseApplicationID, int TestTypeID)
         {
 
             bool Result = false;
@@ -301,12 +301,12 @@ namespace DVDL_DataAccess_
             {
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-
+                    connection.Open();
                     string query = @" SELECT top 1 Found=1
-                            FROM LocalDrivingLicenseApplications INNER JOIN
-                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID 
+                            FROM LocalDrivingLicenseApplication INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID 
                             WHERE
-                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)  
+                            (LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)  
                             AND(TestAppointments.TestTypeID = @TestTypeID) and isLocked=0
                             ORDER BY TestAppointments.TestAppointmentID desc";
 
@@ -342,7 +342,7 @@ namespace DVDL_DataAccess_
             {
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-
+                    connection.Open();  
                     string query = @" SELECT top 1 TestResult
                             FROM LocalDrivingLicenseApplications INNER JOIN
                                  TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
@@ -375,5 +375,6 @@ namespace DVDL_DataAccess_
 
             return Result;
         }
+
     }
 }

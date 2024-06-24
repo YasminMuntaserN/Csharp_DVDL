@@ -25,9 +25,9 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
 
         private clsTestType.enTestType _TestTypeID = clsTestType.enTestType.VisionTest;
         private clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication;
-        private int _LocalDrivingLicenseApplicationID = -1;
+        private int? _LocalDrivingLicenseApplicationID = -1;
         private clsTestAppointment _TestAppointment;
-        private int _TestAppointmentID = -1;
+        private int? _TestAppointmentID = -1;
 
         public ctrlScheduleTest()
         {
@@ -167,7 +167,9 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             {
                 case clsTestType.enTestType.VisionTest:
                     //in this case no required previous test to pass.
-                    return _OperationForEachTestType(clsTestType.enTestType.VisionTest, "Vision Test");
+                    lblUserMessage.Visible = false;
+
+                    return true;
 
 
                 case clsTestType.enTestType.WrittenTest:
@@ -283,7 +285,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
 
         }
 
-        public void LoadInfo(int LocalDrivingLicenseApplicationID, int AppointmentID = -1)
+        public void LoadInfo(int? LocalDrivingLicenseApplicationID, int? AppointmentID = -1)
         {
             //if no appointment id this means AddNew mode otherwise it's update mode.
             if (AppointmentID == -1)

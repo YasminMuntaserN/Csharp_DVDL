@@ -51,5 +51,12 @@ namespace Project_4_DVDL_System_.Global_Classes
             MessageBox.Show(message, "Success",
               MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        public static void NotAllowed(string message)
+        {
+            MessageBox.Show(message, "NotAllowed",
+              MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
     }
 }

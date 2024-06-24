@@ -236,10 +236,74 @@ namespace DVDL_DataAccess_
             return dt;
         }
 
-        public static DataTable GetApplicationTestAppointmentsPerTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        public static DataTable GetApplicationTestAppointmentsPerTestType(int? LocalDrivingLicenseApplicationID, int TestTypeID)
         {
             return clsDataAccessHelper.All("SELECT TestAppointmentID, AppointmentDate,PaidFees, IsLocked FROM TestAppointments WHERE (TestTypeID = @TestTypeID) AND (LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) order by TestAppointmentID desc;"
                 , "LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID, "TestTypeID", TestTypeID);
+        }
+
+        public static bool GetLastTestAppointment(
+                       int ?LocalDrivingLicenseApplicationID, int TestTypeID,
+                      ref int TestAppointmentID, ref DateTime AppointmentDate,
+                      ref decimal PaidFees, ref int CreatedByUserID, ref bool IsLocked, ref int RetakeTestApplicationID)
+        {
+            bool isFound = false;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"SELECT       top 1 *
+                                      FROM            TestAppointments
+                                      WHERE        (TestTypeID = @TestTypeID) 
+                                      AND (LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                                      order by TestAppointmentID Desc";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+
+                            // The record was found
+                            isFound = true;
+
+                            TestAppointmentID = (int)reader["TestAppointmentID"];
+                            AppointmentDate = (DateTime)reader["AppointmentDate"];
+                            PaidFees = Convert.ToDecimal(reader["PaidFees"]);
+                            CreatedByUserID = (int)reader["CreatedByUserID"];
+                            IsLocked = (bool)reader["IsLocked"];
+
+                            if (reader["RetakeTestApplicationID"] == DBNull.Value)
+                                RetakeTestApplicationID = -1;
+                            else
+                                RetakeTestApplicationID = (int)reader["RetakeTestApplicationID"];
+
+
+                        }
+                        else
+                        {
+                            // The record was not found
+                            isFound = false;
+                        }
+
+                        reader.Close();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+            return isFound;
+
         }
     }
 }

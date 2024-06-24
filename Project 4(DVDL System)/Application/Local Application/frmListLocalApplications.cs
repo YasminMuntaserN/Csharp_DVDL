@@ -1,5 +1,6 @@
 ﻿using DVDL_BusinessLayer_;
 using Project_4_DVDL_System_.Global_Classes;
+using Project_4_DVDL_System_.Tests.TestAppointments;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static DVDL_BusinessLayer_.clsTestType;
 
 namespace Project_4_DVDL_System_.Application.Local_Application
 {
@@ -181,6 +183,61 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             {
                 clsMessages.GeneralErrorMessage("Could not cancel Application");
             }
+
+        }
+
+        private bool _GetTest(clsTestType.enTestType testType , string TestName)
+        {
+            //  clsTestAppointment Appointment =
+            //clsTestAppointment.GetLastTestAppointment(_ApplicationIDFromDGV, clsTestType.enTestType.VisionTest);
+
+            //  if (Appointment == null)
+            //  {
+            //      MessageBox.Show($"No {TestName} Appointment Found!", "Set Appointment", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //      return false ;
+            //  }
+
+
+            //  //frmTakeTest frm = new frmTakeTest(Appointment.TestAppointmentID, clsTestType.enTestType.VisionTest);
+            //  //frm.ShowDialog();
+            frmTestAppointments frm = new frmTestAppointments(_ApplicationIDFromDGV, testType);
+            frm.ShowDialog();
+            //refresh
+            _RefreshList();
+            return true;
+        }
+
+        private void cmsSechduleVisionTest_Click(object sender, EventArgs e)
+        {
+            if (!_GetTest(clsTestType.enTestType.VisionTest , "Vision Test")) return;
+        }
+
+        private void cmsScheduleStreetTest_Click(object sender, EventArgs e)
+        {
+            if (!clsLocalDrivingLicenseApplication.DoesPassTestType(_ApplicationIDFromDGV, clsTestType.enTestType.WrittenTest))
+            {
+                MessageBox.Show("Person Should Pass the Written Test First!", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!_GetTest(clsTestType.enTestType.StreetTest, "Street Test")) return;
+
+        }
+
+        private void cmsScheduleWrittenTest_Click(object sender, EventArgs e)
+        {
+            if (!clsLocalDrivingLicenseApplication.DoesPassTestType(_ApplicationIDFromDGV, clsTestType.enTestType.VisionTest))
+            {
+                clsMessages.NotAllowed("Person Should Pass the Vision Test First!");
+                return;
+            }
+
+            if (!_GetTest(clsTestType.enTestType.WrittenTest, "Written Test")) return;
+
+        }
+
+        private void Menu_Opening(object sender, CancelEventArgs e)
+        {
 
         }
     }

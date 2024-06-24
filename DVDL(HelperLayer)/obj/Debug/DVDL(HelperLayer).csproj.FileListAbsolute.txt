@@ -4,3 +4,9 @@ G:\C#\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).csproj.AssemblyReference.cac
 G:\C#\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).csproj.CoreCompileInputs.cache
 G:\C#\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).dll
 G:\C#\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).pdb
+G:\C#\DVDL\DVDL(HelperLayer)\bin\Debug\DVDL(HelperLayer).dll
+G:\C#\DVDL\DVDL(HelperLayer)\bin\Debug\DVDL(HelperLayer).pdb
+G:\C#\DVDL\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).csproj.AssemblyReference.cache
+G:\C#\DVDL\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).csproj.CoreCompileInputs.cache
+G:\C#\DVDL\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).dll
+G:\C#\DVDL\DVDL(HelperLayer)\obj\Debug\DVDL(HelperLayer).pdb

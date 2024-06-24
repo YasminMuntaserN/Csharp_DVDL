@@ -1,7 +1,9 @@
 ﻿using DVDL_DataAccess_;
+using DVDL_HelperLayer_;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -106,6 +108,21 @@ namespace DVDL_BusinessLayer_
         {
            return clsTestData.PassedTestCount(LocalDrivingID);
         }
+
+        public static clsTest GetLastTestByPersonAndTestTypeAndLicenseClass(int? PersonID, int ?LicenseClassID, clsTestType.enTestType TestTypeID)
+        {
+            int TestID = -1;
+            int TestAppointmentID = -1;
+            bool TestResult = false;
+            string Notes = null;
+            int CreatedByUserID = -1;
+
+            bool IsFound = clsTestData.GetLastTestByPersonAndTestTypeAndLicenseClass
+                (PersonID,  LicenseClassID,  (int)TestTypeID, ref TestID, ref TestAppointmentID, ref TestResult, ref Notes, ref CreatedByUserID);
+
+            return (IsFound) ? (new clsTest(TestID, TestAppointmentID, TestResult, Notes, CreatedByUserID)) : null;
+        }
+
 
     }
 

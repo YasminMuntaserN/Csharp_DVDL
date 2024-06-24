@@ -62,7 +62,7 @@
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Green;
             this.guna2GroupBox2.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(580, 224);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(626, 224);
             this.guna2GroupBox2.TabIndex = 3;
             this.guna2GroupBox2.Text = " Applications Info :";
             // 
@@ -182,9 +182,9 @@
             // 
             // ctrlApplication1
             // 
-            this.ctrlApplication1.Location = new System.Drawing.Point(0, 216);
+            this.ctrlApplication1.Location = new System.Drawing.Point(0, 220);
             this.ctrlApplication1.Name = "ctrlApplication1";
-            this.ctrlApplication1.Size = new System.Drawing.Size(583, 327);
+            this.ctrlApplication1.Size = new System.Drawing.Size(626, 326);
             this.ctrlApplication1.TabIndex = 4;
             // 
             // ctrlLocalApplication
@@ -194,7 +194,7 @@
             this.Controls.Add(this.ctrlApplication1);
             this.Controls.Add(this.guna2GroupBox2);
             this.Name = "ctrlLocalApplication";
-            this.Size = new System.Drawing.Size(583, 546);
+            this.Size = new System.Drawing.Size(626, 546);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

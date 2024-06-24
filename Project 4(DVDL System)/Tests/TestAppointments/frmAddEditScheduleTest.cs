@@ -14,11 +14,11 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
     public partial class frmAddEditScheduleTest : Form
     {
 
-        private int _LocalDrivingLicenseApplicationID = -1;
+        private int? _LocalDrivingLicenseApplicationID = -1;
         private clsTestType.enTestType _TestTypeID = clsTestType.enTestType.VisionTest;
-        private int _AppointmentID = -1;
+        private int? _AppointmentID = null;
 
-        public frmAddEditScheduleTest(int LocalDrivingLicenseApplicationID, clsTestType.enTestType TestTypeID, int AppointmentID = -1)
+        public frmAddEditScheduleTest(int ?LocalDrivingLicenseApplicationID, clsTestType.enTestType TestTypeID, int? AppointmentID = -1)
         {
             InitializeComponent();
             _LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;

@@ -116,12 +116,26 @@ namespace DVDL_BusinessLayer_
             return clsTestAppointmentData.GetAllTestAppointments();
         }
 
-        public static DataTable GetApplicationTestAppointmentsPerTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        public static DataTable GetApplicationTestAppointmentsPerTestType(int? LocalDrivingLicenseApplicationID, int TestTypeID)
         {
             return clsTestAppointmentData.GetApplicationTestAppointmentsPerTestType(LocalDrivingLicenseApplicationID, TestTypeID);
         }
 
+        public static clsTestAppointment GetLastTestAppointment(int? LocalDrivingLicenseApplicationID, clsTestType.enTestType TestTypeID)
+        {
+            int TestAppointmentID = -1;
+            DateTime AppointmentDate = DateTime.Now; decimal PaidFees = 0;
+            int CreatedByUserID = -1; bool IsLocked = false; int RetakeTestApplicationID = -1;
 
+            if (clsTestAppointmentData.GetLastTestAppointment(LocalDrivingLicenseApplicationID, (int)TestTypeID,
+                ref TestAppointmentID, ref AppointmentDate, ref PaidFees, ref CreatedByUserID, ref IsLocked, ref RetakeTestApplicationID))
+
+                return new clsTestAppointment(TestAppointmentID, (int)TestTypeID, LocalDrivingLicenseApplicationID,
+             AppointmentDate, PaidFees, CreatedByUserID, IsLocked, RetakeTestApplicationID);
+            else
+                return null;
+
+        }
     }
 
 }
