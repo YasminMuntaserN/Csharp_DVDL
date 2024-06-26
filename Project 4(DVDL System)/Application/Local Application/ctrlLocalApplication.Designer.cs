@@ -62,7 +62,7 @@
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Green;
             this.guna2GroupBox2.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(626, 224);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(730, 205);
             this.guna2GroupBox2.TabIndex = 3;
             this.guna2GroupBox2.Text = " Applications Info :";
             // 
@@ -70,7 +70,7 @@
             // 
             this.llShowLicenceInfo.AutoSize = true;
             this.llShowLicenceInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.llShowLicenceInfo.Location = new System.Drawing.Point(344, 184);
+            this.llShowLicenceInfo.Location = new System.Drawing.Point(472, 150);
             this.llShowLicenceInfo.Name = "llShowLicenceInfo";
             this.llShowLicenceInfo.Size = new System.Drawing.Size(178, 28);
             this.llShowLicenceInfo.TabIndex = 206;
@@ -182,9 +182,9 @@
             // 
             // ctrlApplication1
             // 
-            this.ctrlApplication1.Location = new System.Drawing.Point(0, 220);
+            this.ctrlApplication1.Location = new System.Drawing.Point(0, 196);
             this.ctrlApplication1.Name = "ctrlApplication1";
-            this.ctrlApplication1.Size = new System.Drawing.Size(626, 326);
+            this.ctrlApplication1.Size = new System.Drawing.Size(730, 326);
             this.ctrlApplication1.TabIndex = 4;
             // 
             // ctrlLocalApplication
@@ -194,7 +194,7 @@
             this.Controls.Add(this.ctrlApplication1);
             this.Controls.Add(this.guna2GroupBox2);
             this.Name = "ctrlLocalApplication";
-            this.Size = new System.Drawing.Size(626, 546);
+            this.Size = new System.Drawing.Size(733, 491);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

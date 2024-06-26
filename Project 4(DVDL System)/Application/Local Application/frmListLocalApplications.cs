@@ -150,7 +150,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             if (clsMessages.conformDeleted("Local Driving License Application ", _ApplicationIDFromDGV))
             {
                 //Perform Delete and refresh
-                if (clsPerson.DeletePerson(_ApplicationIDFromDGV))
+                if (clsLocalDrivingLicenseApplication.DeleteLocalDrivingLicenseApplication(_ApplicationIDFromDGV))
                 {
                     clsMessages.OperationDoneSuccessfully("Deleted");
                     _RefreshList();
@@ -236,9 +236,57 @@ namespace Project_4_DVDL_System_.Application.Local_Application
 
         }
 
-        private void Menu_Opening(object sender, CancelEventArgs e)
+        private void PerformEnabledChoice(clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication)
         {
 
+            int TotalPassedTests = (int)dgvApplications.CurrentRow.Cells[4].Value;
+
+            bool LicenseExists = LocalDrivingLicenseApplication.IsLicenseIssued();
+
+            //Enabled only if person passed all tests and Does not have license. 
+            cmsIssueLicense.Enabled = (TotalPassedTests == 3) && !LicenseExists;
+
+            cmsShowLicense.Enabled = LicenseExists;
+
+            cmsShowpersonLicenseHistory.Enabled = LicenseExists;
+
+            cmsEdit.Enabled = !LicenseExists && (LocalDrivingLicenseApplication.ApplicationStatus == (byte)clsApplication.enStatus.New);
+
+            cmsTests.Enabled = !LicenseExists;
         }
+
+        private void PreformEnabledOptionFromScheduledTestMenu(clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication)
+        {
+            //Enable Disable Schedule Menu and it's sub Menu
+            bool PassedVisionTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.VisionTest); ;
+            bool PassedWrittenTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.WrittenTest);
+            bool PassedStreetTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.StreetTest);
+
+            cmsTests.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PassedStreetTest) && (LocalDrivingLicenseApplication.ApplicationStatus == (byte)clsApplication.enStatus.New);
+
+            if (cmsTests.Enabled)
+            {
+                //To Allow Schedule vision test, Person must not passed the same test before.
+                cmsScheduleVisionTest.Enabled = !PassedVisionTest;
+
+                //To Allow Schedule written test, Person must pass the vision test and must not passed the same test before.
+                cmsScheduleWrittenTest.Enabled = PassedVisionTest && !PassedWrittenTest;
+
+                //To Allow Schedule Street test, Person must pass the vision * written tests, and must not passed the same test before.
+                cmsScheduleStreetTest.Enabled = PassedVisionTest && PassedWrittenTest && !PassedStreetTest;
+
+            }
+        }
+     
+        private void Menu_Opening(object sender, CancelEventArgs e)
+        {
+            clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication =
+            clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(_ApplicationIDFromDGV);
+
+            PerformEnabledChoice(LocalDrivingLicenseApplication);
+
+            PreformEnabledOptionFromScheduledTestMenu(LocalDrivingLicenseApplication);
+        }
+
     }
 }

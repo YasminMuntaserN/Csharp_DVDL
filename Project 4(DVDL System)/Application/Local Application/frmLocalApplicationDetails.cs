@@ -18,10 +18,9 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             ctrlLocalApplication1.LoadLocalApplicationInfo(ID); 
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }

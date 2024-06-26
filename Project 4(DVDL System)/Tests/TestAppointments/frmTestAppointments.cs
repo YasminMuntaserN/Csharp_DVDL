@@ -65,7 +65,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             _dtLicenseTestAppointments = clsTestAppointment.GetApplicationTestAppointmentsPerTestType(_LocalDrivingLicenseApplicationID, (int)_TestType);
 
             dgvLicenseTestAppointments.DataSource = _dtLicenseTestAppointments;
-            lblRecordsCount.Text = dgvLicenseTestAppointments.Rows.Count.ToString();
+            lblRecordsCount.Text = _dtLicenseTestAppointments.Rows.Count.ToString();
 
             if (dgvLicenseTestAppointments.Rows.Count > 0)
             {
@@ -131,6 +131,16 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             ctrlLocalApplication1.LoadLocalApplicationInfo(_LocalDrivingLicenseApplicationID);
             _RefreshList();
 
+        }
+
+        private void cmsTakeTest_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -129,30 +129,7 @@ namespace DVDL_DataAccess_
 
         public static bool DeleteLocalDrivingLicenseApplication(int? LocalDrivingLicenseApplicationID)
         {
-            int RowAffected = 0;
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
-                {
-                    connection.Open();
-
-                    string query = @"delete LocalDrivingLicenseApplications where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", (object)LocalDrivingLicenseApplicationID ?? DBNull.Value);
-
-                        RowAffected = command.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                clsLogError.LogError(ex);
-            }
-
-            return (RowAffected > 0);
+            return clsDataAccessHelper.Delete("delete LocalDrivingLicenseApplication where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID", "LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
         }
 
         public static bool DoesLocalDrivingLicenseApplicationExist(int? LocalDrivingLicenseApplicationID)

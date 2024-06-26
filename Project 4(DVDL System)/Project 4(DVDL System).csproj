@@ -448,5 +448,14 @@
   <ItemGroup>
     <None Include="Resources\highway-sign.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointments1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointments %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
