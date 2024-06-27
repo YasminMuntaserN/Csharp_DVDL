@@ -30,6 +30,7 @@
         {
             this.tpAppointmentsList = new System.Windows.Forms.TabControl();
             this.tpApplicayionInfo = new System.Windows.Forms.TabPage();
+            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblRecordsCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,17 +40,14 @@
             this.Menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.cmsEditTest = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsTakeTest = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pbTestTypeImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             this.tpAppointmentsList.SuspendLayout();
             this.tpApplicayionInfo.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
             this.Menu.SuspendLayout();
-            this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +56,7 @@
             this.tpAppointmentsList.Controls.Add(this.tpApplicayionInfo);
             this.tpAppointmentsList.Controls.Add(this.tabPage2);
             this.tpAppointmentsList.Font = new System.Drawing.Font("Times New Roman", 12.2F);
-            this.tpAppointmentsList.Location = new System.Drawing.Point(19, 104);
+            this.tpAppointmentsList.Location = new System.Drawing.Point(12, 133);
             this.tpAppointmentsList.Name = "tpAppointmentsList";
             this.tpAppointmentsList.SelectedIndex = 0;
             this.tpAppointmentsList.Size = new System.Drawing.Size(745, 553);
@@ -75,6 +73,13 @@
             this.tpApplicayionInfo.TabIndex = 0;
             this.tpApplicayionInfo.Text = "Application Info";
             this.tpApplicayionInfo.UseVisualStyleBackColor = true;
+            // 
+            // ctrlLocalApplication1
+            // 
+            this.ctrlLocalApplication1.Location = new System.Drawing.Point(3, 6);
+            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
+            this.ctrlLocalApplication1.Size = new System.Drawing.Size(738, 548);
+            this.ctrlLocalApplication1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -182,31 +187,15 @@
             this.cmsTakeTest.Text = "Take Test";
             this.cmsTakeTest.Click += new System.EventHandler(this.cmsTakeTest_Click);
             // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.BorderRadius = 50;
-            this.guna2CustomGradientPanel1.BorderThickness = 20;
-            this.guna2CustomGradientPanel1.Controls.Add(this.pbTestTypeImage);
-            this.guna2CustomGradientPanel1.Controls.Add(this.lblTitle);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-11, -23);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(795, 88);
-            this.guna2CustomGradientPanel1.TabIndex = 178;
-            // 
             // pbTestTypeImage
             // 
             this.pbTestTypeImage.BackColor = System.Drawing.Color.Transparent;
             this.pbTestTypeImage.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
             this.pbTestTypeImage.ImageRotate = 0F;
-            this.pbTestTypeImage.Location = new System.Drawing.Point(49, 22);
+            this.pbTestTypeImage.Location = new System.Drawing.Point(251, -3);
             this.pbTestTypeImage.Name = "pbTestTypeImage";
             this.pbTestTypeImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbTestTypeImage.Size = new System.Drawing.Size(111, 63);
+            this.pbTestTypeImage.Size = new System.Drawing.Size(231, 82);
             this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbTestTypeImage.TabIndex = 245;
             this.pbTestTypeImage.TabStop = false;
@@ -216,8 +205,8 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(183, 32);
+            this.lblTitle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblTitle.Location = new System.Drawing.Point(186, 67);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(423, 45);
@@ -238,31 +227,25 @@
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(287, 668);
+            this.btnClose.Location = new System.Drawing.Point(287, 688);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(174, 45);
             this.btnClose.TabIndex = 179;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // ctrlLocalApplication1
-            // 
-            this.ctrlLocalApplication1.Location = new System.Drawing.Point(3, 6);
-            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
-            this.ctrlLocalApplication1.Size = new System.Drawing.Size(738, 548);
-            this.ctrlLocalApplication1.TabIndex = 0;
-            // 
             // frmTestAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 725);
+            this.ClientSize = new System.Drawing.Size(771, 737);
+            this.Controls.Add(this.pbTestTypeImage);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.tpAppointmentsList);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmTestAppointments";
-            this.Text = "frmTestAppointments";
+            this.Text = "TestAppointments";
             this.Load += new System.EventHandler(this.frmTestAppointments_Load);
             this.tpAppointmentsList.ResumeLayout(false);
             this.tpApplicayionInfo.ResumeLayout(false);
@@ -270,10 +253,9 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).EndInit();
             this.Menu.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,7 +264,6 @@
         private System.Windows.Forms.TabControl tpAppointmentsList;
         private System.Windows.Forms.TabPage tpApplicayionInfo;
         private System.Windows.Forms.TabPage tabPage2;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbTestTypeImage;
         private System.Windows.Forms.Label lblTitle;
         private Application.Local_Application.ctrlLocalApplication ctrlLocalApplication1;

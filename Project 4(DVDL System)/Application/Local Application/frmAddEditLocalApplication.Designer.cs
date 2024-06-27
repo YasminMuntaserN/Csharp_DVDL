@@ -28,17 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.TcApplication = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPagePersonalInfo = new System.Windows.Forms.TabPage();
+            this.ctrlPersonCardWithFilter1 = new Project_4_DVDL_System_.Person.User_Controls.ctrlPersonCardWithFilter();
             this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tpApplicationInfo = new System.Windows.Forms.TabPage();
-            this.lblLocalApplicationD = new System.Windows.Forms.Label();
-            this.lblApplicationID = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.cbLicenseClass = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCreatedByUser = new System.Windows.Forms.Label();
@@ -50,44 +47,29 @@
             this.lblApplicationDate = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbLicenseClass = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblLocalApplicationD = new System.Windows.Forms.Label();
+            this.lblApplicationID = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.ctrlPersonCardWithFilter1 = new Project_4_DVDL_System_.Person.User_Controls.ctrlPersonCardWithFilter();
-            this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.TcApplication.SuspendLayout();
             this.tabPagePersonalInfo.SuspendLayout();
             this.tpApplicationInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.BorderRadius = 50;
-            this.guna2CustomGradientPanel1.BorderThickness = 20;
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.lblTitle);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-3, -37);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(882, 113);
-            this.guna2CustomGradientPanel1.TabIndex = 252;
             // 
             // guna2CirclePictureBox2
             // 
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.Local_Driving_License_512;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(51, 36);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(70, 12);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(95, 70);
@@ -100,8 +82,8 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 16.8F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(153, 51);
+            this.lblTitle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblTitle.Location = new System.Drawing.Point(172, 34);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(593, 39);
@@ -148,6 +130,14 @@
             this.tabPagePersonalInfo.TabIndex = 0;
             this.tabPagePersonalInfo.Text = "Personal Info";
             this.tabPagePersonalInfo.UseVisualStyleBackColor = true;
+            // 
+            // ctrlPersonCardWithFilter1
+            // 
+            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
+            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(-4, 3);
+            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
+            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(843, 360);
+            this.ctrlPersonCardWithFilter1.TabIndex = 2;
             // 
             // btnNext
             // 
@@ -197,46 +187,24 @@
             this.tpApplicationInfo.Text = "Application Info";
             this.tpApplicationInfo.UseVisualStyleBackColor = true;
             // 
-            // lblLocalApplicationD
+            // cbLicenseClass
             // 
-            this.lblLocalApplicationD.AutoSize = true;
-            this.lblLocalApplicationD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalApplicationD.Location = new System.Drawing.Point(287, 28);
-            this.lblLocalApplicationD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLocalApplicationD.Name = "lblLocalApplicationD";
-            this.lblLocalApplicationD.Size = new System.Drawing.Size(49, 25);
-            this.lblLocalApplicationD.TabIndex = 168;
-            this.lblLocalApplicationD.Text = "N/A";
-            // 
-            // lblApplicationID
-            // 
-            this.lblApplicationID.AutoSize = true;
-            this.lblApplicationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationID.Location = new System.Drawing.Point(42, 27);
-            this.lblApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationID.Name = "lblApplicationID";
-            this.lblApplicationID.Size = new System.Drawing.Size(198, 25);
-            this.lblApplicationID.TabIndex = 167;
-            this.lblApplicationID.Text = "D.L.Application ID :";
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Green;
-            this.guna2Separator1.FillThickness = 2;
-            this.guna2Separator1.Location = new System.Drawing.Point(47, 55);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(750, 30);
-            this.guna2Separator1.TabIndex = 166;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox10.Location = new System.Drawing.Point(249, 27);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 169;
-            this.pictureBox10.TabStop = false;
+            this.cbLicenseClass.BackColor = System.Drawing.Color.Transparent;
+            this.cbLicenseClass.BorderColor = System.Drawing.Color.Gray;
+            this.cbLicenseClass.BorderRadius = 10;
+            this.cbLicenseClass.BorderThickness = 0;
+            this.cbLicenseClass.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbLicenseClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLicenseClass.FillColor = System.Drawing.Color.Silver;
+            this.cbLicenseClass.FocusedColor = System.Drawing.Color.Black;
+            this.cbLicenseClass.FocusedState.BorderColor = System.Drawing.Color.Black;
+            this.cbLicenseClass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbLicenseClass.ForeColor = System.Drawing.Color.Black;
+            this.cbLicenseClass.ItemHeight = 27;
+            this.cbLicenseClass.Location = new System.Drawing.Point(292, 158);
+            this.cbLicenseClass.Name = "cbLicenseClass";
+            this.cbLicenseClass.Size = new System.Drawing.Size(272, 33);
+            this.cbLicenseClass.TabIndex = 366;
             // 
             // pictureBox1
             // 
@@ -355,35 +323,57 @@
             this.label5.TabIndex = 172;
             this.label5.Text = "Application Date:";
             // 
-            // cbLicenseClass
+            // lblLocalApplicationD
             // 
-            this.cbLicenseClass.BackColor = System.Drawing.Color.Transparent;
-            this.cbLicenseClass.BorderColor = System.Drawing.Color.Gray;
-            this.cbLicenseClass.BorderRadius = 10;
-            this.cbLicenseClass.BorderThickness = 0;
-            this.cbLicenseClass.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbLicenseClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLicenseClass.FillColor = System.Drawing.Color.Silver;
-            this.cbLicenseClass.FocusedColor = System.Drawing.Color.Black;
-            this.cbLicenseClass.FocusedState.BorderColor = System.Drawing.Color.Black;
-            this.cbLicenseClass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cbLicenseClass.ForeColor = System.Drawing.Color.Black;
-            this.cbLicenseClass.ItemHeight = 27;
-            this.cbLicenseClass.Location = new System.Drawing.Point(292, 158);
-            this.cbLicenseClass.Name = "cbLicenseClass";
-            this.cbLicenseClass.Size = new System.Drawing.Size(272, 33);
-            this.cbLicenseClass.TabIndex = 366;
+            this.lblLocalApplicationD.AutoSize = true;
+            this.lblLocalApplicationD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocalApplicationD.Location = new System.Drawing.Point(287, 28);
+            this.lblLocalApplicationD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocalApplicationD.Name = "lblLocalApplicationD";
+            this.lblLocalApplicationD.Size = new System.Drawing.Size(49, 25);
+            this.lblLocalApplicationD.TabIndex = 168;
+            this.lblLocalApplicationD.Text = "N/A";
+            // 
+            // lblApplicationID
+            // 
+            this.lblApplicationID.AutoSize = true;
+            this.lblApplicationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationID.Location = new System.Drawing.Point(42, 27);
+            this.lblApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApplicationID.Name = "lblApplicationID";
+            this.lblApplicationID.Size = new System.Drawing.Size(198, 25);
+            this.lblApplicationID.TabIndex = 167;
+            this.lblApplicationID.Text = "D.L.Application ID :";
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.Green;
+            this.guna2Separator1.FillThickness = 2;
+            this.guna2Separator1.Location = new System.Drawing.Point(47, 55);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(750, 30);
+            this.guna2Separator1.TabIndex = 166;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
+            this.pictureBox10.Location = new System.Drawing.Point(249, 27);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 169;
+            this.pictureBox10.TabStop = false;
             // 
             // btnClose
             // 
-            this.btnClose.BorderColor = System.Drawing.Color.Green;
+            this.btnClose.BorderColor = System.Drawing.Color.SeaGreen;
             this.btnClose.BorderRadius = 10;
             this.btnClose.BorderThickness = 3;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.Green;
+            this.btnClose.FillColor = System.Drawing.Color.SeaGreen;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
@@ -397,14 +387,14 @@
             // 
             // btnSave
             // 
-            this.btnSave.BorderColor = System.Drawing.Color.Green;
+            this.btnSave.BorderColor = System.Drawing.Color.SeaGreen;
             this.btnSave.BorderRadius = 10;
             this.btnSave.BorderThickness = 3;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Green;
+            this.btnSave.FillColor = System.Drawing.Color.SeaGreen;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::Project_4_DVDL_System_.Properties.Resources.bookmark;
@@ -416,46 +406,36 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ctrlPersonCardWithFilter1
-            // 
-            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(0, 3);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(843, 360);
-            this.ctrlPersonCardWithFilter1.TabIndex = 2;
-            // 
             // frmAddEditLocalApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 665);
+            this.Controls.Add(this.guna2CirclePictureBox2);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.TcApplication);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAddEditLocalApplication";
-            this.Text = "frmAddEditLocalApplication";
+            this.Text = "Add Edit Local Application";
             this.Load += new System.EventHandler(this.frmAddEditLocalApplication_Load);
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.TcApplication.ResumeLayout(false);
             this.tabPagePersonalInfo.ResumeLayout(false);
             this.tpApplicationInfo.ResumeLayout(false);
             this.tpApplicationInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2TabControl TcApplication;

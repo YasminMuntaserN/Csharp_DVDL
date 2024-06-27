@@ -94,6 +94,7 @@
             this.gbTestType.Controls.Add(this.label1);
             this.gbTestType.Controls.Add(this.pictureBox8);
             this.gbTestType.Controls.Add(this.lblTitle);
+            this.gbTestType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTestType.Location = new System.Drawing.Point(4, 5);
             this.gbTestType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbTestType.Name = "gbTestType";
@@ -403,7 +404,7 @@
             this.dtpTestDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpTestDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpTestDate.Name = "dtpTestDate";
-            this.dtpTestDate.Size = new System.Drawing.Size(163, 24);
+            this.dtpTestDate.Size = new System.Drawing.Size(163, 30);
             this.dtpTestDate.TabIndex = 155;
             this.dtpTestDate.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             // 

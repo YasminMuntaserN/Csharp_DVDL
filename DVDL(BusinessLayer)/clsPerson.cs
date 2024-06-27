@@ -27,7 +27,7 @@ namespace DVDL_BusinessLayer_
         public int? NationalityCountryID { get; set; }
         public clsCountry CountryInfo => clsCountry.Find(NationalityCountryID);
         public string ImagePath { get; set; }
-        public string FullName => FirstName + SecondName + ThirdName + LastName;
+        public string FullName => FirstName +' '+ SecondName + ' ' + ThirdName + ' ' + LastName;
         public string GenderName => Gender == 0 ? "Male" : "Female";
 
         public clsPerson()

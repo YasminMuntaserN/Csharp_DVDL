@@ -36,5 +36,6 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             ctrlScheduleTest1.TestTypeID = _TestTypeID;
             ctrlScheduleTest1.LoadInfo(_LocalDrivingLicenseApplicationID, _AppointmentID);
         }
+
     }
 }
