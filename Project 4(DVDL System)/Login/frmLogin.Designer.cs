@@ -39,14 +39,14 @@
             this.llCreateAccount = new System.Windows.Forms.LinkLabel();
             this.chkRememberMe = new Guna.UI2.WinForms.Guna2CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnDarkMobe = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ToggleSwitch = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LightMode = new System.Windows.Forms.Label();
+            this.btnDarkMobe = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 18.8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label3.ForeColor = System.Drawing.Color.Goldenrod;
             this.label3.Location = new System.Drawing.Point(189, 250);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 40);
@@ -151,8 +151,8 @@
             this.btnLogin.BorderRadius = 20;
             this.btnLogin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(211)))), ((int)(((byte)(159)))));
             this.btnLogin.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(192)))), ((int)(((byte)(145)))));
-            this.btnLogin.FillColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.FillColor2 = System.Drawing.Color.SeaGreen;
+            this.btnLogin.FillColor = System.Drawing.Color.Goldenrod;
+            this.btnLogin.FillColor2 = System.Drawing.Color.Goldenrod;
             this.btnLogin.Font = new System.Drawing.Font("Sitka Banner", 16F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.FillColor = System.Drawing.Color.SeaGreen;
@@ -170,7 +170,7 @@
             this.llCreateAccount.AutoSize = true;
             this.llCreateAccount.Font = new System.Drawing.Font("Sitka Heading", 16F, System.Drawing.FontStyle.Bold);
             this.llCreateAccount.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llCreateAccount.LinkColor = System.Drawing.Color.SeaGreen;
+            this.llCreateAccount.LinkColor = System.Drawing.Color.Goldenrod;
             this.llCreateAccount.Location = new System.Drawing.Point(118, 566);
             this.llCreateAccount.Name = "llCreateAccount";
             this.llCreateAccount.Size = new System.Drawing.Size(198, 39);
@@ -186,7 +186,7 @@
             this.chkRememberMe.CheckedState.BorderRadius = 0;
             this.chkRememberMe.CheckedState.BorderThickness = 0;
             this.chkRememberMe.CheckedState.FillColor = System.Drawing.Color.Gray;
-            this.chkRememberMe.CheckMarkColor = System.Drawing.Color.SeaGreen;
+            this.chkRememberMe.CheckMarkColor = System.Drawing.Color.Goldenrod;
             this.chkRememberMe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRememberMe.ForeColor = System.Drawing.Color.White;
             this.chkRememberMe.Location = new System.Drawing.Point(144, 622);
@@ -202,33 +202,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // btnDarkMobe
-            // 
-            this.btnDarkMobe.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnDarkMobe.HoverState.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnDarkMobe.Image = global::Project_4_DVDL_System_.Properties.Resources.dots;
-            this.btnDarkMobe.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnDarkMobe.ImageRotate = 0F;
-            this.btnDarkMobe.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnDarkMobe.Location = new System.Drawing.Point(383, 1);
-            this.btnDarkMobe.Name = "btnDarkMobe";
-            this.btnDarkMobe.PressedState.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnDarkMobe.Size = new System.Drawing.Size(56, 48);
-            this.btnDarkMobe.TabIndex = 14;
-            this.btnDarkMobe.Click += new System.EventHandler(this.btnDarkMode_Click);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.Screenshot__22__removebg_preview;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(64, 61);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(308, 113);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // ToggleSwitch
             // 
@@ -268,6 +241,33 @@
             this.LightMode.TabIndex = 16;
             this.LightMode.Text = "Light Mode";
             // 
+            // btnDarkMobe
+            // 
+            this.btnDarkMobe.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnDarkMobe.HoverState.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnDarkMobe.Image = global::Project_4_DVDL_System_.Properties.Resources.dots;
+            this.btnDarkMobe.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnDarkMobe.ImageRotate = 0F;
+            this.btnDarkMobe.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnDarkMobe.Location = new System.Drawing.Point(383, 1);
+            this.btnDarkMobe.Name = "btnDarkMobe";
+            this.btnDarkMobe.PressedState.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnDarkMobe.Size = new System.Drawing.Size(56, 48);
+            this.btnDarkMobe.TabIndex = 14;
+            this.btnDarkMobe.Click += new System.EventHandler(this.btnDarkMode_Click);
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.Screenshot__23__removebg_preview;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(64, 61);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(308, 113);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -289,13 +289,13 @@
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -398,7 +398,6 @@
             this.btnAdd.FillColor2 = System.Drawing.Color.DarkOliveGreen;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = global::Project_4_DVDL_System_.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAdd.Location = new System.Drawing.Point(799, 262);
             this.btnAdd.Name = "btnAdd";

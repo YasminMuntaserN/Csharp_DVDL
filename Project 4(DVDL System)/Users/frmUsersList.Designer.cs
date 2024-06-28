@@ -200,7 +200,6 @@
             this.btnAdd.FillColor2 = System.Drawing.Color.DarkOliveGreen;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = global::Project_4_DVDL_System_.Properties.Resources.add;
             this.btnAdd.Location = new System.Drawing.Point(811, 260);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(180, 45);
