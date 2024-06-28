@@ -12,7 +12,7 @@ namespace DVDL_BusinessLayer_
 {
     public class clsLicenseData
     {
-        public static bool GetLicenseInfoByID(int? LicenseID, ref int ApplicationID, ref int DriverID, ref int LicenseClass, ref DateTime IssueDate, ref DateTime ExpirationDate, ref string Notes, ref decimal PaidFees, ref bool IsActive, ref byte IssueReason, ref int CreatedByUserID)
+        public static bool GetLicenseInfoByID(int? LicenseID, ref int ApplicationID, ref int DriverID, ref int LicenseClassID, ref DateTime IssueDate, ref DateTime ExpirationDate, ref string Notes, ref decimal PaidFees, ref bool IsActive, ref byte IssueReason, ref int CreatedByUserID)
         {
             bool IsFound = false;
 
@@ -37,7 +37,7 @@ namespace DVDL_BusinessLayer_
 
                                 ApplicationID = (int)reader["ApplicationID"];
                                 DriverID = (int)reader["DriverID"];
-                                LicenseClass = (int)reader["LicenseClass"];
+                                LicenseClassID = (int)reader["LicenseClassID"];
                                 IssueDate = (DateTime)reader["IssueDate"];
                                 ExpirationDate = (DateTime)reader["ExpirationDate"];
                                 Notes = (reader["Notes"] != DBNull.Value) ? (string)reader["Notes"] : null;
@@ -65,7 +65,7 @@ namespace DVDL_BusinessLayer_
             return IsFound;
         }
 
-        public static int? AddNewLicense(int ApplicationID, int DriverID, int LicenseClass, DateTime IssueDate, DateTime ExpirationDate, string Notes, decimal PaidFees, bool IsActive, byte IssueReason, int CreatedByUserID)
+        public static int? AddNewLicense(int? ApplicationID, int? DriverID, int? LicenseClassID, DateTime IssueDate, DateTime ExpirationDate, string Notes, decimal PaidFees, bool IsActive, byte IssueReason, int? CreatedByUserID)
         {
             // This function will return the new person id if succeeded and null if not
             int? LicenseID = null;
@@ -76,15 +76,15 @@ namespace DVDL_BusinessLayer_
                 {
                     connection.Open();
 
-                    string query = @"insert into Licenses (ApplicationID, DriverID, LicenseClass, IssueDate, ExpirationDate, Notes, PaidFees, IsActive, IssueReason, CreatedByUserID)
-                                     values (@ApplicationID, @DriverID, @LicenseClass, @IssueDate, @ExpirationDate, @Notes, @PaidFees, @IsActive, @IssueReason, @CreatedByUserID)
+                    string query = @"insert into Licenses (ApplicationID, DriverID, LicenseClassID, IssueDate, ExpirationDate, Notes, PaidFees, IsActive, IssueReason, CreatedByUserID)
+                                     values (@ApplicationID, @DriverID, @LicenseClassID, @IssueDate, @ExpirationDate, @Notes, @PaidFees, @IsActive, @IssueReason, @CreatedByUserID)
                                      select scope_identity()";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
                         command.Parameters.AddWithValue("@DriverID", DriverID);
-                        command.Parameters.AddWithValue("@LicenseClass", LicenseClass);
+                        command.Parameters.AddWithValue("@LicenseClassID", LicenseClassID);
                         command.Parameters.AddWithValue("@IssueDate", IssueDate);
                         command.Parameters.AddWithValue("@ExpirationDate", ExpirationDate);
                         command.Parameters.AddWithValue("@Notes", (object)Notes ?? DBNull.Value);
@@ -110,7 +110,7 @@ namespace DVDL_BusinessLayer_
             return LicenseID;
         }
 
-        public static bool UpdateLicense(int? LicenseID, int ApplicationID, int DriverID, int LicenseClass, DateTime IssueDate, DateTime ExpirationDate, string Notes, decimal PaidFees, bool IsActive, byte IssueReason, int CreatedByUserID)
+        public static bool UpdateLicense(int? LicenseID, int? ApplicationID, int? DriverID, int? LicenseClassID, DateTime IssueDate, DateTime ExpirationDate, string Notes, decimal PaidFees, bool IsActive, byte IssueReason, int? CreatedByUserID)
         {
             int RowAffected = 0;
 
@@ -123,7 +123,7 @@ namespace DVDL_BusinessLayer_
                     string query = @"Update Licenses
                                      set ApplicationID = @ApplicationID,
                                      DriverID = @DriverID,
-                                     LicenseClass = @LicenseClass,
+                                     LicenseClassID = @LicenseClassID,
                                      IssueDate = @IssueDate,
                                      ExpirationDate = @ExpirationDate,
                                      Notes = @Notes,
@@ -138,7 +138,7 @@ namespace DVDL_BusinessLayer_
                         command.Parameters.AddWithValue("@LicenseID", (object)LicenseID ?? DBNull.Value);
                         command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
                         command.Parameters.AddWithValue("@DriverID", DriverID);
-                        command.Parameters.AddWithValue("@LicenseClass", LicenseClass);
+                        command.Parameters.AddWithValue("@LicenseClassID", LicenseClassID);
                         command.Parameters.AddWithValue("@IssueDate", IssueDate);
                         command.Parameters.AddWithValue("@ExpirationDate", ExpirationDate);
                         command.Parameters.AddWithValue("@Notes", (object)Notes ?? DBNull.Value);
@@ -174,7 +174,7 @@ namespace DVDL_BusinessLayer_
             return clsDataAccessHelper.All("select * from Licenses");
         }
 
-        public static int GetActiveLicenseIDByPersonID(int? PersonID, int? LicenseClassID)
+        public static int GetActiveLicenseIDByPersonID(int? PersonID, int? LicenseClassIDID)
         {
             int LicenseID = -1;
             try
@@ -188,7 +188,7 @@ namespace DVDL_BusinessLayer_
                                                      Drivers ON Licenses.DriverID = Drivers.DriverID
                             WHERE  
                              
-                             Licenses.LicenseClass = @LicenseClass 
+                             Licenses.LicenseClassID = @LicenseClassID 
                               AND Drivers.PersonID = @PersonID
                               And IsActive=1;";
 
@@ -196,7 +196,7 @@ namespace DVDL_BusinessLayer_
                     {
 
                         command.Parameters.AddWithValue("@PersonID", (object)PersonID ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@LicenseClass", (object)LicenseClassID ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@LicenseClassID", (object)LicenseClassIDID ?? DBNull.Value);
 
                         object result = command.ExecuteScalar();
 

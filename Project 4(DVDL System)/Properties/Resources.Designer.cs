@@ -213,6 +213,16 @@ namespace Project_4_DVDL_System_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap countries1 {
+            get {
+                object obj = ResourceManager.GetObject("countries1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap crm {
             get {
                 object obj = ResourceManager.GetObject("crm", resourceCulture);
@@ -346,6 +356,16 @@ namespace Project_4_DVDL_System_.Properties {
         internal static System.Drawing.Bitmap highway_sign {
             get {
                 object obj = ResourceManager.GetObject("highway-sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home__2_ {
+            get {
+                object obj = ResourceManager.GetObject("home (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -3,7 +3,6 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project 4(DVDL System).csproj.Assemb
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmApplicationTypesList.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmEditApplicationType.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.ctrlApplication.resources
-G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Custom_Controls.cucTextBox.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.ctrlPersonCard.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmAddEditPerson.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmListPeople.resources
@@ -96,4 +95,4 @@ G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Buffers.xml
 G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Memory.xml
 G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Numerics.Vectors.xml
 G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.AddFormToPanel.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.frmIssueDriverLicense.resources

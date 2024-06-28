@@ -1,5 +1,6 @@
 ﻿using DVDL_BusinessLayer_;
 using Guna.UI2.WinForms;
+using Project_4_DVDL_System_.Application.Local_Application;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.Login;
 using Project_4_DVDL_System_.Person;
@@ -18,17 +19,19 @@ namespace Project_4_DVDL_System_
     public partial class frmMainMenu : Form
     {
         private Guna2Button _currentButton;
+        private ToolStripMenuItem _currentMenuItem;
         private Form _activeForm;
         private frmLogin _frmLogin;
+
+        private  enum _enFrom {button ,menu };
+
+        private static _enFrom ActionFrom = _enFrom.button; 
 
         public frmMainMenu(frmLogin login)
         {
             InitializeComponent();
         }
-        protected override void OnPaint(PaintEventArgs pe)
-        {
-            base.OnPaint(pe);
-        }
+     
         private void _ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -37,6 +40,18 @@ namespace Project_4_DVDL_System_
                 {
                     _DisableMenuButton();
                     _currentButton = (Guna2Button)btnSender;
+                }
+            }
+        }
+
+        private void _ActivateMenu(object cmsMenu)
+        {
+            if (cmsMenu != null)
+            {
+                if (_currentMenuItem != (ToolStripMenuItem)cmsMenu)
+                {
+                    _DisableMenuButton();
+                    _currentMenuItem = (ToolStripMenuItem)cmsMenu;
                 }
             }
         }
@@ -54,13 +69,17 @@ namespace Project_4_DVDL_System_
             }
         }
 
-        public async void OpenChildFormAsync(Form childForm, object btnSender)
+        public async void OpenChildFormAsync(Form childForm, object btnSender )
         {
             await Task.Delay(100);
 
             _activeForm?.Close();
 
-            _ActivateButton(btnSender);
+            if(ActionFrom ==_enFrom.button)
+               _ActivateButton(btnSender);
+            else
+                _ActivateMenu(btnSender);
+
             _activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -71,7 +90,6 @@ namespace Project_4_DVDL_System_
             childForm.BringToFront();
             childForm.Show();
         }
-
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
@@ -87,6 +105,7 @@ namespace Project_4_DVDL_System_
 
         private void btnPeople_Click_1(object sender, EventArgs e)
         {
+            ActionFrom = _enFrom.button;
             OpenChildFormAsync(new frmListPeople(), sender);
         }
 
@@ -98,6 +117,13 @@ namespace Project_4_DVDL_System_
         private void btnAccountSettings_Click_1(object sender, EventArgs e)
         {
             openMenu(sender, guna2ContextMenuStrip2);
+        }
+
+        private void manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActionFrom = _enFrom.menu;
+            OpenChildFormAsync(new frmListLocalApplications(), sender);
+            
         }
     }
 }

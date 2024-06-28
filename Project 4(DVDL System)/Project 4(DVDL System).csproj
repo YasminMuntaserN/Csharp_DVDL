@@ -128,12 +128,6 @@
     <Compile Include="Application\Local Application\frmLocalApplicationDetails.Designer.cs">
       <DependentUpon>frmLocalApplicationDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Controls\cucTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Custom Controls\cucTextBox.Designer.cs">
-      <DependentUpon>cucTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +138,12 @@
     <Compile Include="Global Classes\clsGlobal.cs" />
     <Compile Include="Global Classes\clsMessages.cs" />
     <Compile Include="Global Classes\clsValidation.cs" />
+    <Compile Include="License\frmIssueDriverLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License\frmIssueDriverLicense.Designer.cs">
+      <DependentUpon>frmIssueDriverLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,11 +280,11 @@
     <EmbeddedResource Include="Application\Local Application\frmLocalApplicationDetails.resx">
       <DependentUpon>frmLocalApplicationDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Controls\cucTextBox.resx">
-      <DependentUpon>cucTextBox.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\frmIssueDriverLicense.resx">
+      <DependentUpon>frmIssueDriverLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -568,7 +568,10 @@
     <None Include="Resources\Screenshot__23_-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="License\" />
+    <None Include="Resources\home %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countries1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

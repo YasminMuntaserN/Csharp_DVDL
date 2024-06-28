@@ -1,5 +1,6 @@
 ﻿using DVDL_BusinessLayer_;
 using Project_4_DVDL_System_.Global_Classes;
+using Project_4_DVDL_System_.License;
 using Project_4_DVDL_System_.Tests.TestAppointments;
 using System;
 using System.Collections.Generic;
@@ -288,5 +289,11 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             PreformEnabledOptionFromScheduledTestMenu(LocalDrivingLicenseApplication);
         }
 
+        private void cmsIssueLicense_Click(object sender, EventArgs e)
+        {
+            frmIssueDriverLicense frmIssueDriverLicense = new frmIssueDriverLicense(_ApplicationIDFromDGV);
+            frmIssueDriverLicense.ShowDialog();
+            _RefreshList(); 
+        }
     }
 }

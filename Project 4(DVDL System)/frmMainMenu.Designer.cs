@@ -42,6 +42,9 @@ namespace Project_4_DVDL_System_
             this.smRetakeTest = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.smManageApplications = new System.Windows.Forms.ToolStripMenuItem();
+            this.SmManageLocalDrivingLicenseApplications = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.SmInternationalDrivingLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.smDetainLicenses = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -121,7 +124,7 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Gray;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
@@ -199,11 +202,38 @@ namespace Project_4_DVDL_System_
             // smManageApplications
             // 
             this.smManageApplications.BackColor = System.Drawing.Color.Linen;
+            this.smManageApplications.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SmManageLocalDrivingLicenseApplications,
+            this.toolStripSeparator10,
+            this.SmInternationalDrivingLicense});
             this.smManageApplications.Image = global::Project_4_DVDL_System_.Properties.Resources.feature;
             this.smManageApplications.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.smManageApplications.Name = "smManageApplications";
             this.smManageApplications.Size = new System.Drawing.Size(381, 38);
             this.smManageApplications.Text = "       Manage Applications";
+            // 
+            // SmManageLocalDrivingLicenseApplications
+            // 
+            this.SmManageLocalDrivingLicenseApplications.BackColor = System.Drawing.Color.Linen;
+            this.SmManageLocalDrivingLicenseApplications.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.SmManageLocalDrivingLicenseApplications.Image = global::Project_4_DVDL_System_.Properties.Resources.home__2_;
+            this.SmManageLocalDrivingLicenseApplications.Name = "SmManageLocalDrivingLicenseApplications";
+            this.SmManageLocalDrivingLicenseApplications.Size = new System.Drawing.Size(530, 36);
+            this.SmManageLocalDrivingLicenseApplications.Text = "      Manage Local Driving License Applications";
+            this.SmManageLocalDrivingLicenseApplications.Click += new System.EventHandler(this.manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(512, 6);
+            // 
+            // SmInternationalDrivingLicense
+            // 
+            this.SmInternationalDrivingLicense.BackColor = System.Drawing.Color.Linen;
+            this.SmInternationalDrivingLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.countries1;
+            this.SmInternationalDrivingLicense.Name = "SmInternationalDrivingLicense";
+            this.SmInternationalDrivingLicense.Size = new System.Drawing.Size(530, 36);
+            this.SmInternationalDrivingLicense.Text = "     International Driving License Applications";
             // 
             // toolStripSeparator2
             // 
@@ -553,6 +583,9 @@ namespace Project_4_DVDL_System_
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Panel Disaplypanel;
+        private System.Windows.Forms.ToolStripMenuItem SmManageLocalDrivingLicenseApplications;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripMenuItem SmInternationalDrivingLicense;
     }
 }
 

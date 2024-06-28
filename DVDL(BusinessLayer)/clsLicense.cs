@@ -12,17 +12,20 @@ namespace DVDL_BusinessLayer_
         public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode = enMode.AddNew;
 
+        public enum enIssueReason { FirstTime = 1, Renew = 2, DamagedReplacement = 3, LostReplacement = 4 };
+
         public int? LicenseID { get; set; }
-        public int ApplicationID { get; set; }
-        public int DriverID { get; set; }
-        public int LicenseClass { get; set; }
+        public int? ApplicationID { get; set; }
+        public int? DriverID { get; set; }
+        public int? LicenseClass { get; set; }
         public DateTime IssueDate { get; set; }
         public DateTime ExpirationDate { get; set; }
         public string Notes { get; set; }
         public decimal PaidFees { get; set; }
         public bool IsActive { get; set; }
-        public byte IssueReason { get; set; }
-        public int CreatedByUserID { get; set; }
+        public int? CreatedByUserID { get; set; }
+        public enIssueReason IssueReason { set; get; }
+        public string IssueReasonText => GetIssueReasonText(this.IssueReason);
 
         public clsLicense()
         {
@@ -52,22 +55,40 @@ namespace DVDL_BusinessLayer_
             this.Notes = Notes;
             this.PaidFees = PaidFees;
             this.IsActive = IsActive;
-            this.IssueReason = IssueReason;
+            this.IssueReason = (enIssueReason)IssueReason;
             this.CreatedByUserID = CreatedByUserID;
 
             Mode = enMode.Update;
         }
 
+        public static string GetIssueReasonText(enIssueReason IssueReason)
+        {
+
+            switch (IssueReason)
+            {
+                case enIssueReason.FirstTime:
+                    return "First Time";
+                case enIssueReason.Renew:
+                    return "Renew";
+                case enIssueReason.DamagedReplacement:
+                    return "Replacement for Damaged";
+                case enIssueReason.LostReplacement:
+                    return "Replacement for Lost";
+                default:
+                    return "First Time";
+            }
+        }
+
         private bool _AddNewLicense()
         {
-            this.LicenseID = clsLicenseData.AddNewLicense(this.ApplicationID, this.DriverID, this.LicenseClass, this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees, this.IsActive, this.IssueReason, this.CreatedByUserID);
+            this.LicenseID = clsLicenseData.AddNewLicense(this.ApplicationID, this.DriverID, this.LicenseClass, this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees, this.IsActive, (byte)this.IssueReason, this.CreatedByUserID);
 
             return (this.LicenseID.HasValue);
         }
 
         private bool _UpdateLicense()
         {
-            return clsLicenseData.UpdateLicense(this.LicenseID, this.ApplicationID, this.DriverID, this.LicenseClass, this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees, this.IsActive, this.IssueReason, this.CreatedByUserID);
+            return clsLicenseData.UpdateLicense(this.LicenseID, this.ApplicationID, this.DriverID, this.LicenseClass, this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees, this.IsActive, (byte)this.IssueReason, this.CreatedByUserID);
         }
 
         public bool Save()
