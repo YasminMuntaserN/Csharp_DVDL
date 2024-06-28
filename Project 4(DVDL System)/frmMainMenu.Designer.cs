@@ -67,7 +67,6 @@ namespace Project_4_DVDL_System_
             this.smSignOut = new System.Windows.Forms.ToolStripMenuItem();
             this.pbUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.addFormToPanel1 = new Project_4_DVDL_System_.AddFormToPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Disaplypanel = new System.Windows.Forms.Panel();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -464,14 +463,6 @@ namespace Project_4_DVDL_System_
             this.label2.TabIndex = 8;
             this.label2.Text = "UserName";
             // 
-            // addFormToPanel1
-            // 
-            this.addFormToPanel1.Location = new System.Drawing.Point(1574, 88);
-            this.addFormToPanel1.Name = "addFormToPanel1";
-            this.addFormToPanel1.Size = new System.Drawing.Size(75, 23);
-            this.addFormToPanel1.TabIndex = 9;
-            this.addFormToPanel1.Text = "addFormToPanel1";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
@@ -499,7 +490,6 @@ namespace Project_4_DVDL_System_
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1803, 1055);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.addFormToPanel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pbUser);
             this.Controls.Add(this.btnAccountSettings);
@@ -561,7 +551,6 @@ namespace Project_4_DVDL_System_
         private System.Windows.Forms.ToolStripMenuItem smSignOut;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbUser;
         private System.Windows.Forms.Label label2;
-        private AddFormToPanel addFormToPanel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Panel Disaplypanel;
     }
