@@ -206,6 +206,7 @@
             // 
             // cmsShowDetails
             // 
+            this.cmsShowDetails.AutoSize = false;
             this.cmsShowDetails.BackColor = System.Drawing.Color.DarkGray;
             this.cmsShowDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsShowDetails.ForeColor = System.Drawing.Color.Black;

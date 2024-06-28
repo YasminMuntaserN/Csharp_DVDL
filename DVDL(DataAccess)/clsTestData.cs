@@ -58,7 +58,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewTest(int TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
+        public static int? AddNewTest(int? TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
         {
             // This function will return the new person id if succeeded and null if not
             int? TestID = null;
@@ -97,7 +97,7 @@ namespace DVDL_DataAccess_
             return TestID;
         }
 
-        public static bool UpdateTest(int? TestID, int TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
+        public static bool UpdateTest(int? TestID, int? TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
         {
             int RowAffected = 0;
 

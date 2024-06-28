@@ -65,7 +65,6 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             _dtLicenseTestAppointments = clsTestAppointment.GetApplicationTestAppointmentsPerTestType(_LocalDrivingLicenseApplicationID, (int)_TestType);
 
             dgvLicenseTestAppointments.DataSource = _dtLicenseTestAppointments;
-            lblRecordsCount.Text = _dtLicenseTestAppointments.Rows.Count.ToString();
 
             if (dgvLicenseTestAppointments.Rows.Count > 0)
             {
@@ -84,8 +83,38 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
 
         }
 
-        private void btnAddNewAppointment_Click(object sender, EventArgs e)
+        private void cmsEditTest_Click(object sender, EventArgs e)
         {
+            frmAddEditScheduleTest frm = new frmAddEditScheduleTest(_LocalDrivingLicenseApplicationID, _TestType, _TestAppointmentID);
+            frm.ShowDialog();
+            _RefreshList(); 
+        }
+
+        private void frmTestAppointments_Load(object sender, EventArgs e)
+        {
+            _LoadTestTypeImageAndTitle();
+
+
+            ctrlLocalApplication1.LoadLocalApplicationInfo(_LocalDrivingLicenseApplicationID);
+            _RefreshList();
+
+        }
+
+        private void cmsTakeTest_Click(object sender, EventArgs e)
+        {
+            frmTakeTest takeTest = new frmTakeTest(_TestAppointmentID, _TestType);
+            takeTest.ShowDialog();
+            _RefreshList();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAddNewAppointment_Click_1(object sender, EventArgs e)
+        {
+
             clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(_LocalDrivingLicenseApplicationID);
 
             // first we want to check if the person have an active Appointment 
@@ -111,36 +140,9 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
                 return;
             }
 
-            frmAddEditScheduleTest frmAddEditScheduleTest =new frmAddEditScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
+            frmAddEditScheduleTest frmAddEditScheduleTest = new frmAddEditScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
             frmAddEditScheduleTest.ShowDialog();
             _RefreshList();
-        }
-
-        private void cmsEditTest_Click(object sender, EventArgs e)
-        {
-            frmAddEditScheduleTest frm = new frmAddEditScheduleTest(_LocalDrivingLicenseApplicationID, _TestType, _TestAppointmentID);
-            frm.ShowDialog();
-            _RefreshList(); 
-        }
-
-        private void frmTestAppointments_Load(object sender, EventArgs e)
-        {
-            _LoadTestTypeImageAndTitle();
-
-
-            ctrlLocalApplication1.LoadLocalApplicationInfo(_LocalDrivingLicenseApplicationID);
-            _RefreshList();
-
-        }
-
-        private void cmsTakeTest_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

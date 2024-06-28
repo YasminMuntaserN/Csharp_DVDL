@@ -16,7 +16,7 @@ namespace DVDL_BusinessLayer_
         public enMode Mode = enMode.AddNew;
 
         public int? TestID { get; set; }
-        public int TestAppointmentID { get; set; }
+        public int? TestAppointmentID { get; set; }
         public bool TestResult { get; set; }
         public string Notes { get; set; }
         public int CreatedByUserID { get; set; }
@@ -24,7 +24,7 @@ namespace DVDL_BusinessLayer_
         public clsTest()
         {
             this.TestID = null;
-            this.TestAppointmentID = -1;
+            this.TestAppointmentID = null;
             this.TestResult = false;
             this.Notes = null;
             this.CreatedByUserID = -1;

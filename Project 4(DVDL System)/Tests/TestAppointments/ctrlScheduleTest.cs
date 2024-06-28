@@ -175,13 +175,13 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
                 case clsTestType.enTestType.WrittenTest:
                     //Written Test, you cannot schedule it before person passes the vision test.
                     //we check if pass vision test 1.
-                    return _OperationForEachTestType(clsTestType.enTestType.WrittenTest, "Written Test");
+                    return _OperationForEachTestType(clsTestType.enTestType.VisionTest, "Vision Test");
 
                 case clsTestType.enTestType.StreetTest:
 
                     //Street Test, you cannot schedule it before person passes the written test.
                     //we check if pass Written 2.
-                        return _OperationForEachTestType(clsTestType.enTestType.StreetTest, "Street Test.");
+                        return _OperationForEachTestType(clsTestType.enTestType.WrittenTest, "Written Test");
 
             }
             return true;

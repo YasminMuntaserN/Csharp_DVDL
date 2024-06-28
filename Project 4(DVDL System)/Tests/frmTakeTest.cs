@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DVDL_BusinessLayer_;
+using Project_4_DVDL_System_.Global_Classes;
+using Project_4_DVDL_System_.Tests.TestAppointments;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,92 @@ namespace Project_4_DVDL_System_.Tests
 {
     public partial class frmTakeTest : Form
     {
-        public frmTakeTest()
+        private int? _AppointmentID;
+        private clsTestType.enTestType _TestType;
+
+        private int? _TestID = -1;
+        private clsTest _Test;
+
+        private void _FillFieldsWithTestObject()
+        {
+            ctrlScheduledTest1.TestTypeID = _TestType;
+            ctrlScheduledTest1.LoadInfo(_AppointmentID);
+
+            if (ctrlScheduledTest1.TestAppointmentID == -1)
+                btnSave.Enabled = false;
+            else
+                btnSave.Enabled = true;
+
+
+            int? _TestID = ctrlScheduledTest1.TestID;
+            if (_TestID != -1)
+            {
+                _Test = clsTest.Find(_TestID);
+
+                if (_Test.TestResult)
+                    rbPass.Checked = true;
+                else
+                    rbFail.Checked = true;
+                txtNotes.Text = _Test.Notes;
+
+                lblUserMessage.Visible = true;
+                rbFail.Enabled = false;
+                rbPass.Enabled = false;
+            }
+
+            else
+                _Test = new clsTest();
+        }
+
+        private void _FillTestObjectFromFieldInfo()
+        {
+            _Test.TestAppointmentID = _AppointmentID;
+            _Test.TestResult = rbPass.Checked;
+            _Test.Notes = txtNotes.Text.Trim();
+            _Test.CreatedByUserID = 3;
+        }
+
+        public frmTakeTest(int? AppointmentID, clsTestType.enTestType TestType)
         {
             InitializeComponent();
+            _AppointmentID = AppointmentID;
+            _TestType = TestType;
+        }
+
+        private void frmTakeTest_Load(object sender, EventArgs e)
+        {
+            _FillFieldsWithTestObject();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to save? After that you cannot change the Pass/Fail results after you save?.",
+                     "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No
+            )
+            {
+                return;
+            }
+
+            _FillTestObjectFromFieldInfo();
+
+            if (_Test.Save())
+            {
+                clsTestAppointment clsTestAppointment = clsTestAppointment.Find(_Test.TestAppointmentID);
+                clsTestAppointment.IsLocked = true;
+                if (clsTestAppointment.Save())
+                {
+                    clsMessages.GeneralSuccessMessage("Data Saved Successfully.");
+                    btnSave.Enabled = false;
+                }
+            }
+            else
+                clsMessages.GeneralErrorMessage("Error: Data Is not Saved Successfully.");
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();   
         }
     }
 }

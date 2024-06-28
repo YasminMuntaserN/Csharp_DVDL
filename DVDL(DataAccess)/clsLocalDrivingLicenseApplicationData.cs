@@ -194,11 +194,11 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
                     string query = @" SELECT top 1 Found=1
-                            FROM LocalDrivingLicenseApplications INNER JOIN
-                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                            FROM LocalDrivingLicenseApplication INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
                                  Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
                             WHERE
-                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            (LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
                             AND(TestAppointments.TestTypeID = @TestTypeID)
                             ORDER BY TestAppointments.TestAppointmentID desc";
 
@@ -207,8 +207,6 @@ namespace DVDL_DataAccess_
 
                         command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
                         command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
-
-                        connection.Open();
 
                         object result = command.ExecuteScalar();
 
@@ -236,7 +234,7 @@ namespace DVDL_DataAccess_
             {
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-
+                    connection.Open (); 
                     string query = @" SELECT TotalTrialsPerTest = count(TestID)
                             FROM LocalDrivingLicenseApplications INNER JOIN
                                  TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
@@ -321,11 +319,11 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();  
                     string query = @" SELECT top 1 TestResult
-                            FROM LocalDrivingLicenseApplications INNER JOIN
-                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                            FROM LocalDrivingLicenseApplication INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
                                  Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
                             WHERE
-                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            (LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
                             AND(TestAppointments.TestTypeID = @TestTypeID)
                             ORDER BY TestAppointments.TestAppointmentID desc";
 

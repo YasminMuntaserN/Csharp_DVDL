@@ -22,6 +22,7 @@ namespace DVDL_BusinessLayer_
         public bool IsLocked { get; set; }
         public int? RetakeTestApplicationID { get; set; }
 
+        public int TestID => GetTestID(TestAppointmentID);
         public clsApplication RetakeTestAppInfo =>clsApplication.Find(RetakeTestApplicationID);
 
         public clsTestAppointment()
@@ -33,7 +34,7 @@ namespace DVDL_BusinessLayer_
             this.PaidFees = -1M;
             this.CreatedByUserID = -1;
             this.IsLocked = false;
-            this.RetakeTestApplicationID = null;
+            this.RetakeTestApplicationID = -1;
 
             Mode = enMode.AddNew;
         }
@@ -50,6 +51,11 @@ namespace DVDL_BusinessLayer_
             this.RetakeTestApplicationID = RetakeTestApplicationID;
 
             Mode = enMode.Update;
+        }
+
+        private int GetTestID(int? TestAppointmentID)
+        {
+            return clsTestAppointmentData.GetTestID(TestAppointmentID);
         }
 
         private bool _AddNewTestAppointment()

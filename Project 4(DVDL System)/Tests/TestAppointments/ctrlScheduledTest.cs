@@ -71,7 +71,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             InitializeComponent();
         }
 
-        public void LoadInfo(int TestAppointmentID)
+        public void LoadInfo(int? TestAppointmentID)
         {
 
             _TestAppointmentID = TestAppointmentID;
@@ -82,21 +82,19 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             //incase we did not find any appointment .
             if (_TestAppointment == null)
             {
-                MessageBox.Show("Error: No  Appointment ID = " + _TestAppointmentID.ToString(),
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                clsMessages.NotFound("Appointment", _TestAppointmentID);
                 _TestAppointmentID = -1;
                 return;
             }
 
-            _TestID = _TestAppointment.TestTypeID;
+            _TestID = _TestAppointment.TestID;
 
             _LocalDrivingLicenseApplicationID = _TestAppointment.LocalDrivingLicenseApplicationID;
             _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(_LocalDrivingLicenseApplicationID);
 
             if (_LocalDrivingLicenseApplication == null)
             {
-                MessageBox.Show("Error: No Local Driving License Application with ID = " + _LocalDrivingLicenseApplicationID.ToString(),
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                clsMessages.NotFound("Local Driving License Application ", _LocalDrivingLicenseApplicationID);
                 return;
             }
 

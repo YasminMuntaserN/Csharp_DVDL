@@ -72,8 +72,8 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"insert into TestAppointments (TestTypeID, LocalDrivingLicenseApplicationID, AppointmentDate, PaidFees, CreatedByUserID, IsLocked, RetakeTestApplicationID)
-                                  values (@TestTypeID, @LocalDrivingLicenseApplicationID, @AppointmentDate, @PaidFees, @CreatedByUserID, @IsLocked, @RetakeTestApplicationID)
+                    string query = @"insert into TestAppointments (TestTypeID, LocalDrivingLicenseApplicationID, AppointmentDate, PaidFees, CreatedByUserID,  RetakeTestApplicationID)
+                                  values (@TestTypeID, @LocalDrivingLicenseApplicationID, @AppointmentDate, @PaidFees, @CreatedByUserID,@RetakeTestApplicationID)
                                   select scope_identity()";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -83,8 +83,11 @@ namespace DVDL_DataAccess_
                         command.Parameters.AddWithValue("@AppointmentDate", AppointmentDate);
                         command.Parameters.AddWithValue("@PaidFees", PaidFees);
                         command.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
-                        command.Parameters.AddWithValue("@IsLocked", IsLocked);
-                        command.Parameters.AddWithValue("@RetakeTestApplicationID", (object)RetakeTestApplicationID ?? DBNull.Value);
+                        if (RetakeTestApplicationID == -1)
+
+                            command.Parameters.AddWithValue("@RetakeTestApplicationID", DBNull.Value);
+                        else
+                            command.Parameters.AddWithValue("@RetakeTestApplicationID", RetakeTestApplicationID);
 
                         object result = command.ExecuteScalar();
 
@@ -243,7 +246,7 @@ namespace DVDL_DataAccess_
         }
 
         public static bool GetLastTestAppointment(
-                       int ?LocalDrivingLicenseApplicationID, int TestTypeID,
+                       int? LocalDrivingLicenseApplicationID, int TestTypeID,
                       ref int TestAppointmentID, ref DateTime AppointmentDate,
                       ref decimal PaidFees, ref int CreatedByUserID, ref bool IsLocked, ref int RetakeTestApplicationID)
         {
@@ -303,6 +306,42 @@ namespace DVDL_DataAccess_
                 clsLogError.LogError(ex);
             }
             return isFound;
+
+        }
+
+        public static int GetTestID(int? TestAppointmentID)
+        {
+            int TestID = -1;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+                    string query = @"select TestID from Tests where TestAppointmentID=@TestAppointmentID;";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+
+                        command.Parameters.AddWithValue("@TestAppointmentID", (object)TestAppointmentID ??null);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            TestID = insertedID;
+                        }
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                clsLogError.LogError (ex);
+            }
+
+            return TestID;
 
         }
     }

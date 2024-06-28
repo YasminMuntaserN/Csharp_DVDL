@@ -28,27 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlScheduledTest1 = new Project_4_DVDL_System_.Tests.TestAppointments.ctrlScheduledTest();
             this.lblUserMessage = new System.Windows.Forms.Label();
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnPass = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.btnFail = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbPass = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbFail = new Guna.UI2.WinForms.Guna2RadioButton();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.ctrlScheduledTest1 = new Project_4_DVDL_System_.Tests.TestAppointments.ctrlScheduledTest();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ctrlScheduledTest1
-            // 
-            this.ctrlScheduledTest1.Location = new System.Drawing.Point(12, 12);
-            this.ctrlScheduledTest1.Name = "ctrlScheduledTest1";
-            this.ctrlScheduledTest1.Size = new System.Drawing.Size(580, 572);
-            this.ctrlScheduledTest1.TabIndex = 0;
             // 
             // lblUserMessage
             // 
@@ -94,43 +87,43 @@
             this.label8.TabIndex = 200;
             this.label8.Text = "Result:";
             // 
-            // btnPass
+            // rbPass
             // 
-            this.btnPass.AutoSize = true;
-            this.btnPass.CheckedState.BorderColor = System.Drawing.Color.Green;
-            this.btnPass.CheckedState.BorderThickness = 0;
-            this.btnPass.CheckedState.FillColor = System.Drawing.Color.Silver;
-            this.btnPass.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.btnPass.CheckedState.InnerOffset = -4;
-            this.btnPass.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.btnPass.Location = new System.Drawing.Point(148, 591);
-            this.btnPass.Name = "btnPass";
-            this.btnPass.Size = new System.Drawing.Size(70, 30);
-            this.btnPass.TabIndex = 210;
-            this.btnPass.Text = "Pass";
-            this.btnPass.UncheckedState.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnPass.UncheckedState.BorderThickness = 4;
-            this.btnPass.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.btnPass.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbPass.AutoSize = true;
+            this.rbPass.CheckedState.BorderColor = System.Drawing.Color.Green;
+            this.rbPass.CheckedState.BorderThickness = 0;
+            this.rbPass.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.rbPass.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbPass.CheckedState.InnerOffset = -4;
+            this.rbPass.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.rbPass.Location = new System.Drawing.Point(148, 591);
+            this.rbPass.Name = "rbPass";
+            this.rbPass.Size = new System.Drawing.Size(70, 30);
+            this.rbPass.TabIndex = 210;
+            this.rbPass.Text = "Pass";
+            this.rbPass.UncheckedState.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.rbPass.UncheckedState.BorderThickness = 4;
+            this.rbPass.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbPass.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // btnFail
+            // rbFail
             // 
-            this.btnFail.AutoSize = true;
-            this.btnFail.CheckedState.BorderColor = System.Drawing.Color.Green;
-            this.btnFail.CheckedState.BorderThickness = 0;
-            this.btnFail.CheckedState.FillColor = System.Drawing.Color.Silver;
-            this.btnFail.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.btnFail.CheckedState.InnerOffset = -4;
-            this.btnFail.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.btnFail.Location = new System.Drawing.Point(224, 591);
-            this.btnFail.Name = "btnFail";
-            this.btnFail.Size = new System.Drawing.Size(67, 30);
-            this.btnFail.TabIndex = 211;
-            this.btnFail.Text = "Fail";
-            this.btnFail.UncheckedState.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnFail.UncheckedState.BorderThickness = 4;
-            this.btnFail.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.btnFail.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbFail.AutoSize = true;
+            this.rbFail.CheckedState.BorderColor = System.Drawing.Color.Green;
+            this.rbFail.CheckedState.BorderThickness = 0;
+            this.rbFail.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.rbFail.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbFail.CheckedState.InnerOffset = -4;
+            this.rbFail.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.rbFail.Location = new System.Drawing.Point(224, 591);
+            this.rbFail.Name = "rbFail";
+            this.rbFail.Size = new System.Drawing.Size(67, 30);
+            this.rbFail.TabIndex = 211;
+            this.rbFail.Text = "Fail";
+            this.rbFail.UncheckedState.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.rbFail.UncheckedState.BorderThickness = 4;
+            this.rbFail.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbFail.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // pictureBox7
             // 
@@ -173,36 +166,45 @@
             this.btnClose.Size = new System.Drawing.Size(174, 45);
             this.btnClose.TabIndex = 212;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // guna2Button1
+            // btnSave
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 3;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::Project_4_DVDL_System_.Properties.Resources.bookmark;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(199, 742);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(174, 45);
-            this.guna2Button1.TabIndex = 213;
-            this.guna2Button1.Text = "Save";
+            this.btnSave.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.BorderRadius = 10;
+            this.btnSave.BorderThickness = 3;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::Project_4_DVDL_System_.Properties.Resources.bookmark;
+            this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSave.Location = new System.Drawing.Point(199, 742);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(174, 45);
+            this.btnSave.TabIndex = 213;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // ctrlScheduledTest1
+            // 
+            this.ctrlScheduledTest1.Location = new System.Drawing.Point(12, 12);
+            this.ctrlScheduledTest1.Name = "ctrlScheduledTest1";
+            this.ctrlScheduledTest1.Size = new System.Drawing.Size(580, 572);
+            this.ctrlScheduledTest1.TabIndex = 0;
             // 
             // frmTakeTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 799);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnFail);
-            this.Controls.Add(this.btnPass);
+            this.Controls.Add(this.rbFail);
+            this.Controls.Add(this.rbPass);
             this.Controls.Add(this.lblUserMessage);
             this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.pictureBox7);
@@ -212,6 +214,7 @@
             this.Controls.Add(this.ctrlScheduledTest1);
             this.Name = "frmTakeTest";
             this.Text = "Take Test";
+            this.Load += new System.EventHandler(this.frmTakeTest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -228,9 +231,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2RadioButton btnPass;
-        private Guna.UI2.WinForms.Guna2RadioButton btnFail;
+        private Guna.UI2.WinForms.Guna2RadioButton rbPass;
+        private Guna.UI2.WinForms.Guna2RadioButton rbFail;
         private Guna.UI2.WinForms.Guna2Button btnClose;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
     }
 }
