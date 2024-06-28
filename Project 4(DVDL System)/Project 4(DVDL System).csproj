@@ -567,5 +567,8 @@
   <ItemGroup>
     <None Include="Resources\Screenshot__23_-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="License\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
