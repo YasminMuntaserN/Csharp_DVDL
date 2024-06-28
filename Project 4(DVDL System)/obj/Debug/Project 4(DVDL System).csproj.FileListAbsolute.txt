@@ -4,7 +4,6 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.A
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Application_Types.frmEditApplicationType.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.ctrlApplication.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Custom_Controls.cucTextBox.resources
-G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Form1.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.ctrlPersonCard.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmAddEditPerson.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Person.frmListPeople.resources
@@ -77,3 +76,5 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestApp
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestAppointments.frmAddEditScheduleTest.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.frmTakeTest.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Tests.TestAppointments.ctrlScheduledTest.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Login.frmLogin.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.frmMainMenu.resources

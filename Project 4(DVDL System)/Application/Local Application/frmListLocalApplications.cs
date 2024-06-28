@@ -239,7 +239,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
         private void PerformEnabledChoice(clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication)
         {
 
-            int TotalPassedTests = (int)dgvApplications.CurrentRow.Cells[4].Value;
+            int TotalPassedTests = (int)dgvApplications.CurrentRow.Cells[5].Value;
 
             bool LicenseExists = LocalDrivingLicenseApplication.IsLicenseIssued();
 

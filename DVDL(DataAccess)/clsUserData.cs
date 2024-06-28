@@ -357,7 +357,7 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"select found = 1 from Users where UserName = @UserName COLLATE SQL_Latin1_General_CP1_CS_AS and Password = @Password COLLATE SQL_Latin1_General_CP1_CS_AS";
+                    string query = @"select found = 1 from Users where UserName = @UserName and Password = @Password ";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

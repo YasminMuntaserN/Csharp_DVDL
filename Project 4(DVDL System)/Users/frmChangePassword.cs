@@ -80,7 +80,7 @@ namespace Project_4_DVDL_System_.Users
                 errorProvider1.SetError(txtCurrentPassword, null);
             };
             // Validate the current password against the stored hash
-            if (_User.Password != clsBusinessLayerHelper.ComputeHash(currentPassword))
+            if (_User.Password != clsGlobal.Encrypt(currentPassword))
             {
                 e.Cancel = true;
                 errorProvider1.SetError(txtCurrentPassword, "The entered password is incorrect. Please try again.");
@@ -111,7 +111,7 @@ namespace Project_4_DVDL_System_.Users
                 errorProvider1.SetError(txtNewPassword, null);
             }
 
-            if (clsBusinessLayerHelper.ComputeHash(newPassword) == _User.Password)
+            if (clsGlobal.Encrypt(newPassword) == _User.Password)
             {
                 e.Cancel = true;
                 errorProvider1.SetError(txtNewPassword, "This password is the same as your current one. Please choose a different password.");

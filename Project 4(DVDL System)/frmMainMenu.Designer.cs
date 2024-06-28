@@ -1,6 +1,6 @@
 ﻿namespace Project_4_DVDL_System_
 {
-    partial class Form1
+    partial class frmMainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 738);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(1048, 738);
+            this.Name = "frmMainMenu";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMainMenu_Load);
             this.ResumeLayout(false);
 
         }
