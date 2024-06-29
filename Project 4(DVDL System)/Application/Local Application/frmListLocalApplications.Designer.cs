@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFilterValue = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvApplications = new System.Windows.Forms.DataGridView();
             this.Menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cmsShowDetails = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsAddApplication = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsCancelApplication = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsTests = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsScheduleVisionTest = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsScheduleWrittenTest = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsScheduleStreetTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsIssueLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsShowLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsShowpersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplications)).BeginInit();
             this.Menu.SuspendLayout();
@@ -134,35 +134,35 @@
             // dgvApplications
             // 
             this.dgvApplications.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvApplications.ContextMenuStrip = this.Menu;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvApplications.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvApplications.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvApplications.EnableHeadersVisualStyles = false;
             this.dgvApplications.Location = new System.Drawing.Point(27, 345);
             this.dgvApplications.Name = "dgvApplications";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvApplications.RowHeadersWidth = 51;
             this.dgvApplications.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvApplications.RowTemplate.Height = 26;
@@ -201,80 +201,8 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(362, 338);
+            this.Menu.Size = new System.Drawing.Size(362, 310);
             this.Menu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(358, 6);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(358, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(358, 6);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(358, 6);
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(358, 6);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(358, 6);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(41, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 32);
-            this.label1.TabIndex = 369;
-            this.label1.Text = "Filter By :";
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.FillThickness = 3;
-            this.guna2Separator1.Location = new System.Drawing.Point(35, 191);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(968, 31);
-            this.guna2Separator1.TabIndex = 368;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BorderRadius = 10;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.Goldenrod;
-            this.btnAdd.FillColor2 = System.Drawing.Color.DarkGoldenrod;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12.2F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.Location = new System.Drawing.Point(785, 262);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(201, 45);
-            this.btnAdd.TabIndex = 374;
-            this.btnAdd.Text = "Add New";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmsShowDetails
             // 
@@ -287,6 +215,12 @@
             this.cmsShowDetails.Size = new System.Drawing.Size(361, 30);
             this.cmsShowDetails.Text = "Show Application Detatils";
             this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(358, 6);
             // 
             // cmsAddApplication
             // 
@@ -324,6 +258,12 @@
             this.cmsDelete.Text = "Delete Application";
             this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(358, 6);
+            // 
             // cmsCancelApplication
             // 
             this.cmsCancelApplication.BackColor = System.Drawing.Color.DarkGray;
@@ -334,6 +274,11 @@
             this.cmsCancelApplication.Size = new System.Drawing.Size(361, 30);
             this.cmsCancelApplication.Text = "Cancel Application";
             this.cmsCancelApplication.Click += new System.EventHandler(this.cmsCancelApplication_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(358, 6);
             // 
             // cmsTests
             // 
@@ -376,6 +321,11 @@
             this.cmsScheduleStreetTest.Text = "Schedule Street Test";
             this.cmsScheduleStreetTest.Click += new System.EventHandler(this.cmsScheduleStreetTest_Click);
             // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(358, 6);
+            // 
             // cmsIssueLicense
             // 
             this.cmsIssueLicense.BackColor = System.Drawing.Color.DarkGray;
@@ -387,6 +337,11 @@
             this.cmsIssueLicense.Text = "Issue Driving License (First Time)";
             this.cmsIssueLicense.Click += new System.EventHandler(this.cmsIssueLicense_Click);
             // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(358, 6);
+            // 
             // cmsShowLicense
             // 
             this.cmsShowLicense.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -396,6 +351,12 @@
             this.cmsShowLicense.Name = "cmsShowLicense";
             this.cmsShowLicense.Size = new System.Drawing.Size(361, 30);
             this.cmsShowLicense.Text = "Show License";
+            this.cmsShowLicense.Click += new System.EventHandler(this.cmsShowLicense_Click);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(358, 6);
             // 
             // cmsShowpersonLicenseHistory
             // 
@@ -406,6 +367,46 @@
             this.cmsShowpersonLicenseHistory.Name = "cmsShowpersonLicenseHistory";
             this.cmsShowpersonLicenseHistory.Size = new System.Drawing.Size(361, 30);
             this.cmsShowpersonLicenseHistory.Text = "Show person License History";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(41, 271);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 32);
+            this.label1.TabIndex = 369;
+            this.label1.Text = "Filter By :";
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
+            this.guna2Separator1.FillThickness = 3;
+            this.guna2Separator1.Location = new System.Drawing.Point(35, 191);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(968, 31);
+            this.guna2Separator1.TabIndex = 368;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BorderRadius = 10;
+            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdd.FillColor = System.Drawing.Color.Goldenrod;
+            this.btnAdd.FillColor2 = System.Drawing.Color.DarkGoldenrod;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAdd.Location = new System.Drawing.Point(785, 262);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(201, 45);
+            this.btnAdd.TabIndex = 374;
+            this.btnAdd.Text = "Add New";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -424,6 +425,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1049, 754);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFilterValue);

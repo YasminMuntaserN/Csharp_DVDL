@@ -189,18 +189,6 @@ namespace Project_4_DVDL_System_.Application.Local_Application
 
         private bool _GetTest(clsTestType.enTestType testType , string TestName)
         {
-            //  clsTestAppointment Appointment =
-            //clsTestAppointment.GetLastTestAppointment(_ApplicationIDFromDGV, clsTestType.enTestType.VisionTest);
-
-            //  if (Appointment == null)
-            //  {
-            //      MessageBox.Show($"No {TestName} Appointment Found!", "Set Appointment", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //      return false ;
-            //  }
-
-
-            //  //frmTakeTest frm = new frmTakeTest(Appointment.TestAppointmentID, clsTestType.enTestType.VisionTest);
-            //  //frm.ShowDialog();
             frmTestAppointments frm = new frmTestAppointments(_ApplicationIDFromDGV, testType);
             frm.ShowDialog();
             //refresh
@@ -294,6 +282,26 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             frmIssueDriverLicense frmIssueDriverLicense = new frmIssueDriverLicense(_ApplicationIDFromDGV);
             frmIssueDriverLicense.ShowDialog();
             _RefreshList(); 
+        }
+
+        private void cmsShowLicense_Click(object sender, EventArgs e)
+        {
+            int LocalDrivingLicenseApplicationID = (int)dgvApplications.CurrentRow.Cells[0].Value;
+
+            int LicenseID = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(
+               LocalDrivingLicenseApplicationID).GetActiveLicenseID();
+
+            if (LicenseID != -1)
+            {
+                frmShowIssueDrivingLicenseDetails frm = new frmShowIssueDrivingLicenseDetails(LicenseID);
+                frm.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("No License Found!", "No License", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
     }
 }

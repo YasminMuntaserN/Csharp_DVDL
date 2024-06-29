@@ -96,3 +96,5 @@ G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Memory.xml
 G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Numerics.Vectors.xml
 G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.frmIssueDriverLicense.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.ctrlDriverLicenseInfo.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.frmShowIssueDrivingLicenseDetails.resources

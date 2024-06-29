@@ -120,11 +120,11 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
             this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
             this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.Goldenrod;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.Silver;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Gray;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
@@ -225,7 +225,7 @@ namespace Project_4_DVDL_System_
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(512, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(527, 6);
             // 
             // SmInternationalDrivingLicense
             // 
@@ -369,11 +369,11 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip2.RenderStyle.ColorTable = null;
             this.guna2ContextMenuStrip2.RenderStyle.RoundedEdges = true;
             this.guna2ContextMenuStrip2.RenderStyle.SelectionArrowColor = System.Drawing.Color.Goldenrod;
-            this.guna2ContextMenuStrip2.RenderStyle.SelectionBackColor = System.Drawing.Color.Silver;
-            this.guna2ContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.Gray;
+            this.guna2ContextMenuStrip2.RenderStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(313, 130);
+            this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(313, 158);
             // 
             // smCurrentUserInfo
             // 

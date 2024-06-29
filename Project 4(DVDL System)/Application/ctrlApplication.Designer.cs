@@ -67,6 +67,7 @@
             // 
             // guna2GroupBox2
             // 
+            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
             this.guna2GroupBox2.Controls.Add(this.llViewPersonInfo);
             this.guna2GroupBox2.Controls.Add(this.lblStatusDate);
             this.guna2GroupBox2.Controls.Add(this.pictureBox8);
@@ -92,6 +93,7 @@
             this.guna2GroupBox2.Controls.Add(this.pictureBox3);
             this.guna2GroupBox2.Controls.Add(this.lblApplicationID);
             this.guna2GroupBox2.Controls.Add(this.label4);
+            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(3, 3);
@@ -104,7 +106,7 @@
             // 
             this.llViewPersonInfo.AutoSize = true;
             this.llViewPersonInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.llViewPersonInfo.Location = new System.Drawing.Point(590, 263);
+            this.llViewPersonInfo.Location = new System.Drawing.Point(546, 267);
             this.llViewPersonInfo.Name = "llViewPersonInfo";
             this.llViewPersonInfo.Size = new System.Drawing.Size(172, 28);
             this.llViewPersonInfo.TabIndex = 208;

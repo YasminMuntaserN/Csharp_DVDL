@@ -56,6 +56,7 @@ namespace Project_4_DVDL_System_.License
             lblIsActive.Text = _License.IsActive ? "Yes" : "No";
             lblDateOfBirth.Text = clsFormat.DateToShort(application.PersonInfo.DateOfBirth);
             lblExpirationDate.Text = clsFormat.DateToShort(_License.ExpirationDate);
+            lblDriverID.Text = _License.DriverID.ToString();
             lblIsDetainad.Text = "Return Back";
             _LoadPersonImage(application);
             return true;
@@ -74,7 +75,6 @@ namespace Project_4_DVDL_System_.License
             }
             _FillLicenseInfoInFields();
         }
-
 
     }
 }
