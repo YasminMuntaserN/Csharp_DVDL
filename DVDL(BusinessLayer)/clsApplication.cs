@@ -32,7 +32,9 @@ namespace DVDL_BusinessLayer_
         public DateTime LastStatusDate { get; set; }
         public decimal PaidFees { get; set; }
         public int CreatedByUserID { get; set; }
-        public string PersonName => clsPerson.Find(ApplicantPersonID).FullName;
+        public clsPerson PersonInfo => clsPerson.Find(ApplicantPersonID);
+        public string PersonName => PersonInfo.FullName;
+        
         public clsApplication()
         {
             this.ApplicationID = null;
@@ -46,7 +48,7 @@ namespace DVDL_BusinessLayer_
 
             Mode = enMode.AddNew;
         }
-
+      
         private clsApplication(int? ApplicationID, int? ApplicantPersonID, DateTime ApplicationDate, int ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int CreatedByUserID)
         {
             this.ApplicationID = ApplicationID;
