@@ -189,7 +189,7 @@ namespace DVDL_DataAccess_
 
         public static DataTable GetAllDrivers()
         {
-            return clsDataAccessHelper.All("select * from Drivers");
+            return clsDataAccessHelper.All("select * from DriverInfo");
         }
     }
 }

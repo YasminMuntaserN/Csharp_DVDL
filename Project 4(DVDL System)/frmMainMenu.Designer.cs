@@ -124,7 +124,7 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
@@ -331,6 +331,7 @@ namespace Project_4_DVDL_System_
             this.btnDrivers.Size = new System.Drawing.Size(228, 55);
             this.btnDrivers.TabIndex = 3;
             this.btnDrivers.Text = "Drivers";
+            this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
             // 
             // btnAccountSettings
             // 
@@ -503,7 +504,7 @@ namespace Project_4_DVDL_System_
             this.guna2Panel1.Controls.Add(this.Disaplypanel);
             this.guna2Panel1.Location = new System.Drawing.Point(59, 282);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1091, 761);
+            this.guna2Panel1.Size = new System.Drawing.Size(1091, 732);
             this.guna2Panel1.TabIndex = 10;
             // 
             // Disaplypanel

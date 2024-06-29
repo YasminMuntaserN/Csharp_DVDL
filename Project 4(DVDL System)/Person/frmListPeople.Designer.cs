@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
             this.Menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.cmsAddPerson = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsShowDetails = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -40,10 +44,6 @@
             this.txtFilterValue = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbCountry = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmsAddPerson = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsShowDetails = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.Menu.SuspendLayout();
@@ -53,35 +53,35 @@
             // dgvUsers
             // 
             this.dgvUsers.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsers.ContextMenuStrip = this.Menu;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.EnableHeadersVisualStyles = false;
             this.dgvUsers.Location = new System.Drawing.Point(12, 314);
             this.dgvUsers.Name = "dgvUsers";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsers.RowHeadersWidth = 51;
             this.dgvUsers.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvUsers.RowTemplate.Height = 26;
@@ -110,6 +110,45 @@
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.Menu.Size = new System.Drawing.Size(255, 124);
             // 
+            // cmsAddPerson
+            // 
+            this.cmsAddPerson.ForeColor = System.Drawing.Color.White;
+            this.cmsAddPerson.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
+            this.cmsAddPerson.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmsAddPerson.Name = "cmsAddPerson";
+            this.cmsAddPerson.Size = new System.Drawing.Size(254, 30);
+            this.cmsAddPerson.Text = "Add New Person";
+            this.cmsAddPerson.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmsAddPerson.Click += new System.EventHandler(this.cmsAddPerson_Click);
+            // 
+            // cmsEdit
+            // 
+            this.cmsEdit.ForeColor = System.Drawing.Color.White;
+            this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
+            this.cmsEdit.Name = "cmsEdit";
+            this.cmsEdit.Size = new System.Drawing.Size(254, 30);
+            this.cmsEdit.Text = "Edit";
+            this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
+            // 
+            // cmsShowDetails
+            // 
+            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
+            this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
+            this.cmsShowDetails.Name = "cmsShowDetails";
+            this.cmsShowDetails.Size = new System.Drawing.Size(254, 30);
+            this.cmsShowDetails.Text = "Show Person Detatils";
+            this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
+            // 
+            // cmsDelete
+            // 
+            this.cmsDelete.ForeColor = System.Drawing.Color.White;
+            this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
+            this.cmsDelete.Name = "cmsDelete";
+            this.cmsDelete.Size = new System.Drawing.Size(254, 30);
+            this.cmsDelete.Text = "Delete";
+            this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -126,7 +165,7 @@
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
             this.guna2Separator1.FillThickness = 3;
-            this.guna2Separator1.Location = new System.Drawing.Point(31, 189);
+            this.guna2Separator1.Location = new System.Drawing.Point(12, 176);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(995, 31);
             this.guna2Separator1.TabIndex = 342;
@@ -250,45 +289,6 @@
             this.cbCountry.Size = new System.Drawing.Size(212, 36);
             this.cbCountry.TabIndex = 367;
             this.cbCountry.SelectedIndexChanged += new System.EventHandler(this.cbCountry_SelectedIndexChanged_1);
-            // 
-            // cmsAddPerson
-            // 
-            this.cmsAddPerson.ForeColor = System.Drawing.Color.White;
-            this.cmsAddPerson.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
-            this.cmsAddPerson.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmsAddPerson.Name = "cmsAddPerson";
-            this.cmsAddPerson.Size = new System.Drawing.Size(254, 30);
-            this.cmsAddPerson.Text = "Add New Person";
-            this.cmsAddPerson.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmsAddPerson.Click += new System.EventHandler(this.cmsAddPerson_Click);
-            // 
-            // cmsEdit
-            // 
-            this.cmsEdit.ForeColor = System.Drawing.Color.White;
-            this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
-            this.cmsEdit.Name = "cmsEdit";
-            this.cmsEdit.Size = new System.Drawing.Size(254, 30);
-            this.cmsEdit.Text = "Edit";
-            this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
-            // 
-            // cmsShowDetails
-            // 
-            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
-            this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
-            this.cmsShowDetails.Name = "cmsShowDetails";
-            this.cmsShowDetails.Size = new System.Drawing.Size(254, 30);
-            this.cmsShowDetails.Text = "Show Person Detatils";
-            this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
-            // 
-            // cmsDelete
-            // 
-            this.cmsDelete.ForeColor = System.Drawing.Color.White;
-            this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
-            this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(254, 30);
-            this.cmsDelete.Text = "Delete";
-            this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
             // 
             // guna2CirclePictureBox1
             // 
