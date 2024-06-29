@@ -10,37 +10,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Project_4_DVDL_System_.License
 {
     public partial class ctrlDrivingLicenseCardWithFilter : UserControl
     {
+        // Define a custom event handler delegate with parameters
+        public event Action<int?> OnLicenseSelected;
+        // Create a protected method to raise the event with a parameter
+        protected virtual void LicenseSelected(int? LicenseID)
+        {
+            Action<int?> handler = OnLicenseSelected;
+            if (handler != null)
+            {
+                handler(LicenseID); // Raise the event with the parameter
+            }
+        }
+
+
         private int? _LicenceID = null;
 
-        private clsLicense _License = null;
-
-        public int? LicenseID => _LicenceID;
         public clsLicense License => ctrlDriverLicenseInfo1.License;
+
+        private bool _FilterEnabled = true;
+
+        public bool FilterEnabled
+        {
+            get => _FilterEnabled;
+            set
+            {
+                _FilterEnabled = value;
+                gbFilters.Enabled = _FilterEnabled;
+            }
+        }
 
         public ctrlDrivingLicenseCardWithFilter()
         {
             InitializeComponent();
         }
 
-        public Action<int?> LicenseIDBack;
-
         private void btnFind_Click(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())
             {
-                //Here we dont continue becuase the form is not valid
-                MessageBox.Show("Some fileds are not valide!, put the mouse over the red icon(s) to see the erro", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                clsMessages.ValidationErrorMessage();
                 txtLicenseID.Focus();
                 return;
 
             }
 
-            int LicenseID = Convert.ToInt32(txtLicenseID.Text);
+            int LicenseID = int.Parse(txtLicenseID.Text);
             LoadLicenseInfo(LicenseID);
         }
 
@@ -49,7 +69,9 @@ namespace Project_4_DVDL_System_.License
             txtLicenseID.Text = LicenseID.ToString();
             ctrlDriverLicenseInfo1.LoadLicenseInfo(LicenseID);
             _LicenceID = ctrlDriverLicenseInfo1.LicenseID;
-            LicenseIDBack?.Invoke(_License?.LicenseID);
+            if (OnLicenseSelected != null && FilterEnabled)
+                // Raise the event with a parameter
+                OnLicenseSelected(_LicenceID);
         }
 
         private void txtLicenseID_Validating(object sender, CancelEventArgs e)
@@ -78,5 +100,10 @@ namespace Project_4_DVDL_System_.License
                 btnFind.PerformClick();
             }
         }
+
+        public void txtLicenseIDFocus() => txtLicenseID.Focus();
+
+    
+
     }
 }

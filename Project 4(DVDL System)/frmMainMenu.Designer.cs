@@ -124,7 +124,7 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
@@ -178,6 +178,7 @@ namespace Project_4_DVDL_System_
             this.smRenewDrivingLicense.Name = "smRenewDrivingLicense";
             this.smRenewDrivingLicense.Size = new System.Drawing.Size(302, 32);
             this.smRenewDrivingLicense.Text = "Renew Driving License";
+            this.smRenewDrivingLicense.Click += new System.EventHandler(this.smRenewDrivingLicense_Click);
             // 
             // toolStripSeparator4
             // 
@@ -373,7 +374,7 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(313, 158);
+            this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(313, 130);
             // 
             // smCurrentUserInfo
             // 

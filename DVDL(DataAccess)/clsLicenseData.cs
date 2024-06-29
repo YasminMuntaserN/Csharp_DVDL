@@ -215,5 +215,34 @@ namespace DVDL_BusinessLayer_
             }
             return LicenseID;
         }
+
+        public static bool DeactivateLicense(int? LicenseID)
+        {
+            int rowsAffected = 0;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"UPDATE Licenses SET  IsActive = 0                           
+                                     WHERE LicenseID=@LicenseID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@LicenseID", (object)LicenseID ?? DBNull.Value);
+
+                        rowsAffected = command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            return (rowsAffected > 0);
+        }
+
     }
 }

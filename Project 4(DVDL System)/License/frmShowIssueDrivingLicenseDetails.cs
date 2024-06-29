@@ -14,7 +14,7 @@ namespace Project_4_DVDL_System_.License
     {
         private int? _LicenseID = null;
 
-        public frmShowIssueDrivingLicenseDetails(int LicenseID)
+        public frmShowIssueDrivingLicenseDetails(int? LicenseID)
         {
             _LicenseID = LicenseID;
             InitializeComponent();

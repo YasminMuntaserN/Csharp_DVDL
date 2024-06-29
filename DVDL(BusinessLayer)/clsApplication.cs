@@ -31,7 +31,7 @@ namespace DVDL_BusinessLayer_
         public byte ApplicationStatus { get; set; }
         public DateTime LastStatusDate { get; set; }
         public decimal PaidFees { get; set; }
-        public int CreatedByUserID { get; set; }
+        public int ?CreatedByUserID { get; set; }
         public clsPerson PersonInfo => clsPerson.Find(ApplicantPersonID);
         public string PersonName => PersonInfo.FullName;
         

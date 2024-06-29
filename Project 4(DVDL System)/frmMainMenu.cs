@@ -1,6 +1,7 @@
 ﻿using DVDL_BusinessLayer_;
 using Guna.UI2.WinForms;
 using Project_4_DVDL_System_.Application.Local_Application;
+using Project_4_DVDL_System_.Application.Renew_Local_License;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.Login;
 using Project_4_DVDL_System_.Person;
@@ -124,6 +125,14 @@ namespace Project_4_DVDL_System_
             ActionFrom = _enFrom.menu;
             OpenChildFormAsync(new frmListLocalApplications(), sender);
             
+        }
+
+        private void smRenewDrivingLicense_Click(object sender, EventArgs e)
+        {
+            //  ActionFrom = _enFrom.menu;
+            //  OpenChildFormAsync(new frmRenewLocalLicense(), sender);
+            frmRenewLocalLicense frmRenewLocalLicense = new frmRenewLocalLicense();
+            frmRenewLocalLicense.ShowDialog();  
         }
     }
 }

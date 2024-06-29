@@ -48,6 +48,7 @@
             // 
             // guna2GroupBox2
             // 
+            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
             this.guna2GroupBox2.Controls.Add(this.llShowLicenceInfo);
             this.guna2GroupBox2.Controls.Add(this.lblPassedTests);
             this.guna2GroupBox2.Controls.Add(this.label2);
@@ -58,11 +59,12 @@
             this.guna2GroupBox2.Controls.Add(this.label4);
             this.guna2GroupBox2.Controls.Add(this.pictureBox6);
             this.guna2GroupBox2.Controls.Add(this.pictureBox2);
+            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(859, 205);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(830, 174);
             this.guna2GroupBox2.TabIndex = 3;
             this.guna2GroupBox2.Text = " Applications Info :";
             // 
@@ -70,7 +72,7 @@
             // 
             this.llShowLicenceInfo.AutoSize = true;
             this.llShowLicenceInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.llShowLicenceInfo.Location = new System.Drawing.Point(653, 150);
+            this.llShowLicenceInfo.Location = new System.Drawing.Point(71, 102);
             this.llShowLicenceInfo.Name = "llShowLicenceInfo";
             this.llShowLicenceInfo.Size = new System.Drawing.Size(178, 28);
             this.llShowLicenceInfo.TabIndex = 206;
@@ -83,7 +85,7 @@
             this.lblPassedTests.AutoSize = true;
             this.lblPassedTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassedTests.ForeColor = System.Drawing.Color.Black;
-            this.lblPassedTests.Location = new System.Drawing.Point(225, 150);
+            this.lblPassedTests.Location = new System.Drawing.Point(581, 102);
             this.lblPassedTests.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassedTests.Name = "lblPassedTests";
             this.lblPassedTests.Size = new System.Drawing.Size(24, 25);
@@ -95,7 +97,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(40, 150);
+            this.label2.Location = new System.Drawing.Point(385, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 25);
@@ -105,7 +107,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.certified;
-            this.pictureBox7.Location = new System.Drawing.Point(187, 150);
+            this.pictureBox7.Location = new System.Drawing.Point(543, 102);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,7 +119,7 @@
             this.lblAppliedFor.AutoSize = true;
             this.lblAppliedFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppliedFor.ForeColor = System.Drawing.Color.Black;
-            this.lblAppliedFor.Location = new System.Drawing.Point(278, 107);
+            this.lblAppliedFor.Location = new System.Drawing.Point(574, 60);
             this.lblAppliedFor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppliedFor.Name = "lblAppliedFor";
             this.lblAppliedFor.Size = new System.Drawing.Size(62, 25);
@@ -129,7 +131,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(29, 107);
+            this.label10.Location = new System.Drawing.Point(325, 60);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(211, 25);
@@ -163,7 +165,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
-            this.pictureBox6.Location = new System.Drawing.Point(247, 107);
+            this.pictureBox6.Location = new System.Drawing.Point(543, 60);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,9 +184,9 @@
             // 
             // ctrlApplication1
             // 
-            this.ctrlApplication1.Location = new System.Drawing.Point(0, 201);
+            this.ctrlApplication1.Location = new System.Drawing.Point(-2, 169);
             this.ctrlApplication1.Name = "ctrlApplication1";
-            this.ctrlApplication1.Size = new System.Drawing.Size(859, 314);
+            this.ctrlApplication1.Size = new System.Drawing.Size(832, 265);
             this.ctrlApplication1.TabIndex = 4;
             // 
             // ctrlLocalApplication
@@ -194,7 +196,7 @@
             this.Controls.Add(this.ctrlApplication1);
             this.Controls.Add(this.guna2GroupBox2);
             this.Name = "ctrlLocalApplication";
-            this.Size = new System.Drawing.Size(860, 514);
+            this.Size = new System.Drawing.Size(829, 429);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

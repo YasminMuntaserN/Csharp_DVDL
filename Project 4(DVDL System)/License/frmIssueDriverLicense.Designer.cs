@@ -50,9 +50,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
-            this.pictureBox1.Location = new System.Drawing.Point(93, 596);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 504);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(12, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 178;
             this.pictureBox1.TabStop = false;
@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 596);
+            this.label1.Location = new System.Drawing.Point(10, 504);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 25);
@@ -70,11 +70,11 @@
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(144, 596);
+            this.txtNotes.Location = new System.Drawing.Point(143, 504);
             this.txtNotes.MaxLength = 500;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(716, 127);
+            this.txtNotes.Size = new System.Drawing.Size(697, 127);
             this.txtNotes.TabIndex = 176;
             // 
             // guna2CirclePictureBox2
@@ -118,7 +118,7 @@
             this.btnIssue.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
             this.btnIssue.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnIssue.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnIssue.Location = new System.Drawing.Point(660, 729);
+            this.btnIssue.Location = new System.Drawing.Point(645, 649);
             this.btnIssue.Name = "btnIssue";
             this.btnIssue.Size = new System.Drawing.Size(180, 45);
             this.btnIssue.TabIndex = 260;
@@ -140,7 +140,7 @@
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.Location = new System.Drawing.Point(464, 729);
+            this.btnClose.Location = new System.Drawing.Point(449, 649);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 45);
             this.btnClose.TabIndex = 261;
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 780);
+            this.ClientSize = new System.Drawing.Size(862, 710);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnIssue);
             this.Controls.Add(this.guna2CirclePictureBox2);

@@ -98,3 +98,5 @@ G:\C#\DVDL\Project 4(DVDL System)\bin\Debug\System.Runtime.CompilerServices.Unsa
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.frmIssueDriverLicense.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.ctrlDriverLicenseInfo.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.frmShowIssueDrivingLicenseDetails.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Renew_Local_License.frmRenewLocalLicense.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.ctrlDrivingLicenseCardWithFilter.resources

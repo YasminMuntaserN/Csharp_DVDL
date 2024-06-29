@@ -76,7 +76,7 @@
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.Location = new System.Drawing.Point(473, 520);
+            this.btnClose.Location = new System.Drawing.Point(429, 451);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 45);
             this.btnClose.TabIndex = 262;
@@ -95,7 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1081, 574);
+            this.ClientSize = new System.Drawing.Size(1081, 514);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2CirclePictureBox2);
             this.Controls.Add(this.lblTitle);

@@ -61,7 +61,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewApplication(int? ApplicationPersonID, DateTime ApplicationDate, int ?ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int UserID)
+        public static int? AddNewApplication(int? ApplicationPersonID, DateTime ApplicationDate, int ?ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int? UserID)
         {
             // This function will return the new person id if succeeded and null if not
             int? ApplicationID = null;
@@ -103,7 +103,7 @@ namespace DVDL_DataAccess_
             return ApplicationID;
         }
 
-        public static bool UpdateApplication(int? ApplicationID, int? ApplicationPersonID, DateTime ApplicationDate, int? ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int UserID)
+        public static bool UpdateApplication(int? ApplicationID, int? ApplicationPersonID, DateTime ApplicationDate, int? ApplicationTypeID, byte ApplicationStatus, DateTime LastStatusDate, decimal PaidFees, int ?UserID)
         {
             int RowAffected = 0;
 

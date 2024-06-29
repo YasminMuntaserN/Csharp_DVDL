@@ -58,5 +58,10 @@ namespace Project_4_DVDL_System_.Application
             frmShowDetails frmShowDetails = new frmShowDetails(_Application.ApplicantPersonID);
             frmShowDetails.ShowDialog();
         }
+
+        private void guna2GroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

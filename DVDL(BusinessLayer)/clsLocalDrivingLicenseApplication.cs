@@ -35,7 +35,7 @@ namespace DVDL_BusinessLayer_
         private clsLocalDrivingLicenseApplication(int? LocalDrivingLicenseApplicationID, int? ApplicationID,
        int? ApplicantPersonID, DateTime ApplicationDate, int? ApplicationTypeID,
       byte ApplicationStatus, DateTime LastStatusDate,
-      decimal PaidFees, int CreatedByUserID, int LicenseClassID)
+      decimal PaidFees, int? CreatedByUserID, int LicenseClassID)
         {
             this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID; ;
             this.ApplicationID = ApplicationID;

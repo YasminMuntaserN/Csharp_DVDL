@@ -73,6 +73,7 @@ namespace Project_4_DVDL_System_.License
                 _LicenseID = -1;
                 return;
             }
+            lblLicenseID.Text = _License.LicenseID.ToString();
             _FillLicenseInfoInFields();
         }
 
