@@ -1,6 +1,7 @@
 ﻿using DVDL_BusinessLayer_;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.License;
+using Project_4_DVDL_System_.License.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -120,7 +121,9 @@ namespace Project_4_DVDL_System_.Application.ReplaceLostOrDamagedLicense
 
         private void llShowLicenseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            frmDriverLicenseHistory frm =new frmDriverLicenseHistory
+                (ctrlDrivingLicenseCardWithFilter1.License.DriverInfo.PersonID);
+            frm.ShowDialog();
         }
 
         private void frmReplaceLostOrDamagedLicense_Load(object sender, EventArgs e)

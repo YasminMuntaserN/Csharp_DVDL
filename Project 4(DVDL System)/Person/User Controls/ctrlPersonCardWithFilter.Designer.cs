@@ -50,16 +50,17 @@
             // 
             // gbFilter
             // 
+            this.gbFilter.BackColor = System.Drawing.Color.Linen;
             this.gbFilter.Controls.Add(this.btnAddNew);
             this.gbFilter.Controls.Add(this.btnFind);
             this.gbFilter.Controls.Add(this.txtFilterValue);
             this.gbFilter.Controls.Add(this.cbFilter);
             this.gbFilter.Controls.Add(this.label1);
             this.gbFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbFilter.ForeColor = System.Drawing.Color.Green;
+            this.gbFilter.ForeColor = System.Drawing.Color.Goldenrod;
             this.gbFilter.Location = new System.Drawing.Point(3, 3);
             this.gbFilter.Name = "gbFilter";
-            this.gbFilter.Size = new System.Drawing.Size(821, 69);
+            this.gbFilter.Size = new System.Drawing.Size(1018, 72);
             this.gbFilter.TabIndex = 0;
             this.gbFilter.TabStop = false;
             this.gbFilter.Text = "Filter ";
@@ -155,37 +156,38 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(3, 78);
+            this.splitContainer1.Location = new System.Drawing.Point(3, 72);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Silver;
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.ctrlPersonCard1);
-            this.splitContainer1.Size = new System.Drawing.Size(837, 267);
+            this.splitContainer1.Size = new System.Drawing.Size(1016, 288);
             this.splitContainer1.SplitterDistance = 44;
             this.splitContainer1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(3, 10);
+            this.label2.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label2.Location = new System.Drawing.Point(0, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(812, 35);
+            this.label2.Size = new System.Drawing.Size(1013, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Personal Info :";
             // 
             // ctrlPersonCard1
             // 
-            this.ctrlPersonCard1.Location = new System.Drawing.Point(0, 6);
+            this.ctrlPersonCard1.BackColor = System.Drawing.Color.Linen;
+            this.ctrlPersonCard1.Location = new System.Drawing.Point(-3, 3);
             this.ctrlPersonCard1.Name = "ctrlPersonCard1";
-            this.ctrlPersonCard1.Size = new System.Drawing.Size(848, 228);
+            this.ctrlPersonCard1.Size = new System.Drawing.Size(1016, 233);
             this.ctrlPersonCard1.TabIndex = 0;
             // 
             // ctrlPersonCardWithFilter
@@ -195,7 +197,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.gbFilter);
             this.Name = "ctrlPersonCardWithFilter";
-            this.Size = new System.Drawing.Size(843, 360);
+            this.Size = new System.Drawing.Size(1021, 360);
             this.gbFilter.ResumeLayout(false);
             this.gbFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

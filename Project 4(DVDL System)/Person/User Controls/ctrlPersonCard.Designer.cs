@@ -73,7 +73,7 @@
             // 
             this.lblCountry.AutoSize = true;
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.Location = new System.Drawing.Point(530, 152);
+            this.lblCountry.Location = new System.Drawing.Point(557, 152);
             this.lblCountry.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(68, 25);
@@ -84,7 +84,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(530, 112);
+            this.lblPhone.Location = new System.Drawing.Point(557, 112);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(68, 25);
@@ -95,7 +95,7 @@
             // 
             this.lblDateOfBirth.AutoSize = true;
             this.lblDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(530, 80);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(557, 80);
             this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
             this.lblDateOfBirth.Size = new System.Drawing.Size(68, 25);
@@ -195,7 +195,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(383, 152);
+            this.label15.Location = new System.Drawing.Point(410, 152);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(95, 25);
@@ -228,7 +228,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(394, 112);
+            this.label4.Location = new System.Drawing.Point(421, 112);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 25);
@@ -239,7 +239,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(339, 80);
+            this.label3.Location = new System.Drawing.Point(366, 80);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
@@ -275,7 +275,7 @@
             this.llEditPersonInfo.Enabled = false;
             this.llEditPersonInfo.Font = new System.Drawing.Font("Tahoma", 12F);
             this.llEditPersonInfo.LinkColor = System.Drawing.Color.DimGray;
-            this.llEditPersonInfo.Location = new System.Drawing.Point(674, 10);
+            this.llEditPersonInfo.Location = new System.Drawing.Point(828, 19);
             this.llEditPersonInfo.Name = "llEditPersonInfo";
             this.llEditPersonInfo.Size = new System.Drawing.Size(151, 24);
             this.llEditPersonInfo.TabIndex = 255;
@@ -296,7 +296,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Project_4_DVDL_System_.Properties.Resources.schedule;
-            this.pictureBox4.Location = new System.Drawing.Point(489, 77);
+            this.pictureBox4.Location = new System.Drawing.Point(516, 77);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -336,7 +336,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.countries;
-            this.pictureBox6.Location = new System.Drawing.Point(489, 152);
+            this.pictureBox6.Location = new System.Drawing.Point(516, 152);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -366,7 +366,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.phone_call;
-            this.pictureBox2.Location = new System.Drawing.Point(488, 112);
+            this.pictureBox2.Location = new System.Drawing.Point(515, 112);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -379,7 +379,7 @@
             this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbPersonImage.Image = global::Project_4_DVDL_System_.Properties.Resources.man;
             this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(656, 42);
+            this.pbPersonImage.Location = new System.Drawing.Point(810, 51);
             this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbPersonImage.Name = "pbPersonImage";
             this.pbPersonImage.Size = new System.Drawing.Size(169, 167);
@@ -391,6 +391,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.Controls.Add(this.llEditPersonInfo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblCountry);
@@ -421,7 +422,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbPersonImage);
             this.Name = "ctrlPersonCard";
-            this.Size = new System.Drawing.Size(833, 228);
+            this.Size = new System.Drawing.Size(1016, 242);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGendor)).EndInit();

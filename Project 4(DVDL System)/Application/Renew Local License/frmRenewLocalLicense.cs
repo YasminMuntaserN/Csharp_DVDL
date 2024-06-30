@@ -1,6 +1,7 @@
 ﻿using DVDL_BusinessLayer_;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.License;
+using Project_4_DVDL_System_.License.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -124,6 +125,13 @@ namespace Project_4_DVDL_System_.Application.Renew_Local_License
         {
             frmShowIssueDrivingLicenseDetails frm = new frmShowIssueDrivingLicenseDetails(_NewLicenseID);
             frm.ShowDialog();
-        } 
+        }
+
+        private void llShowLicenseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmDriverLicenseHistory history = new frmDriverLicenseHistory
+                (ctrlDrivingLicenseCardWithFilter1.License.DriverInfo.PersonID);    
+            history.ShowDialog();   
+        }
     }
 }

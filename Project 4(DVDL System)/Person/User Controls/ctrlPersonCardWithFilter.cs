@@ -152,5 +152,6 @@ namespace Project_4_DVDL_System_.Person.User_Controls
             if (cbFilter.Text == "Person ID")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
+
     }
 }

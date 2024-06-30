@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFilterValue = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -134,35 +134,35 @@
             // dgvApplications
             // 
             this.dgvApplications.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvApplications.ContextMenuStrip = this.Menu;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvApplications.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvApplications.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvApplications.EnableHeadersVisualStyles = false;
             this.dgvApplications.Location = new System.Drawing.Point(27, 345);
             this.dgvApplications.Name = "dgvApplications";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvApplications.RowHeadersWidth = 51;
             this.dgvApplications.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvApplications.RowTemplate.Height = 26;
@@ -171,9 +171,9 @@
             // 
             // Menu
             // 
-            this.Menu.BackColor = System.Drawing.Color.LightGray;
-            this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu.BackColor = System.Drawing.Color.Linen;
+            this.Menu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu.ImageScalingSize = new System.Drawing.Size(30, 30);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsShowDetails,
             this.toolStripSeparator12,
@@ -201,88 +201,89 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(362, 310);
+            this.Menu.Size = new System.Drawing.Size(407, 386);
             this.Menu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening);
             // 
             // cmsShowDetails
             // 
             this.cmsShowDetails.AutoSize = false;
-            this.cmsShowDetails.BackColor = System.Drawing.Color.DarkGray;
+            this.cmsShowDetails.BackColor = System.Drawing.Color.Linen;
             this.cmsShowDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsShowDetails.ForeColor = System.Drawing.Color.Black;
             this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
             this.cmsShowDetails.Name = "cmsShowDetails";
             this.cmsShowDetails.Size = new System.Drawing.Size(361, 30);
-            this.cmsShowDetails.Text = "Show Application Detatils";
+            this.cmsShowDetails.Text = "       Show Application Detatils";
             this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
             // 
             // toolStripSeparator12
             // 
+            this.toolStripSeparator12.BackColor = System.Drawing.Color.Linen;
             this.toolStripSeparator12.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsAddApplication
             // 
-            this.cmsAddApplication.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmsAddApplication.BackColor = System.Drawing.Color.Linen;
             this.cmsAddApplication.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsAddApplication.ForeColor = System.Drawing.Color.Black;
             this.cmsAddApplication.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
             this.cmsAddApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmsAddApplication.Name = "cmsAddApplication";
-            this.cmsAddApplication.Size = new System.Drawing.Size(361, 30);
-            this.cmsAddApplication.Text = "Add New Application";
+            this.cmsAddApplication.Size = new System.Drawing.Size(406, 36);
+            this.cmsAddApplication.Text = "       Add New Application";
             this.cmsAddApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsAddApplication.Click += new System.EventHandler(this.cmsAddApplication_Click);
             // 
             // cmsEdit
             // 
-            this.cmsEdit.BackColor = System.Drawing.Color.DarkGray;
+            this.cmsEdit.BackColor = System.Drawing.Color.Linen;
             this.cmsEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsEdit.ForeColor = System.Drawing.Color.Black;
             this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
             this.cmsEdit.Name = "cmsEdit";
-            this.cmsEdit.Size = new System.Drawing.Size(361, 30);
-            this.cmsEdit.Text = "Edit Application";
+            this.cmsEdit.Size = new System.Drawing.Size(406, 36);
+            this.cmsEdit.Text = "       Edit Application";
             this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
             // 
             // cmsDelete
             // 
-            this.cmsDelete.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmsDelete.BackColor = System.Drawing.Color.Linen;
             this.cmsDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsDelete.ForeColor = System.Drawing.Color.Black;
             this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
             this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(361, 30);
-            this.cmsDelete.Text = "Delete Application";
+            this.cmsDelete.Size = new System.Drawing.Size(406, 36);
+            this.cmsDelete.Text = "       Delete Application";
             this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsCancelApplication
             // 
-            this.cmsCancelApplication.BackColor = System.Drawing.Color.DarkGray;
+            this.cmsCancelApplication.BackColor = System.Drawing.Color.Linen;
             this.cmsCancelApplication.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsCancelApplication.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmsCancelApplication.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.cmsCancelApplication.Name = "cmsCancelApplication";
-            this.cmsCancelApplication.Size = new System.Drawing.Size(361, 30);
-            this.cmsCancelApplication.Text = "Cancel Application";
+            this.cmsCancelApplication.Size = new System.Drawing.Size(406, 36);
+            this.cmsCancelApplication.Text = "       Cancel Application";
             this.cmsCancelApplication.Click += new System.EventHandler(this.cmsCancelApplication_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsTests
             // 
-            this.cmsTests.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmsTests.BackColor = System.Drawing.Color.Linen;
             this.cmsTests.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsScheduleVisionTest,
             this.cmsScheduleWrittenTest,
@@ -291,15 +292,15 @@
             this.cmsTests.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmsTests.Image = global::Project_4_DVDL_System_.Properties.Resources.Schedule_Test_32;
             this.cmsTests.Name = "cmsTests";
-            this.cmsTests.Size = new System.Drawing.Size(361, 30);
-            this.cmsTests.Text = "Sechdule Tests";
+            this.cmsTests.Size = new System.Drawing.Size(406, 36);
+            this.cmsTests.Text = "       Sechdule Tests";
             // 
             // cmsScheduleVisionTest
             // 
             this.cmsScheduleVisionTest.BackColor = System.Drawing.Color.Silver;
             this.cmsScheduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
             this.cmsScheduleVisionTest.Name = "cmsScheduleVisionTest";
-            this.cmsScheduleVisionTest.Size = new System.Drawing.Size(280, 30);
+            this.cmsScheduleVisionTest.Size = new System.Drawing.Size(290, 36);
             this.cmsScheduleVisionTest.Text = "Schedule Vision Test";
             this.cmsScheduleVisionTest.Click += new System.EventHandler(this.cmsSechduleVisionTest_Click);
             // 
@@ -308,7 +309,7 @@
             this.cmsScheduleWrittenTest.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmsScheduleWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
             this.cmsScheduleWrittenTest.Name = "cmsScheduleWrittenTest";
-            this.cmsScheduleWrittenTest.Size = new System.Drawing.Size(280, 30);
+            this.cmsScheduleWrittenTest.Size = new System.Drawing.Size(290, 36);
             this.cmsScheduleWrittenTest.Text = "Schedule Written Test";
             this.cmsScheduleWrittenTest.Click += new System.EventHandler(this.cmsScheduleWrittenTest_Click);
             // 
@@ -317,56 +318,57 @@
             this.cmsScheduleStreetTest.BackColor = System.Drawing.Color.Silver;
             this.cmsScheduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
             this.cmsScheduleStreetTest.Name = "cmsScheduleStreetTest";
-            this.cmsScheduleStreetTest.Size = new System.Drawing.Size(280, 30);
+            this.cmsScheduleStreetTest.Size = new System.Drawing.Size(290, 36);
             this.cmsScheduleStreetTest.Text = "Schedule Street Test";
             this.cmsScheduleStreetTest.Click += new System.EventHandler(this.cmsScheduleStreetTest_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsIssueLicense
             // 
-            this.cmsIssueLicense.BackColor = System.Drawing.Color.DarkGray;
+            this.cmsIssueLicense.BackColor = System.Drawing.Color.Linen;
             this.cmsIssueLicense.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsIssueLicense.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmsIssueLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
             this.cmsIssueLicense.Name = "cmsIssueLicense";
-            this.cmsIssueLicense.Size = new System.Drawing.Size(361, 30);
-            this.cmsIssueLicense.Text = "Issue Driving License (First Time)";
+            this.cmsIssueLicense.Size = new System.Drawing.Size(406, 36);
+            this.cmsIssueLicense.Text = "       Issue Driving License (First Time)";
             this.cmsIssueLicense.Click += new System.EventHandler(this.cmsIssueLicense_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsShowLicense
             // 
-            this.cmsShowLicense.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmsShowLicense.BackColor = System.Drawing.Color.Linen;
             this.cmsShowLicense.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.cmsShowLicense.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmsShowLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.Local_Driving_License_512;
             this.cmsShowLicense.Name = "cmsShowLicense";
-            this.cmsShowLicense.Size = new System.Drawing.Size(361, 30);
-            this.cmsShowLicense.Text = "Show License";
+            this.cmsShowLicense.Size = new System.Drawing.Size(406, 36);
+            this.cmsShowLicense.Text = "       Show License";
             this.cmsShowLicense.Click += new System.EventHandler(this.cmsShowLicense_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(358, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(403, 6);
             // 
             // cmsShowpersonLicenseHistory
             // 
-            this.cmsShowpersonLicenseHistory.BackColor = System.Drawing.Color.DarkGray;
+            this.cmsShowpersonLicenseHistory.BackColor = System.Drawing.Color.Linen;
             this.cmsShowpersonLicenseHistory.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsShowpersonLicenseHistory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmsShowpersonLicenseHistory.Image = global::Project_4_DVDL_System_.Properties.Resources.clock;
             this.cmsShowpersonLicenseHistory.Name = "cmsShowpersonLicenseHistory";
-            this.cmsShowpersonLicenseHistory.Size = new System.Drawing.Size(361, 30);
-            this.cmsShowpersonLicenseHistory.Text = "Show person License History";
+            this.cmsShowpersonLicenseHistory.Size = new System.Drawing.Size(406, 36);
+            this.cmsShowpersonLicenseHistory.Text = "       Show person License History";
+            this.cmsShowpersonLicenseHistory.Click += new System.EventHandler(this.cmsShowpersonLicenseHistory_Click);
             // 
             // label1
             // 

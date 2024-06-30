@@ -87,7 +87,7 @@ namespace Project_4_DVDL_System_.Drivers
         //    }
         //}
 
-        public void LoadInfo(int DriverID)
+        public void LoadInfo(int? DriverID)
         {
             _DriverID = DriverID;
             _Driver = clsDriver.Find(_DriverID);
@@ -97,7 +97,7 @@ namespace Project_4_DVDL_System_.Drivers
 
         }
 
-        public void LoadInfoByPersonID(int PersonID)
+        public void LoadInfoByPersonID(int? PersonID)
         {
 
             _Driver = clsDriver.FindByPersonID(PersonID);

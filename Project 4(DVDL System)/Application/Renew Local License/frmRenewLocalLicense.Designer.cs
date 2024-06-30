@@ -590,12 +590,13 @@
             this.llShowLicenseHistory.Enabled = false;
             this.llShowLicenseHistory.Font = new System.Drawing.Font("Tahoma", 12F);
             this.llShowLicenseHistory.LinkColor = System.Drawing.Color.Black;
-            this.llShowLicenseHistory.Location = new System.Drawing.Point(26, 774);
+            this.llShowLicenseHistory.Location = new System.Drawing.Point(26, 778);
             this.llShowLicenseHistory.Name = "llShowLicenseHistory";
             this.llShowLicenseHistory.Size = new System.Drawing.Size(208, 24);
             this.llShowLicenseHistory.TabIndex = 266;
             this.llShowLicenseHistory.TabStop = true;
             this.llShowLicenseHistory.Text = "Show Licenses History";
+            this.llShowLicenseHistory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llShowLicenseHistory_LinkClicked);
             // 
             // ctrlDrivingLicenseCardWithFilter1
             // 

@@ -1,6 +1,7 @@
 ﻿using DVDL_BusinessLayer_;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.License;
+using Project_4_DVDL_System_.License.Controls;
 using Project_4_DVDL_System_.Tests.TestAppointments;
 using System;
 using System.Collections.Generic;
@@ -302,6 +303,16 @@ namespace Project_4_DVDL_System_.Application.Local_Application
                 MessageBox.Show("No License Found!", "No License", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+        }
+
+        private void cmsShowpersonLicenseHistory_Click(object sender, EventArgs e)
+        {
+            clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication = 
+                clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseApplication(_ApplicationIDFromDGV);
+           
+            frmDriverLicenseHistory history = new frmDriverLicenseHistory
+                (_LocalDrivingLicenseApplication.ApplicantPersonID);    
+            history.ShowDialog();
         }
     }
 }
