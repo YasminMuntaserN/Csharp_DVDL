@@ -7,6 +7,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+using System.ComponentModel;
+using System.Reflection;
+using System.Security.Cryptography;
 
 namespace DVDL_BusinessLayer_
 {
@@ -242,6 +246,12 @@ namespace DVDL_BusinessLayer_
                 return false;
             }
             return (rowsAffected > 0);
+        }
+
+        public static DataTable GetDriverLicenses(int? DriverID)
+        {
+            return clsDataAccessHelper.All("SELECT Licenses.LicenseID, ApplicationID, LicenseClasses.ClassName, Licenses.IssueDate, Licenses.ExpirationDate, Licenses.IsActive FROM Licenses INNER JOIN LicenseClasses ON Licenses.LicenseClass = LicenseClasses.LicenseClassID where DriverID = @DriverID Order By IsActive Desc, ExpirationDate Desc", "DriverID", DriverID);
+
         }
 
     }

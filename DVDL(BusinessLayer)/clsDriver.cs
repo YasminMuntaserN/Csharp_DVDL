@@ -110,5 +110,10 @@ namespace DVDL_BusinessLayer_
             return clsDriverData.GetAllDrivers();
         }
 
+        public static DataTable GetLicenses(int? DriverID)
+        {
+            return clsLicense.GetDriverLicenses(DriverID);
+        }
+
     }
 }
