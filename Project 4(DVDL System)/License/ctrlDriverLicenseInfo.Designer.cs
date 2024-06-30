@@ -137,7 +137,7 @@
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.Size = new System.Drawing.Size(1051, 334);
             this.guna2GroupBox2.TabIndex = 3;
-            this.guna2GroupBox2.Text = " Applications Info :";
+            this.guna2GroupBox2.Text = "Driver Liceense Info :";
             // 
             // pbPersonImage
             // 

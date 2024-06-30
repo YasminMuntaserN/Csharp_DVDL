@@ -2,6 +2,7 @@
 using Guna.UI2.WinForms;
 using Project_4_DVDL_System_.Application.Local_Application;
 using Project_4_DVDL_System_.Application.Renew_Local_License;
+using Project_4_DVDL_System_.Application.ReplaceLostOrDamagedLicense;
 using Project_4_DVDL_System_.Drivers;
 using Project_4_DVDL_System_.Global_Classes;
 using Project_4_DVDL_System_.Login;
@@ -140,6 +141,13 @@ namespace Project_4_DVDL_System_
         {
             ActionFrom = _enFrom.button;
             OpenChildFormAsync(new frmListDrivers(), sender);
+        }
+
+        private void replacmentDamageOrLostToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            guna2ContextMenuStrip1.Visible = false;
+            frmReplaceLostOrDamagedLicense frm =new frmReplaceLostOrDamagedLicense();   
+            frm.ShowDialog();
         }
     }
 }

@@ -72,6 +72,9 @@ namespace Project_4_DVDL_System_
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Disaplypanel = new System.Windows.Forms.Panel();
+            this.replacmentDamageOrLostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.guna2ContextMenuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
@@ -124,18 +127,20 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
             this.drivingLicenseServicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.smNewDrivingLicense,
+            this.toolStripSeparator12,
             this.smRenewDrivingLicense,
             this.toolStripSeparator4,
-            this.smRetakeTest});
+            this.smRetakeTest,
+            this.toolStripSeparator11,
+            this.replacmentDamageOrLostToolStripMenuItem});
             this.drivingLicenseServicesToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.License_View_32;
             this.drivingLicenseServicesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.drivingLicenseServicesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.drivingLicenseServicesToolStripMenuItem.Name = "drivingLicenseServicesToolStripMenuItem";
             this.drivingLicenseServicesToolStripMenuItem.Size = new System.Drawing.Size(381, 38);
             this.drivingLicenseServicesToolStripMenuItem.Text = "         Driving License Services";
@@ -147,16 +152,18 @@ namespace Project_4_DVDL_System_
             this.smLocalLicense,
             this.toolStripSeparator5,
             this.smInternationalLicense});
+            this.smNewDrivingLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.driver_license__2_;
             this.smNewDrivingLicense.Name = "smNewDrivingLicense";
-            this.smNewDrivingLicense.Size = new System.Drawing.Size(302, 32);
-            this.smNewDrivingLicense.Text = "New Driving License";
+            this.smNewDrivingLicense.Size = new System.Drawing.Size(418, 36);
+            this.smNewDrivingLicense.Text = "       New Driving License";
             // 
             // smLocalLicense
             // 
             this.smLocalLicense.BackColor = System.Drawing.Color.Linen;
+            this.smLocalLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.home__2_;
             this.smLocalLicense.Name = "smLocalLicense";
-            this.smLocalLicense.Size = new System.Drawing.Size(287, 32);
-            this.smLocalLicense.Text = "Local License";
+            this.smLocalLicense.Size = new System.Drawing.Size(333, 36);
+            this.smLocalLicense.Text = "      Local License";
             // 
             // toolStripSeparator5
             // 
@@ -168,30 +175,33 @@ namespace Project_4_DVDL_System_
             // smInternationalLicense
             // 
             this.smInternationalLicense.BackColor = System.Drawing.Color.Linen;
+            this.smInternationalLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.countries1;
             this.smInternationalLicense.Name = "smInternationalLicense";
-            this.smInternationalLicense.Size = new System.Drawing.Size(287, 32);
-            this.smInternationalLicense.Text = "International License";
+            this.smInternationalLicense.Size = new System.Drawing.Size(333, 36);
+            this.smInternationalLicense.Text = "      International License";
             // 
             // smRenewDrivingLicense
             // 
             this.smRenewDrivingLicense.BackColor = System.Drawing.Color.Linen;
+            this.smRenewDrivingLicense.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
             this.smRenewDrivingLicense.Name = "smRenewDrivingLicense";
-            this.smRenewDrivingLicense.Size = new System.Drawing.Size(302, 32);
-            this.smRenewDrivingLicense.Text = "Renew Driving License";
+            this.smRenewDrivingLicense.Size = new System.Drawing.Size(418, 36);
+            this.smRenewDrivingLicense.Text = "        Renew Driving License";
             this.smRenewDrivingLicense.Click += new System.EventHandler(this.smRenewDrivingLicense_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.BackColor = System.Drawing.Color.Linen;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(299, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(351, 6);
             // 
             // smRetakeTest
             // 
             this.smRetakeTest.BackColor = System.Drawing.Color.Linen;
+            this.smRetakeTest.Image = global::Project_4_DVDL_System_.Properties.Resources.test;
             this.smRetakeTest.Name = "smRetakeTest";
-            this.smRetakeTest.Size = new System.Drawing.Size(302, 32);
-            this.smRetakeTest.Text = "Retake Test";
+            this.smRetakeTest.Size = new System.Drawing.Size(418, 36);
+            this.smRetakeTest.Text = "      Retake Test";
             // 
             // toolStripSeparator1
             // 
@@ -514,6 +524,25 @@ namespace Project_4_DVDL_System_
             this.Disaplypanel.Size = new System.Drawing.Size(1017, 682);
             this.Disaplypanel.TabIndex = 0;
             // 
+            // replacmentDamageOrLostToolStripMenuItem
+            // 
+            this.replacmentDamageOrLostToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
+            this.replacmentDamageOrLostToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.License_View_32;
+            this.replacmentDamageOrLostToolStripMenuItem.Name = "replacmentDamageOrLostToolStripMenuItem";
+            this.replacmentDamageOrLostToolStripMenuItem.Size = new System.Drawing.Size(418, 36);
+            this.replacmentDamageOrLostToolStripMenuItem.Text = "         Replacment Damage or Lost";
+            this.replacmentDamageOrLostToolStripMenuItem.Click += new System.EventHandler(this.replacmentDamageOrLostToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(361, 6);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(361, 6);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -588,6 +617,9 @@ namespace Project_4_DVDL_System_
         private System.Windows.Forms.ToolStripMenuItem SmManageLocalDrivingLicenseApplications;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ToolStripMenuItem SmInternationalDrivingLicense;
+        private System.Windows.Forms.ToolStripMenuItem replacmentDamageOrLostToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
     }
 }
 
