@@ -1,6 +1,7 @@
 ﻿using DVDL_BusinessLayer_;
 using Guna.UI2.WinForms;
 using Project_4_DVDL_System_.Application.Detain_License;
+using Project_4_DVDL_System_.Application.International_License_Application;
 using Project_4_DVDL_System_.Application.Local_Application;
 using Project_4_DVDL_System_.Application.Renew_Local_License;
 using Project_4_DVDL_System_.Application.ReplaceLostOrDamagedLicense;
@@ -164,6 +165,12 @@ namespace Project_4_DVDL_System_
         {
             frmReleaseDetainedLicense license = new frmReleaseDetainedLicense();
             license.ShowDialog();
+        }
+
+        private void smInternationalLicense_Click(object sender, EventArgs e)
+        {
+            frmAddInternationalLicenseApplication frm =new frmAddInternationalLicenseApplication(); 
+            frm.ShowDialog();
         }
     }
 }

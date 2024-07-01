@@ -61,7 +61,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewInternationalLicense(int ApplicationID, int DriverID, int IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int CreatedByUserID)
+        public static int? AddNewInternationalLicense(int? ApplicationID, int ?DriverID, int ?IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int? CreatedByUserID)
         {
             // This function will return the new person id if succeeded and null if not
             int? InternationalLicenseID = null;
@@ -103,7 +103,7 @@ namespace DVDL_DataAccess_
             return InternationalLicenseID;
         }
 
-        public static bool UpdateInternationalLicense(int? InternationalLicenseID, int ApplicationID, int DriverID, int IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int CreatedByUserID)
+        public static bool UpdateInternationalLicense(int? InternationalLicenseID, int? ApplicationID, int ?DriverID, int ?IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int ?CreatedByUserID)
         {
             int RowAffected = 0;
 
@@ -159,6 +159,44 @@ namespace DVDL_DataAccess_
         public static DataTable GetAllInternationalLicenses()
         {
             return clsDataAccessHelper.All("select * from InternationalLicenses");
+        }
+
+        public static int GetActiveInternationalLicenseIDByDriverID(int? DriverID)
+        {
+            int InternationalLicenseID = -1;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"  
+                            SELECT Top 1 InternationalLicenseID
+                            FROM InternationalLicenses 
+                            where DriverID=@DriverID and GetDate() between IssueDate and ExpirationDate 
+                            order by ExpirationDate Desc;";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@DriverID", DriverID);
+
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            InternationalLicenseID = insertedID;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);   
+            }
+            return InternationalLicenseID;
         }
     }
 }

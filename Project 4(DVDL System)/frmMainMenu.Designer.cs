@@ -182,6 +182,7 @@ namespace Project_4_DVDL_System_
             this.smInternationalLicense.Name = "smInternationalLicense";
             this.smInternationalLicense.Size = new System.Drawing.Size(333, 36);
             this.smInternationalLicense.Text = "      International License";
+            this.smInternationalLicense.Click += new System.EventHandler(this.smInternationalLicense_Click);
             // 
             // toolStripSeparator12
             // 

@@ -5,39 +5,56 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DVDL_BusinessLayer_
 {
-    public class clsInternationalLicense
+    public class clsInternationalLicense : clsApplication
     {
         public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode = enMode.AddNew;
 
         public int? InternationalLicenseID { get; set; }
-        public int ApplicationID { get; set; }
-        public int DriverID { get; set; }
-        public int IssuedUsingLocalLicenseID { get; set; }
+        public int? ApplicationID { get; set; }
+        public int? DriverID { get; set; }
+        public int? IssuedUsingLocalLicenseID { get; set; }
         public DateTime IssueDate { get; set; }
         public DateTime ExpirationDate { get; set; }
         public bool IsActive { get; set; }
-        public int CreatedByUserID { get; set; }
 
         public clsInternationalLicense()
         {
+            //here we set the application type to New International License.
+            this.ApplicationTypeID = (int)clsApplication.enApplicationType.NewInternationalLicense;
+
             this.InternationalLicenseID = null;
-            this.ApplicationID = -1;
-            this.DriverID = -1;
-            this.IssuedUsingLocalLicenseID = -1;
+            this.DriverID = null;
+            this.IssuedUsingLocalLicenseID = null;
             this.IssueDate = DateTime.Now;
             this.ExpirationDate = DateTime.Now;
-            this.IsActive = false;
-            this.CreatedByUserID = -1;
+
+            this.IsActive = true;
+
 
             Mode = enMode.AddNew;
         }
 
-        private clsInternationalLicense(int? InternationalLicenseID, int ApplicationID, int DriverID, int IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int CreatedByUserID)
+        private clsInternationalLicense(int? InternationalLicenseID, int ApplicationID, int DriverID, int IssuedUsingLocalLicenseID, DateTime IssueDate,
+            DateTime ExpirationDate, bool IsActive, int CreatedByUserID,
+                 int? ApplicantPersonID, DateTime ApplicationDate, int? ApplicationTypeID,
+                byte ApplicationStatus, DateTime LastStatusDate,
+                decimal PaidFees)
         {
+            //this is for the base class
+            base.ApplicationID = ApplicationID;
+            base.ApplicantPersonID = ApplicantPersonID;
+            base.ApplicationDate = ApplicationDate;
+            base.ApplicationTypeID = (int)clsApplication.enApplicationType.NewInternationalLicense;
+            base.ApplicationStatus = ApplicationStatus;
+            base.LastStatusDate = LastStatusDate;
+            base.PaidFees = PaidFees;
+            base.CreatedByUserID = CreatedByUserID;
+
             this.InternationalLicenseID = InternationalLicenseID;
             this.ApplicationID = ApplicationID;
             this.DriverID = DriverID;
@@ -64,6 +81,13 @@ namespace DVDL_BusinessLayer_
 
         public bool Save()
         {
+            base.Mode = (clsApplication.enMode)Mode;
+
+            if (!base.Save())
+                return false;
+
+            this.ApplicationID = base.ApplicationID;
+
             switch (Mode)
             {
                 case enMode.AddNew:
@@ -95,8 +119,19 @@ namespace DVDL_BusinessLayer_
             int CreatedByUserID = -1;
 
             bool IsFound = clsInternationalLicenseData.GetInternationalLicenseInfoByID(InternationalLicenseID, ref ApplicationID, ref DriverID, ref IssuedUsingLocalLicenseID, ref IssueDate, ref ExpirationDate, ref IsActive, ref CreatedByUserID);
+            clsApplication Application = clsApplication.Find(ApplicationID);
 
-            return (IsFound) ? (new clsInternationalLicense(InternationalLicenseID, ApplicationID, DriverID, IssuedUsingLocalLicenseID, IssueDate, ExpirationDate, IsActive, CreatedByUserID)) : null;
+            if (Application == null)
+            {
+                return null;
+            }
+
+            //we return new object of that person with the right data
+            return new clsInternationalLicense(InternationalLicenseID, ApplicationID, DriverID, IssuedUsingLocalLicenseID,
+             IssueDate, ExpirationDate, IsActive, CreatedByUserID,
+                Application.ApplicantPersonID, Application.ApplicationDate,
+                 Application.ApplicationTypeID, Application.ApplicationStatus,
+                 Application.LastStatusDate, Application.PaidFees);
         }
 
         public static bool DeleteInternationalLicense(int? InternationalLicenseID)
@@ -112,6 +147,11 @@ namespace DVDL_BusinessLayer_
         public static DataTable GetAllInternationalLicenses()
         {
             return clsInternationalLicenseData.GetAllInternationalLicenses();
+        }
+
+        public static int GetActiveInternationalLicenseIDByDriverID(int? DriverID)
+        {
+            return clsInternationalLicenseData.GetActiveInternationalLicenseIDByDriverID(DriverID);
         }
 
     }
