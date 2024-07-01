@@ -55,9 +55,9 @@ namespace Project_4_DVDL_System_.Application.Renew_Local_License
 
 
             //check the license is not Expired.
-            if (!ctrlDrivingLicenseCardWithFilter1.License.IsLicenseExpired())
+            if (!ctrlDrivingLicenseCardWithFilter1.License.IsLicenseExpired)
             {
-                MessageBox.Show("Selected License is not yet expiered, it will expire on: " + clsFormat.DateToShort(ctrlDrivingLicenseCardWithFilter1.License.ExpirationDate)
+                MessageBox.Show("Selected License is not yet Expired, it will expire on: " + clsFormat.DateToShort(ctrlDrivingLicenseCardWithFilter1.License.ExpirationDate)
                     , "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnRenew.Enabled = false;
                 return;

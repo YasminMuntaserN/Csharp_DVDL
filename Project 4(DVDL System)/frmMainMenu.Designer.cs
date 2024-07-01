@@ -37,9 +37,12 @@ namespace Project_4_DVDL_System_
             this.smLocalLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.smInternationalLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.smRenewDrivingLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.smRetakeTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.replacmentDamageOrLostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.smManageApplications = new System.Windows.Forms.ToolStripMenuItem();
             this.SmManageLocalDrivingLicenseApplications = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +50,9 @@ namespace Project_4_DVDL_System_
             this.SmInternationalDrivingLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.smDetainLicenses = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageDetainedLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detainLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.releaseDetainedLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.smManageApplicationTypes = new System.Windows.Forms.ToolStripMenuItem();
             this.Sperator = new System.Windows.Forms.ToolStripSeparator();
@@ -72,9 +78,6 @@ namespace Project_4_DVDL_System_
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Disaplypanel = new System.Windows.Forms.Panel();
-            this.replacmentDamageOrLostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.guna2ContextMenuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
@@ -170,7 +173,7 @@ namespace Project_4_DVDL_System_
             this.toolStripSeparator5.BackColor = System.Drawing.Color.Linen;
             this.toolStripSeparator5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(284, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(330, 6);
             // 
             // smInternationalLicense
             // 
@@ -179,6 +182,11 @@ namespace Project_4_DVDL_System_
             this.smInternationalLicense.Name = "smInternationalLicense";
             this.smInternationalLicense.Size = new System.Drawing.Size(333, 36);
             this.smInternationalLicense.Text = "      International License";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(415, 6);
             // 
             // smRenewDrivingLicense
             // 
@@ -193,7 +201,7 @@ namespace Project_4_DVDL_System_
             // 
             this.toolStripSeparator4.BackColor = System.Drawing.Color.Linen;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(351, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(415, 6);
             // 
             // smRetakeTest
             // 
@@ -202,6 +210,20 @@ namespace Project_4_DVDL_System_
             this.smRetakeTest.Name = "smRetakeTest";
             this.smRetakeTest.Size = new System.Drawing.Size(418, 36);
             this.smRetakeTest.Text = "      Retake Test";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(415, 6);
+            // 
+            // replacmentDamageOrLostToolStripMenuItem
+            // 
+            this.replacmentDamageOrLostToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
+            this.replacmentDamageOrLostToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.License_View_32;
+            this.replacmentDamageOrLostToolStripMenuItem.Name = "replacmentDamageOrLostToolStripMenuItem";
+            this.replacmentDamageOrLostToolStripMenuItem.Size = new System.Drawing.Size(418, 36);
+            this.replacmentDamageOrLostToolStripMenuItem.Text = "         Replacment Damage or Lost";
+            this.replacmentDamageOrLostToolStripMenuItem.Click += new System.EventHandler(this.replacmentDamageOrLostToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -253,10 +275,40 @@ namespace Project_4_DVDL_System_
             // 
             // smDetainLicenses
             // 
+            this.smDetainLicenses.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageDetainedLicensesToolStripMenuItem,
+            this.detainLicenseToolStripMenuItem,
+            this.releaseDetainedLicenseToolStripMenuItem});
             this.smDetainLicenses.Image = global::Project_4_DVDL_System_.Properties.Resources.driver_license1;
             this.smDetainLicenses.Name = "smDetainLicenses";
             this.smDetainLicenses.Size = new System.Drawing.Size(381, 38);
             this.smDetainLicenses.Text = "       Detain Licenses";
+            // 
+            // manageDetainedLicensesToolStripMenuItem
+            // 
+            this.manageDetainedLicensesToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
+            this.manageDetainedLicensesToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.feature1;
+            this.manageDetainedLicensesToolStripMenuItem.Name = "manageDetainedLicensesToolStripMenuItem";
+            this.manageDetainedLicensesToolStripMenuItem.Size = new System.Drawing.Size(393, 36);
+            this.manageDetainedLicensesToolStripMenuItem.Text = "       Manage Detained Licenses";
+            this.manageDetainedLicensesToolStripMenuItem.Click += new System.EventHandler(this.manageDetainedLicensesToolStripMenuItem_Click);
+            // 
+            // detainLicenseToolStripMenuItem
+            // 
+            this.detainLicenseToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
+            this.detainLicenseToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.Detain_32;
+            this.detainLicenseToolStripMenuItem.Name = "detainLicenseToolStripMenuItem";
+            this.detainLicenseToolStripMenuItem.Size = new System.Drawing.Size(393, 36);
+            this.detainLicenseToolStripMenuItem.Text = "       DetainLicense";
+            this.detainLicenseToolStripMenuItem.Click += new System.EventHandler(this.detainLicenseToolStripMenuItem_Click);
+            // 
+            // releaseDetainedLicenseToolStripMenuItem
+            // 
+            this.releaseDetainedLicenseToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
+            this.releaseDetainedLicenseToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.Release_Detained_License_32;
+            this.releaseDetainedLicenseToolStripMenuItem.Name = "releaseDetainedLicenseToolStripMenuItem";
+            this.releaseDetainedLicenseToolStripMenuItem.Size = new System.Drawing.Size(393, 36);
+            this.releaseDetainedLicenseToolStripMenuItem.Text = "       Release Detained License";
             // 
             // toolStripSeparator3
             // 
@@ -516,6 +568,7 @@ namespace Project_4_DVDL_System_
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1091, 732);
             this.guna2Panel1.TabIndex = 10;
+            this.guna2Panel1.Visible = false;
             // 
             // Disaplypanel
             // 
@@ -523,25 +576,6 @@ namespace Project_4_DVDL_System_
             this.Disaplypanel.Name = "Disaplypanel";
             this.Disaplypanel.Size = new System.Drawing.Size(1017, 682);
             this.Disaplypanel.TabIndex = 0;
-            // 
-            // replacmentDamageOrLostToolStripMenuItem
-            // 
-            this.replacmentDamageOrLostToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
-            this.replacmentDamageOrLostToolStripMenuItem.Image = global::Project_4_DVDL_System_.Properties.Resources.License_View_32;
-            this.replacmentDamageOrLostToolStripMenuItem.Name = "replacmentDamageOrLostToolStripMenuItem";
-            this.replacmentDamageOrLostToolStripMenuItem.Size = new System.Drawing.Size(418, 36);
-            this.replacmentDamageOrLostToolStripMenuItem.Text = "         Replacment Damage or Lost";
-            this.replacmentDamageOrLostToolStripMenuItem.Click += new System.EventHandler(this.replacmentDamageOrLostToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(361, 6);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(361, 6);
             // 
             // frmMainMenu
             // 
@@ -563,7 +597,6 @@ namespace Project_4_DVDL_System_
             this.Name = "frmMainMenu";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMainMenu_Load);
             this.guna2ContextMenuStrip1.ResumeLayout(false);
             this.guna2ContextMenuStrip2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
@@ -620,6 +653,9 @@ namespace Project_4_DVDL_System_
         private System.Windows.Forms.ToolStripMenuItem replacmentDamageOrLostToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem manageDetainedLicensesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem detainLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem releaseDetainedLicenseToolStripMenuItem;
     }
 }
 

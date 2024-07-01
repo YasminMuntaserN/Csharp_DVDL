@@ -104,6 +104,18 @@
     <Compile Include="Application\ctrlApplication.Designer.cs">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application\Detain License\frmDetainLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Detain License\frmDetainLicense.Designer.cs">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Detain License\frmDetainList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Detain License\frmDetainList.Designer.cs">
+      <DependentUpon>frmDetainList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application\Local Application\ctrlLocalApplication.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -315,6 +327,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application\ctrlApplication.resx">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Detain License\frmDetainLicense.resx">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Detain License\frmDetainList.resx">
+      <DependentUpon>frmDetainList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Local Application\ctrlLocalApplication.resx">
       <DependentUpon>ctrlLocalApplication.cs</DependentUpon>
@@ -650,6 +668,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

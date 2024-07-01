@@ -62,7 +62,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewDetain(int LicenseID, DateTime DetainDate, decimal FineFees, int CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
+        public static int? AddNewDetain(int? LicenseID, DateTime DetainDate, decimal FineFees, int? CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
         {
             // This function will return the new person id if succeeded and null if not
             int? DetainID = null;
@@ -105,7 +105,7 @@ namespace DVDL_DataAccess_
             return DetainID;
         }
 
-        public static bool UpdateDetain(int? DetainID, int LicenseID, DateTime DetainDate, decimal FineFees, int CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
+        public static bool UpdateDetain(int? DetainID, int? LicenseID, DateTime DetainDate, decimal FineFees, int? CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
         {
             int RowAffected = 0;
 
@@ -162,8 +162,47 @@ namespace DVDL_DataAccess_
 
         public static DataTable GetAllDetainedLicenses()
         {
-            return clsDataAccessHelper.All("select * from DetainedLicenses");
-         
+            return clsDataAccessHelper.All("select * from DetainedLicensesInfo");
+
         }
+
+        public static bool IsLicenseDetained(int? LicenseID)
+        {
+            bool IsDetained = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"select IsDetained=1 
+                            from detainedLicenses 
+                            where 
+                            LicenseID=@LicenseID 
+                            and IsReleased=0;";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@LicenseID",(object)LicenseID?? DBNull.Value);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            IsDetained = Convert.ToBoolean(result);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+            }
+            return IsDetained;
+
+        }
+
     }
 }

@@ -201,7 +201,7 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(407, 386);
+            this.Menu.Size = new System.Drawing.Size(407, 358);
             this.Menu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening);
             // 
             // cmsShowDetails
@@ -300,7 +300,7 @@
             this.cmsScheduleVisionTest.BackColor = System.Drawing.Color.Silver;
             this.cmsScheduleVisionTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
             this.cmsScheduleVisionTest.Name = "cmsScheduleVisionTest";
-            this.cmsScheduleVisionTest.Size = new System.Drawing.Size(290, 36);
+            this.cmsScheduleVisionTest.Size = new System.Drawing.Size(280, 30);
             this.cmsScheduleVisionTest.Text = "Schedule Vision Test";
             this.cmsScheduleVisionTest.Click += new System.EventHandler(this.cmsSechduleVisionTest_Click);
             // 
@@ -309,7 +309,7 @@
             this.cmsScheduleWrittenTest.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmsScheduleWrittenTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
             this.cmsScheduleWrittenTest.Name = "cmsScheduleWrittenTest";
-            this.cmsScheduleWrittenTest.Size = new System.Drawing.Size(290, 36);
+            this.cmsScheduleWrittenTest.Size = new System.Drawing.Size(280, 30);
             this.cmsScheduleWrittenTest.Text = "Schedule Written Test";
             this.cmsScheduleWrittenTest.Click += new System.EventHandler(this.cmsScheduleWrittenTest_Click);
             // 
@@ -318,7 +318,7 @@
             this.cmsScheduleStreetTest.BackColor = System.Drawing.Color.Silver;
             this.cmsScheduleStreetTest.Image = global::Project_4_DVDL_System_.Properties.Resources.Street_Test_32;
             this.cmsScheduleStreetTest.Name = "cmsScheduleStreetTest";
-            this.cmsScheduleStreetTest.Size = new System.Drawing.Size(290, 36);
+            this.cmsScheduleStreetTest.Size = new System.Drawing.Size(280, 30);
             this.cmsScheduleStreetTest.Text = "Schedule Street Test";
             this.cmsScheduleStreetTest.Click += new System.EventHandler(this.cmsScheduleStreetTest_Click);
             // 

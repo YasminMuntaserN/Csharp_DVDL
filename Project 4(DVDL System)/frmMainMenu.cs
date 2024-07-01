@@ -1,5 +1,6 @@
 ﻿using DVDL_BusinessLayer_;
 using Guna.UI2.WinForms;
+using Project_4_DVDL_System_.Application.Detain_License;
 using Project_4_DVDL_System_.Application.Local_Application;
 using Project_4_DVDL_System_.Application.Renew_Local_License;
 using Project_4_DVDL_System_.Application.ReplaceLostOrDamagedLicense;
@@ -94,10 +95,6 @@ namespace Project_4_DVDL_System_
             childForm.Show();
         }
 
-        private void frmMainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
         private void openMenu(object sender, Guna2ContextMenuStrip menuStrip)
         {
             Guna2Button btnSender = (Guna2Button)sender;
@@ -109,6 +106,7 @@ namespace Project_4_DVDL_System_
         private void btnPeople_Click_1(object sender, EventArgs e)
         {
             ActionFrom = _enFrom.button;
+            guna2Panel1.Visible = true;
             OpenChildFormAsync(new frmListPeople(), sender);
         }
 
@@ -125,14 +123,13 @@ namespace Project_4_DVDL_System_
         private void manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ActionFrom = _enFrom.menu;
+            guna2Panel1.Visible = true;
             OpenChildFormAsync(new frmListLocalApplications(), sender);
             
         }
 
         private void smRenewDrivingLicense_Click(object sender, EventArgs e)
         {
-            //  ActionFrom = _enFrom.menu;
-            //  OpenChildFormAsync(new frmRenewLocalLicense(), sender);
             frmRenewLocalLicense frmRenewLocalLicense = new frmRenewLocalLicense();
             frmRenewLocalLicense.ShowDialog();  
         }
@@ -140,14 +137,27 @@ namespace Project_4_DVDL_System_
         private void btnDrivers_Click(object sender, EventArgs e)
         {
             ActionFrom = _enFrom.button;
+            guna2Panel1.Visible = true;
             OpenChildFormAsync(new frmListDrivers(), sender);
         }
 
         private void replacmentDamageOrLostToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            guna2ContextMenuStrip1.Visible = false;
             frmReplaceLostOrDamagedLicense frm =new frmReplaceLostOrDamagedLicense();   
             frm.ShowDialog();
+        }
+
+        private void detainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDetain_License license =new frmDetain_License();
+            license.ShowDialog();   
+        }
+
+        private void manageDetainedLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActionFrom = _enFrom.menu;
+            guna2Panel1.Visible = true;
+            OpenChildFormAsync(new frmDetainList(), sender);
         }
     }
 }

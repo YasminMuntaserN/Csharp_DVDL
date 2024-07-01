@@ -65,8 +65,10 @@ namespace DVDL_BusinessLayer_
             Mode = enMode.Update;
         }
 
-        public Boolean IsLicenseExpired() => this.ExpirationDate < DateTime.Now;
-    
+        public Boolean IsLicenseExpired => this.ExpirationDate < DateTime.Now;
+
+        public bool IsDetained => clsDetain.IsLicenseDetained(this.LicenseID);
+
         public static string GetIssueReasonText(enIssueReason IssueReason)
         {
 
@@ -264,7 +266,23 @@ namespace DVDL_BusinessLayer_
             return clsLicenseData.GetDriverLicenses(DriverID);
         }
 
+        public int? Detain(float FineFees, int? CreatedByUserID)
+        {
+            clsDetain detainedLicense = new clsDetain();
+            detainedLicense.LicenseID = this.LicenseID;
+            detainedLicense.DetainDate = DateTime.Now;
+            detainedLicense.FineFees = Convert.ToDecimal(FineFees);
+            detainedLicense.CreatedByUserID = CreatedByUserID;
 
+            if (!detainedLicense.Save())
+            {
+
+                return -1;
+            }
+
+            return detainedLicense.DetainID;
+
+        }
     }
 
 }

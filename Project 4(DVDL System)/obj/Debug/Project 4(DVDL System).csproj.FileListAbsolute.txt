@@ -104,3 +104,5 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Drivers.frmLi
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.ReplaceLostOrDamagedLicense.frmReplaceLostOrDamagedLicense.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Drivers.ctrlDriverLicensesHistory.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.Controls.frmDriverLicenseHistory.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmDetain_License.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmDetainList.resources
