@@ -167,7 +167,8 @@ namespace Project_4_DVDL_System_.Application.Detain_License
 
         private void releaseDetainedLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmReleaseDetainedLicense frmReleaseDetainedLicense = new frmReleaseDetainedLicense(_LicenseID);
+            frmReleaseDetainedLicense.ShowDialog();
         }
 
         private void btnDetainedLicense_Click(object sender, EventArgs e)

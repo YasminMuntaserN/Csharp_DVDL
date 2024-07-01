@@ -107,11 +107,6 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             _RefreshList();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAddNewAppointment_Click_1(object sender, EventArgs e)
         {
 
@@ -143,6 +138,11 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             frmAddEditScheduleTest frmAddEditScheduleTest = new frmAddEditScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
             frmAddEditScheduleTest.ShowDialog();
             _RefreshList();
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

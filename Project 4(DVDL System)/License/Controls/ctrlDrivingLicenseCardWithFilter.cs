@@ -64,7 +64,7 @@ namespace Project_4_DVDL_System_.License
             LoadLicenseInfo(LicenseID);
         }
 
-        public void LoadLicenseInfo(int LicenseID)
+        public void LoadLicenseInfo(int? LicenseID)
         {
             txtLicenseID.Text = LicenseID.ToString();
             ctrlDriverLicenseInfo1.LoadLicenseInfo(LicenseID);

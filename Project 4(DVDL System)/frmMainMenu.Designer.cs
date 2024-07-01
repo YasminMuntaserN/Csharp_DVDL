@@ -309,6 +309,7 @@ namespace Project_4_DVDL_System_
             this.releaseDetainedLicenseToolStripMenuItem.Name = "releaseDetainedLicenseToolStripMenuItem";
             this.releaseDetainedLicenseToolStripMenuItem.Size = new System.Drawing.Size(393, 36);
             this.releaseDetainedLicenseToolStripMenuItem.Text = "       Release Detained License";
+            this.releaseDetainedLicenseToolStripMenuItem.Click += new System.EventHandler(this.releaseDetainedLicenseToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 

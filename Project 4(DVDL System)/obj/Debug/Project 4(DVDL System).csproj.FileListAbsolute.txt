@@ -106,3 +106,4 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Drivers.ctrlD
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.License.Controls.frmDriverLicenseHistory.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmDetain_License.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmDetainList.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmReleaseDetainedLicense.resources

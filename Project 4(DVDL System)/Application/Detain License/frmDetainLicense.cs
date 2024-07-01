@@ -115,5 +115,6 @@ namespace Project_4_DVDL_System_.Application.Detain_License
             lblDetainDate.Text = clsFormat.DateToShort(DateTime.Now);
             lblCreatedByUser.Text = clsGlobal.CurrentUser.UserName;
         }
+
     }
 }

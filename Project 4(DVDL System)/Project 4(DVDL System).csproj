@@ -116,6 +116,12 @@
     <Compile Include="Application\Detain License\frmDetainList.Designer.cs">
       <DependentUpon>frmDetainList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application\Detain License\frmReleaseDetainedLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Detain License\frmReleaseDetainedLicense.Designer.cs">
+      <DependentUpon>frmReleaseDetainedLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application\Local Application\ctrlLocalApplication.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Detain License\frmDetainList.resx">
       <DependentUpon>frmDetainList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Detain License\frmReleaseDetainedLicense.resx">
+      <DependentUpon>frmReleaseDetainedLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Local Application\ctrlLocalApplication.resx">
       <DependentUpon>ctrlLocalApplication.cs</DependentUpon>

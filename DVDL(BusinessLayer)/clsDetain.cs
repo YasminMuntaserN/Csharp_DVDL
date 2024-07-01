@@ -38,7 +38,7 @@ namespace DVDL_BusinessLayer_
             Mode = enMode.AddNew;
         }
 
-        private clsDetain(int? DetainID, int LicenseID, DateTime DetainDate, decimal FineFees, int CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
+        private clsDetain(int? DetainID, int? LicenseID, DateTime DetainDate, decimal FineFees, int CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
         {
             this.DetainID = DetainID;
             this.LicenseID = LicenseID;
@@ -103,6 +103,22 @@ namespace DVDL_BusinessLayer_
             return (IsFound) ? (new clsDetain(DetainID, LicenseID, DetainDate, FineFees, CreatedByUserID, IsReleased, ReleaseDate, ReleasedByUserID, ReleaseApplicationID)) : null;
         }
 
+        public static clsDetain FindByLicenseID(int? LicenseID)
+        {
+            int? DetainID = -1;
+            DateTime DetainDate = DateTime.Now;
+            decimal FineFees = -1M;
+            int CreatedByUserID = -1;
+            bool IsReleased = false;
+            DateTime? ReleaseDate = null;
+            int? ReleasedByUserID = null;
+            int? ReleaseApplicationID = null;
+
+            bool IsFound = clsDetainData.GetDetainInfoByLicenseID(LicenseID, ref DetainID, ref DetainDate, ref FineFees, ref CreatedByUserID, ref IsReleased, ref ReleaseDate, ref ReleasedByUserID, ref ReleaseApplicationID);
+
+            return (IsFound) ? (new clsDetain(DetainID, LicenseID, DetainDate, FineFees, CreatedByUserID, IsReleased, ReleaseDate, ReleasedByUserID, ReleaseApplicationID)) : null;
+        }
+
         public static bool DeleteDetain(int? DetainID)
         {
             return clsDetainData.DeleteDetain(DetainID);
@@ -123,6 +139,11 @@ namespace DVDL_BusinessLayer_
            return clsDetainData.IsLicenseDetained(LicenseID);
         }
 
+        public bool ReleaseDetainedLicense(int ?ReleasedByUserID, int ?ReleaseApplicationID)
+        {
+            return clsDetainData.ReleaseDetainedLicense(this.DetainID,
+                   ReleasedByUserID, ReleaseApplicationID);
+        }
     }
 
 }

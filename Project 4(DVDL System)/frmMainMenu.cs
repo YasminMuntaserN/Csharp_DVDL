@@ -159,5 +159,11 @@ namespace Project_4_DVDL_System_
             guna2Panel1.Visible = true;
             OpenChildFormAsync(new frmDetainList(), sender);
         }
+
+        private void releaseDetainedLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReleaseDetainedLicense license = new frmReleaseDetainedLicense();
+            license.ShowDialog();
+        }
     }
 }

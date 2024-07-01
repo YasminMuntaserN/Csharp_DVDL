@@ -31,6 +31,8 @@ namespace DVDL_BusinessLayer_
 
         public clsDriver DriverInfo => clsDriver.Find(DriverID);
 
+        public clsDetain DetainInfo =>clsDetain.FindByLicenseID(LicenseID);
+
         public clsLicense()
         {
             this.LicenseID = null;
@@ -281,6 +283,32 @@ namespace DVDL_BusinessLayer_
             }
 
             return detainedLicense.DetainID;
+
+        }
+
+        public bool ReleaseDetainedLicense(int? ReleasedByUserID, ref int? ApplicationID)
+        {
+
+            clsApplication Application = new clsApplication();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplication.enApplicationType.ReleaseDetainedDrivingLicense;
+            Application.ApplicationStatus = (byte)clsApplication.enStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationType.Find((int)clsApplication.enApplicationType.ReleaseDetainedDrivingLicense).ApplicationFees;
+            Application.CreatedByUserID = ReleasedByUserID;
+
+            if (!Application.Save())
+            {
+                ApplicationID = -1;
+                return false;
+            }
+
+            ApplicationID = Application.ApplicationID;
+
+
+            return this.DetainInfo.ReleaseDetainedLicense(ReleasedByUserID, Application.ApplicationID);
 
         }
     }

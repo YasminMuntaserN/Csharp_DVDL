@@ -33,11 +33,11 @@
             this.cmsTakeTest = new System.Windows.Forms.ToolStripMenuItem();
             this.pbTestTypeImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLicenseTestAppointments = new System.Windows.Forms.DataGridView();
             this.btnAddNewAppointment = new System.Windows.Forms.Button();
             this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
+            this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
@@ -61,7 +61,7 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(215, 92);
+            this.Menu.Size = new System.Drawing.Size(158, 64);
             // 
             // cmsEditTest
             // 
@@ -70,7 +70,7 @@
             this.cmsEditTest.Image = global::Project_4_DVDL_System_.Properties.Resources.setting1;
             this.cmsEditTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmsEditTest.Name = "cmsEditTest";
-            this.cmsEditTest.Size = new System.Drawing.Size(214, 30);
+            this.cmsEditTest.Size = new System.Drawing.Size(157, 30);
             this.cmsEditTest.Text = "Edit Test";
             this.cmsEditTest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsEditTest.Click += new System.EventHandler(this.cmsEditTest_Click);
@@ -80,7 +80,7 @@
             this.cmsTakeTest.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cmsTakeTest.Image = global::Project_4_DVDL_System_.Properties.Resources.test;
             this.cmsTakeTest.Name = "cmsTakeTest";
-            this.cmsTakeTest.Size = new System.Drawing.Size(214, 30);
+            this.cmsTakeTest.Size = new System.Drawing.Size(157, 30);
             this.cmsTakeTest.Text = "Take Test";
             this.cmsTakeTest.Click += new System.EventHandler(this.cmsTakeTest_Click);
             // 
@@ -89,10 +89,10 @@
             this.pbTestTypeImage.BackColor = System.Drawing.Color.Transparent;
             this.pbTestTypeImage.Image = global::Project_4_DVDL_System_.Properties.Resources.Vision_Test_32;
             this.pbTestTypeImage.ImageRotate = 0F;
-            this.pbTestTypeImage.Location = new System.Drawing.Point(105, 9);
+            this.pbTestTypeImage.Location = new System.Drawing.Point(144, 9);
             this.pbTestTypeImage.Name = "pbTestTypeImage";
             this.pbTestTypeImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbTestTypeImage.Size = new System.Drawing.Size(68, 48);
+            this.pbTestTypeImage.Size = new System.Drawing.Size(82, 60);
             this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbTestTypeImage.TabIndex = 245;
             this.pbTestTypeImage.TabStop = false;
@@ -102,40 +102,19 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblTitle.Location = new System.Drawing.Point(188, 9);
+            this.lblTitle.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblTitle.Location = new System.Drawing.Point(233, 9);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(423, 45);
             this.lblTitle.TabIndex = 165;
             this.lblTitle.Text = "Vision Test Appointments";
             // 
-            // btnClose
-            // 
-            this.btnClose.BorderColor = System.Drawing.Color.SeaGreen;
-            this.btnClose.BorderRadius = 10;
-            this.btnClose.BorderThickness = 3;
-            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.SeaGreen;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
-            this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(551, 732);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(174, 45);
-            this.btnClose.TabIndex = 179;
-            this.btnClose.Text = "Close";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 580);
+            this.label1.Location = new System.Drawing.Point(39, 499);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 25);
             this.label1.TabIndex = 248;
@@ -143,45 +122,68 @@
             // 
             // dgvLicenseTestAppointments
             // 
+            this.dgvLicenseTestAppointments.BackgroundColor = System.Drawing.Color.Linen;
             this.dgvLicenseTestAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLicenseTestAppointments.ContextMenuStrip = this.Menu;
-            this.dgvLicenseTestAppointments.Location = new System.Drawing.Point(3, 630);
+            this.dgvLicenseTestAppointments.Location = new System.Drawing.Point(44, 537);
             this.dgvLicenseTestAppointments.Name = "dgvLicenseTestAppointments";
             this.dgvLicenseTestAppointments.RowHeadersWidth = 51;
             this.dgvLicenseTestAppointments.RowTemplate.Height = 26;
-            this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(722, 97);
+            this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(801, 157);
             this.dgvLicenseTestAppointments.TabIndex = 247;
             // 
             // btnAddNewAppointment
             // 
             this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewAppointment.Image = global::Project_4_DVDL_System_.Properties.Resources.appointments__1_;
-            this.btnAddNewAppointment.Location = new System.Drawing.Point(631, 580);
+            this.btnAddNewAppointment.Location = new System.Drawing.Point(767, 487);
             this.btnAddNewAppointment.Name = "btnAddNewAppointment";
-            this.btnAddNewAppointment.Size = new System.Drawing.Size(52, 44);
+            this.btnAddNewAppointment.Size = new System.Drawing.Size(78, 44);
             this.btnAddNewAppointment.TabIndex = 249;
             this.btnAddNewAppointment.UseVisualStyleBackColor = true;
             this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click_1);
             // 
             // ctrlLocalApplication1
             // 
-            this.ctrlLocalApplication1.Location = new System.Drawing.Point(-2, 74);
+            this.ctrlLocalApplication1.Location = new System.Drawing.Point(28, 75);
             this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
-            this.ctrlLocalApplication1.Size = new System.Drawing.Size(732, 503);
+            this.ctrlLocalApplication1.Size = new System.Drawing.Size(833, 406);
             this.ctrlLocalApplication1.TabIndex = 246;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BorderRadius = 10;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.FillColor = System.Drawing.Color.Peru;
+            this.btnClose.FillColor2 = System.Drawing.Color.Goldenrod;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
+            this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnClose.Location = new System.Drawing.Point(655, 712);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(180, 45);
+            this.btnClose.TabIndex = 283;
+            this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // frmTestAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 789);
+            this.ClientSize = new System.Drawing.Size(882, 781);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddNewAppointment);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLicenseTestAppointments);
             this.Controls.Add(this.ctrlLocalApplication1);
             this.Controls.Add(this.pbTestTypeImage);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmTestAppointments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -201,10 +203,10 @@
         private Guna.UI2.WinForms.Guna2ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem cmsEditTest;
         private System.Windows.Forms.ToolStripMenuItem cmsTakeTest;
-        private Guna.UI2.WinForms.Guna2Button btnClose;
         private Application.Local_Application.ctrlLocalApplication ctrlLocalApplication1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLicenseTestAppointments;
         private System.Windows.Forms.Button btnAddNewAppointment;
+        private Guna.UI2.WinForms.Guna2GradientButton btnClose;
     }
 }

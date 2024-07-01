@@ -62,6 +62,57 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
+        public static bool GetDetainInfoByLicenseID(int? LicenseID, ref int? DetainID, ref DateTime DetainDate, ref decimal FineFees, ref int CreatedByUserID, ref bool IsReleased, ref DateTime? ReleaseDate, ref int? ReleasedByUserID, ref int? ReleaseApplicationID)
+        {
+            bool IsFound = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"select * from DetainedLicenses where LicenseID = @LicenseID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@LicenseID", (object)LicenseID ?? DBNull.Value);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // The record was found
+                                IsFound = true;
+
+                                DetainID = (int)reader["DetainID"];
+                                DetainDate = (DateTime)reader["DetainDate"];
+                                FineFees = (decimal)reader["FineFees"];
+                                CreatedByUserID = (int)reader["CreatedByUserID"];
+                                IsReleased = (bool)reader["IsReleased"];
+                                ReleaseDate = (reader["ReleaseDate"] != DBNull.Value) ? (DateTime?)reader["ReleaseDate"] : null;
+                                ReleasedByUserID = (reader["ReleasedByUserID"] != DBNull.Value) ? (int?)reader["ReleasedByUserID"] : null;
+                                ReleaseApplicationID = (reader["ReleaseApplicationID"] != DBNull.Value) ? (int?)reader["ReleaseApplicationID"] : null;
+                            }
+                            else
+                            {
+                                // The record was not found
+                                IsFound = false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+
+                clsLogError.LogError(ex);
+            }
+
+            return IsFound;
+        }
+
         public static int? AddNewDetain(int? LicenseID, DateTime DetainDate, decimal FineFees, int? CreatedByUserID, bool IsReleased, DateTime? ReleaseDate, int? ReleasedByUserID, int? ReleaseApplicationID)
         {
             // This function will return the new person id if succeeded and null if not
@@ -185,7 +236,7 @@ namespace DVDL_DataAccess_
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
 
-                        command.Parameters.AddWithValue("@LicenseID",(object)LicenseID?? DBNull.Value);
+                        command.Parameters.AddWithValue("@LicenseID", (object)LicenseID ?? DBNull.Value);
 
                         object result = command.ExecuteScalar();
 
@@ -204,5 +255,44 @@ namespace DVDL_DataAccess_
 
         }
 
+        public static bool ReleaseDetainedLicense(int? DetainID,
+          int ?ReleasedByUserID, int ?ReleaseApplicationID)
+        {
+
+            int rowsAffected = 0;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"UPDATE dbo.DetainedLicenses
+                              SET IsReleased = 1, 
+                              ReleaseDate = @ReleaseDate, 
+                              ReleaseApplicationID = @ReleaseApplicationID   
+                              WHERE DetainID=@DetainID;";
+
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@DetainID", DetainID);
+                        command.Parameters.AddWithValue("@ReleasedByUserID", ReleasedByUserID);
+                        command.Parameters.AddWithValue("@ReleaseApplicationID", ReleaseApplicationID);
+                        command.Parameters.AddWithValue("@ReleaseDate", DateTime.Now);
+
+                        rowsAffected = command.ExecuteNonQuery();
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                clsLogError.LogError(ex);
+                return false;
+            }
+            return (rowsAffected > 0);
+        }
     }
 }
