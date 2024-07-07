@@ -172,5 +172,12 @@ namespace Project_4_DVDL_System_
             frmAddInternationalLicenseApplication frm =new frmAddInternationalLicenseApplication(); 
             frm.ShowDialog();
         }
+
+        private void SmInternationalDrivingLicense_Click(object sender, EventArgs e)
+        {
+            ActionFrom = _enFrom.menu;
+            guna2Panel1.Visible = true;
+            OpenChildFormAsync(new frmListInternationalLicenses(), sender);
+        }
     }
 }

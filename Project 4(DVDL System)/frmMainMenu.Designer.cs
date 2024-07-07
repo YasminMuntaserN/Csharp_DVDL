@@ -268,6 +268,7 @@ namespace Project_4_DVDL_System_
             this.SmInternationalDrivingLicense.Name = "SmInternationalDrivingLicense";
             this.SmInternationalDrivingLicense.Size = new System.Drawing.Size(530, 36);
             this.SmInternationalDrivingLicense.Text = "     International Driving License Applications";
+            this.SmInternationalDrivingLicense.Click += new System.EventHandler(this.SmInternationalDrivingLicense_Click);
             // 
             // toolStripSeparator2
             // 
