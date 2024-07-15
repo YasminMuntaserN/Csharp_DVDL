@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\C#\\DVDL\\Project 4(DVDL System)\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|G:\\C#\\DVDL\\Project 4(DVDL System)\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|G:\\C#\\DVDL\\Project 4(DVDL System)\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMainMenu.cs",
+              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "frmMainMenu.cs",
+              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\frmMainMenu.cs*",
+              "RelativeToolTip": "frmMainMenu.cs*",
+              "ViewState": "AQIAACEAAAAAAAAAAAAwwDYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T10:10:31.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMainMenu.cs [Design]",
+              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "frmMainMenu.cs",
+              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\frmMainMenu.cs [Design]*",
+              "RelativeToolTip": "frmMainMenu.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T09:42:38.252Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

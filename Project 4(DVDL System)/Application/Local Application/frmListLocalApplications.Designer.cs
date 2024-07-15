@@ -166,7 +166,7 @@
             this.dgvApplications.RowHeadersWidth = 51;
             this.dgvApplications.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvApplications.RowTemplate.Height = 26;
-            this.dgvApplications.Size = new System.Drawing.Size(996, 359);
+            this.dgvApplications.Size = new System.Drawing.Size(996, 237);
             this.dgvApplications.TabIndex = 370;
             // 
             // Menu

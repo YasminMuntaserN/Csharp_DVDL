@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,21 @@ namespace Project_4_DVDL_System_.Person
         {
             InitializeComponent();
         }
+        private void _LoadPersonImage()
+        {
+            if (_Person.Gender == 0)
+                pbPersonImage.Image = Resources.man;
+            else
+                pbPersonImage.Image = Resources.woman;
+
+            string ImagePath = _Person.ImagePath;
+            if (ImagePath != "")
+                if (File.Exists(ImagePath))
+                    pbPersonImage.ImageLocation = ImagePath;
+                else
+                    MessageBox.Show("Could not find this image: = " + ImagePath, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
 
         private void _FillData()
         {
@@ -36,15 +52,9 @@ namespace Project_4_DVDL_System_.Person
             lblPhone.Text = _Person.Phone;
             lblDateOfBirth.Text = clsFormat.DateToShort(_Person.DateOfBirth);
             lblAddress.Text = _Person.Address;
-            pbPersonImage.Image = (_Person.Gender == 0) ?Resources.man : Resources.woman;
-            if (_Person.ImagePath != "")
-            {
-                pbPersonImage.ImageLocation = _Person.ImagePath;
-            }
-            else
-            {
-                pbPersonImage.Image = (_Person.Gender == 0) ? Resources.man : Resources.woman;
-            }
+
+            _LoadPersonImage();
+
             lblCountry.Text = clsCountry.CountryNameByID(_Person.NationalityCountryID);
 
             llEditPersonInfo.Enabled = true;
@@ -84,5 +94,6 @@ namespace Project_4_DVDL_System_.Person
             // Refresh
             LoadPersonInfo(_PersonID);
         }
+
     }
 }

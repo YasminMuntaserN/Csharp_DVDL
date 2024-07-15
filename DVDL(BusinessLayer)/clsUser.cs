@@ -21,6 +21,8 @@ namespace DVDL_BusinessLayer_
         public int? PersonID { get; set; }
         public bool IsActive { get; set; }
 
+        public clsPerson PersonInfo => clsPerson.Find(PersonID);
+
         public clsUser()
         {
             this.UserID = null;

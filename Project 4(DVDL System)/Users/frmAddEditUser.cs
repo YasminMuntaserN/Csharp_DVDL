@@ -138,7 +138,6 @@ namespace Project_4_DVDL_System_.Users
             }
         }
 
-
         private void frmAddEditUser_Load(object sender, EventArgs e)
         {
             _ResetTitles();
@@ -180,21 +179,6 @@ namespace Project_4_DVDL_System_.Users
             }
         }
 
-        private void btnClose_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSave_Click_1(object sender, EventArgs e)
-        {
-
-            if (!_CheckForCorrectData())
-            {
-                return;
-            }
-
-            _Save();
-        }
 
         private void txtUserName_Validating_1(object sender, CancelEventArgs e)
         {
@@ -236,6 +220,22 @@ namespace Project_4_DVDL_System_.Users
             {
                 errorProvider1.SetError(txtUserName, null);
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+            if (!_CheckForCorrectData())
+            {
+                return;
+            }
+
+            _Save();
         }
     }
 }

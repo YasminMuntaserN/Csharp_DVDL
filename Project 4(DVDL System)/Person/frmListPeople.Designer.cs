@@ -72,7 +72,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.Location = new System.Drawing.Point(12, 314);
+            this.dgvUsers.Location = new System.Drawing.Point(31, 326);
             this.dgvUsers.Name = "dgvUsers";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -85,14 +85,14 @@
             this.dgvUsers.RowHeadersWidth = 51;
             this.dgvUsers.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvUsers.RowTemplate.Height = 26;
-            this.dgvUsers.Size = new System.Drawing.Size(1020, 404);
+            this.dgvUsers.Size = new System.Drawing.Size(1195, 346);
             this.dgvUsers.TabIndex = 347;
             // 
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsAddPerson,
             this.cmsEdit,
@@ -108,45 +108,53 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(255, 124);
+            this.Menu.Size = new System.Drawing.Size(310, 132);
             // 
             // cmsAddPerson
             // 
-            this.cmsAddPerson.ForeColor = System.Drawing.Color.White;
+            this.cmsAddPerson.BackColor = System.Drawing.Color.Linen;
+            this.cmsAddPerson.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cmsAddPerson.ForeColor = System.Drawing.Color.Black;
             this.cmsAddPerson.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
             this.cmsAddPerson.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmsAddPerson.Name = "cmsAddPerson";
-            this.cmsAddPerson.Size = new System.Drawing.Size(254, 30);
-            this.cmsAddPerson.Text = "Add New Person";
+            this.cmsAddPerson.Size = new System.Drawing.Size(309, 32);
+            this.cmsAddPerson.Text = "    Add New Person";
             this.cmsAddPerson.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsAddPerson.Click += new System.EventHandler(this.cmsAddPerson_Click);
             // 
             // cmsEdit
             // 
-            this.cmsEdit.ForeColor = System.Drawing.Color.White;
+            this.cmsEdit.BackColor = System.Drawing.Color.Linen;
+            this.cmsEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cmsEdit.ForeColor = System.Drawing.Color.Black;
             this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
             this.cmsEdit.Name = "cmsEdit";
-            this.cmsEdit.Size = new System.Drawing.Size(254, 30);
-            this.cmsEdit.Text = "Edit";
+            this.cmsEdit.Size = new System.Drawing.Size(309, 32);
+            this.cmsEdit.Text = "    Edit";
             this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
             // 
             // cmsShowDetails
             // 
-            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
+            this.cmsShowDetails.BackColor = System.Drawing.Color.Linen;
+            this.cmsShowDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cmsShowDetails.ForeColor = System.Drawing.Color.Black;
             this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
             this.cmsShowDetails.Name = "cmsShowDetails";
-            this.cmsShowDetails.Size = new System.Drawing.Size(254, 30);
-            this.cmsShowDetails.Text = "Show Person Detatils";
+            this.cmsShowDetails.Size = new System.Drawing.Size(309, 32);
+            this.cmsShowDetails.Text = "    Show Person Detatils";
             this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
             // 
             // cmsDelete
             // 
-            this.cmsDelete.ForeColor = System.Drawing.Color.White;
+            this.cmsDelete.BackColor = System.Drawing.Color.Linen;
+            this.cmsDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.cmsDelete.ForeColor = System.Drawing.Color.Black;
             this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
             this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(254, 30);
-            this.cmsDelete.Text = "Delete";
+            this.cmsDelete.Size = new System.Drawing.Size(309, 32);
+            this.cmsDelete.Text = "     Delete";
             this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
             // 
             // label1
@@ -165,9 +173,9 @@
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
             this.guna2Separator1.FillThickness = 3;
-            this.guna2Separator1.Location = new System.Drawing.Point(12, 176);
+            this.guna2Separator1.Location = new System.Drawing.Point(57, 186);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(995, 31);
+            this.guna2Separator1.Size = new System.Drawing.Size(1158, 31);
             this.guna2Separator1.TabIndex = 342;
             // 
             // lblTitle
@@ -176,7 +184,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 22.8F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblTitle.Location = new System.Drawing.Point(411, 130);
+            this.lblTitle.Location = new System.Drawing.Point(529, 130);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(220, 53);
@@ -252,7 +260,7 @@
             this.btnAdd.FillColor2 = System.Drawing.Color.DarkOliveGreen;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(822, 252);
+            this.btnAdd.Location = new System.Drawing.Point(1035, 252);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(180, 45);
             this.btnAdd.TabIndex = 366;
@@ -295,7 +303,7 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.group;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(395, -2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(504, 7);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(268, 120);
@@ -307,8 +315,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1057, 768);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1250, 768);
             this.Controls.Add(this.cbCountry);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFilterValue);
@@ -318,9 +326,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmListPeople";
-            this.Text = "frmListPeople";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "List People";
             this.Load += new System.EventHandler(this.frmListPeople_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.Menu.ResumeLayout(false);

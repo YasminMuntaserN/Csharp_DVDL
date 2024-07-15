@@ -98,10 +98,10 @@
     <Compile Include="Application\Application Types\frmEditApplicationType.Designer.cs">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Application\ctrlApplication.cs">
+    <Compile Include="Application\User controls\ctrlApplication.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Application\ctrlApplication.Designer.cs">
+    <Compile Include="Application\User controls\ctrlApplication.Designer.cs">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Application\Detain License\frmDetainLicense.cs">
@@ -343,7 +343,7 @@
     <EmbeddedResource Include="Application\Application Types\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Application\ctrlApplication.resx">
+    <EmbeddedResource Include="Application\User controls\ctrlApplication.resx">
       <DependentUpon>ctrlApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application\Detain License\frmDetainLicense.resx">
@@ -704,6 +704,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Release Detained License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

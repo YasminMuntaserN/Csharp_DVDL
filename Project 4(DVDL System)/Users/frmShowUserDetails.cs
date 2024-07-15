@@ -18,7 +18,7 @@ namespace Project_4_DVDL_System_.Users
             ctrlUserCard1.LoadUserInfo(UserID);   
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

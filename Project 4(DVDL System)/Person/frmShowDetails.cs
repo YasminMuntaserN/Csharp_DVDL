@@ -18,11 +18,10 @@ namespace Project_4_DVDL_System_.Person
             ctrlPersonCard1.LoadPersonInfo(PersonID);
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
-
 
     }
 }

@@ -46,7 +46,7 @@
             // 
             this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu.ImageScalingSize = new System.Drawing.Size(30, 30);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsEditApplication});
             this.Menu.Name = "Menu";
@@ -59,16 +59,18 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(215, 62);
+            this.Menu.Size = new System.Drawing.Size(246, 68);
             // 
             // cmsEditApplication
             // 
-            this.cmsEditApplication.ForeColor = System.Drawing.Color.White;
+            this.cmsEditApplication.BackColor = System.Drawing.Color.Linen;
+            this.cmsEditApplication.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsEditApplication.ForeColor = System.Drawing.Color.Black;
             this.cmsEditApplication.Image = global::Project_4_DVDL_System_.Properties.Resources.setting1;
             this.cmsEditApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmsEditApplication.Name = "cmsEditApplication";
-            this.cmsEditApplication.Size = new System.Drawing.Size(214, 30);
-            this.cmsEditApplication.Text = "Edit Application";
+            this.cmsEditApplication.Size = new System.Drawing.Size(245, 36);
+            this.cmsEditApplication.Text = "   Edit Application";
             this.cmsEditApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsEditApplication.Click += new System.EventHandler(this.cmsEditApplication_Click);
             // 
@@ -99,7 +101,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 22.8F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.Green;
+            this.lblTitle.ForeColor = System.Drawing.Color.Goldenrod;
             this.lblTitle.Location = new System.Drawing.Point(250, 143);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
@@ -153,9 +155,10 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmApplicationTypesList";
-            this.Text = "frmApplicationTypesList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " Application Types List";
             this.Load += new System.EventHandler(this.frmApplicationTypesList_Load);
             this.Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

@@ -149,7 +149,18 @@ namespace Project_4_DVDL_System_.Users
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+
+        private void frmChangePassword_Activated(object sender, EventArgs e)
+        {
+            txtCurrentPassword.Focus();
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())
             {
@@ -157,11 +168,6 @@ namespace Project_4_DVDL_System_.Users
                 return;
             }
             _ChangePassword();
-        }
-
-        private void frmChangePassword_Activated(object sender, EventArgs e)
-        {
-            txtCurrentPassword.Focus();
         }
     }
 }

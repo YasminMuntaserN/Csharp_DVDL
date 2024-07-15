@@ -50,7 +50,7 @@
             // 
             // gbFilter
             // 
-            this.gbFilter.BackColor = System.Drawing.Color.Linen;
+            this.gbFilter.BackColor = System.Drawing.SystemColors.Control;
             this.gbFilter.Controls.Add(this.btnAddNew);
             this.gbFilter.Controls.Add(this.btnFind);
             this.gbFilter.Controls.Add(this.txtFilterValue);
@@ -184,7 +184,7 @@
             // 
             // ctrlPersonCard1
             // 
-            this.ctrlPersonCard1.BackColor = System.Drawing.Color.Linen;
+            this.ctrlPersonCard1.BackColor = System.Drawing.SystemColors.Control;
             this.ctrlPersonCard1.Location = new System.Drawing.Point(-3, 3);
             this.ctrlPersonCard1.Name = "ctrlPersonCard1";
             this.ctrlPersonCard1.Size = new System.Drawing.Size(1016, 233);

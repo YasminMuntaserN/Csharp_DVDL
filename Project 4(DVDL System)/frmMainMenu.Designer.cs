@@ -63,25 +63,15 @@ namespace Project_4_DVDL_System_
             this.btnAccountSettings = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContextMenuStrip2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.smCurrentUserInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.smChangePassword = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.smSignOut = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Disaplypanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.guna2ContextMenuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnApplications
@@ -103,7 +93,7 @@ namespace Project_4_DVDL_System_
             this.btnApplications.Size = new System.Drawing.Size(228, 55);
             this.btnApplications.TabIndex = 0;
             this.btnApplications.Text = "Applications";
-            this.btnApplications.Click += new System.EventHandler(this.btnApplications_Click_1);
+            this.btnApplications.Click += new System.EventHandler(this.btnApplications_Click);
             // 
             // guna2ContextMenuStrip1
             // 
@@ -167,6 +157,7 @@ namespace Project_4_DVDL_System_
             this.smLocalLicense.Name = "smLocalLicense";
             this.smLocalLicense.Size = new System.Drawing.Size(333, 36);
             this.smLocalLicense.Text = "      Local License";
+            this.smLocalLicense.Click += new System.EventHandler(this.smLocalLicense_Click);
             // 
             // toolStripSeparator5
             // 
@@ -211,6 +202,7 @@ namespace Project_4_DVDL_System_
             this.smRetakeTest.Name = "smRetakeTest";
             this.smRetakeTest.Size = new System.Drawing.Size(418, 36);
             this.smRetakeTest.Text = "      Retake Test";
+            this.smRetakeTest.Click += new System.EventHandler(this.smRetakeTest_Click);
             // 
             // toolStripSeparator11
             // 
@@ -325,6 +317,7 @@ namespace Project_4_DVDL_System_
             this.smManageApplicationTypes.Name = "smManageApplicationTypes";
             this.smManageApplicationTypes.Size = new System.Drawing.Size(381, 38);
             this.smManageApplicationTypes.Text = "       Manage Application Types";
+            this.smManageApplicationTypes.Click += new System.EventHandler(this.smManageApplicationTypes_Click);
             // 
             // Sperator
             // 
@@ -338,6 +331,7 @@ namespace Project_4_DVDL_System_
             this.smManageTestsTypes.Name = "smManageTestsTypes";
             this.smManageTestsTypes.Size = new System.Drawing.Size(381, 38);
             this.smManageTestsTypes.Text = "       Manage Tests Types";
+            this.smManageTestsTypes.Click += new System.EventHandler(this.smManageTestsTypes_Click);
             // 
             // btnPeople
             // 
@@ -377,6 +371,7 @@ namespace Project_4_DVDL_System_
             this.btnUsers.Size = new System.Drawing.Size(228, 55);
             this.btnUsers.TabIndex = 2;
             this.btnUsers.Text = "Users";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnDrivers
             // 
@@ -417,7 +412,7 @@ namespace Project_4_DVDL_System_
             this.btnAccountSettings.Size = new System.Drawing.Size(228, 55);
             this.btnAccountSettings.TabIndex = 4;
             this.btnAccountSettings.Text = "Account Settings";
-            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click_1);
+            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
             // 
             // guna2ContextMenuStrip2
             // 
@@ -444,69 +439,13 @@ namespace Project_4_DVDL_System_
             // 
             // smCurrentUserInfo
             // 
-            this.smCurrentUserInfo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem5,
-            this.toolStripSeparator7,
-            this.toolStripMenuItem6});
             this.smCurrentUserInfo.Image = global::Project_4_DVDL_System_.Properties.Resources.user_avatar__3_;
             this.smCurrentUserInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.smCurrentUserInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.smCurrentUserInfo.Name = "smCurrentUserInfo";
             this.smCurrentUserInfo.Size = new System.Drawing.Size(312, 38);
             this.smCurrentUserInfo.Text = "         Current User Info";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.Linen;
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3,
-            this.toolStripSeparator6,
-            this.toolStripMenuItem4});
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(302, 32);
-            this.toolStripMenuItem2.Text = "New Driving License";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.Linen;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(287, 32);
-            this.toolStripMenuItem3.Text = "Local License";
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.BackColor = System.Drawing.Color.Linen;
-            this.toolStripSeparator6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(284, 6);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.BackColor = System.Drawing.Color.Linen;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(287, 32);
-            this.toolStripMenuItem4.Text = "International License";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.BackColor = System.Drawing.Color.Linen;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(302, 32);
-            this.toolStripMenuItem5.Text = "Renew Driving License";
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.BackColor = System.Drawing.Color.Linen;
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(299, 6);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.BackColor = System.Drawing.Color.Linen;
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(302, 32);
-            this.toolStripMenuItem6.Text = "Retake Test";
+            this.smCurrentUserInfo.Click += new System.EventHandler(this.smCurrentUserInfo_Click);
             // 
             // toolStripSeparator8
             // 
@@ -522,6 +461,7 @@ namespace Project_4_DVDL_System_
             this.smChangePassword.Name = "smChangePassword";
             this.smChangePassword.Size = new System.Drawing.Size(312, 38);
             this.smChangePassword.Text = "       Change Password";
+            this.smChangePassword.Click += new System.EventHandler(this.smChangePassword_Click);
             // 
             // toolStripSeparator9
             // 
@@ -534,62 +474,53 @@ namespace Project_4_DVDL_System_
             this.smSignOut.Name = "smSignOut";
             this.smSignOut.Size = new System.Drawing.Size(312, 38);
             this.smSignOut.Text = "       Sign Out";
+            this.smSignOut.Click += new System.EventHandler(this.smSignOut_Click);
             // 
-            // pbUser
+            // label1
             // 
-            this.pbUser.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbUser.FillColor = System.Drawing.Color.Gainsboro;
-            this.pbUser.ImageRotate = 0F;
-            this.pbUser.Location = new System.Drawing.Point(1447, 63);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbUser.Size = new System.Drawing.Size(85, 67);
-            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUser.TabIndex = 7;
-            this.pbUser.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label1.Location = new System.Drawing.Point(435, 565);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1037, 84);
+            this.label1.TabIndex = 9;
+            this.label1.Text = " Driver and Vehicle Licensens Department";
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1566, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 38);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "UserName";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(855, 663);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.TabIndex = 137;
+            this.label4.Text = "Version 1.0";
             // 
-            // guna2Panel1
+            // label3
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.Goldenrod;
-            this.guna2Panel1.BorderRadius = 50;
-            this.guna2Panel1.BorderThickness = 5;
-            this.guna2Panel1.Controls.Add(this.Disaplypanel);
-            this.guna2Panel1.Location = new System.Drawing.Point(59, 282);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1091, 732);
-            this.guna2Panel1.TabIndex = 10;
-            this.guna2Panel1.Visible = false;
-            // 
-            // Disaplypanel
-            // 
-            this.Disaplypanel.Location = new System.Drawing.Point(34, 21);
-            this.Disaplypanel.Name = "Disaplypanel";
-            this.Disaplypanel.Size = new System.Drawing.Size(1017, 682);
-            this.Disaplypanel.TabIndex = 0;
+            this.label3.Font = new System.Drawing.Font("Stencil", 23.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(675, 495);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(486, 70);
+            this.label3.TabIndex = 138;
+            this.label3.Text = "(DVLD) System";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Project_4_DVDL_System_.Properties.Resources.background_Image;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1803, 1055);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pbUser);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAccountSettings);
             this.Controls.Add(this.btnDrivers);
             this.Controls.Add(this.btnUsers);
@@ -602,8 +533,6 @@ namespace Project_4_DVDL_System_
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2ContextMenuStrip1.ResumeLayout(false);
             this.guna2ContextMenuStrip2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,21 +564,10 @@ namespace Project_4_DVDL_System_
         private Guna.UI2.WinForms.Guna2Button btnAccountSettings;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem smCurrentUserInfo;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem smChangePassword;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem smSignOut;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox pbUser;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Panel Disaplypanel;
         private System.Windows.Forms.ToolStripMenuItem SmManageLocalDrivingLicenseApplications;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ToolStripMenuItem SmInternationalDrivingLicense;
@@ -659,6 +577,9 @@ namespace Project_4_DVDL_System_
         private System.Windows.Forms.ToolStripMenuItem manageDetainedLicensesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detainLicenseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem releaseDetainedLicenseToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 

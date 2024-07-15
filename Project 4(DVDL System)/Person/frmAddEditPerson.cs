@@ -76,6 +76,13 @@ namespace Project_4_DVDL_System_.Person
             txtPhone.Text =_Person.Phone;
             dtpDateOfBirth.Value =_Person.DateOfBirth;
             cbCountry.SelectedIndex = cbCountry.FindString(_Person.CountryInfo.CountryName);
+            //load person image incase it was set.
+            if (_Person.ImagePath != "")
+            {
+                pbPersonImage.ImageLocation = _Person.ImagePath;
+
+            }
+            llRemoveImage.Visible = (_Person.ImagePath != "");
 
             if (_Person.Gender == 0)
                 rbMale.Checked = true;
@@ -108,9 +115,14 @@ namespace Project_4_DVDL_System_.Person
            _Person.Email = string.IsNullOrWhiteSpace(txtEmail.Text.Trim()) ? null : txtEmail.Text.Trim();
            _Person.Address = txtAddress.Text.Trim();
            _Person.Phone = txtPhone.Text.Trim();
-           _Person.Gender = (rbMale.Checked) ? (byte)1 : (byte)0;
+           _Person.Gender = (rbMale.Checked) ? (byte)0 : (byte)1;
            _Person.DateOfBirth = dtpDateOfBirth.Value;
-            _Person.NationalityCountryID = clsCountry.Find(cbCountry.Text).CountryID;
+           _Person.NationalityCountryID = clsCountry.Find(cbCountry.Text).CountryID;
+
+            if (pbPersonImage.ImageLocation != null)
+                _Person.ImagePath = pbPersonImage.ImageLocation;
+            else
+                _Person.ImagePath = "";
         }
 
         private void _Save()
@@ -160,24 +172,6 @@ namespace Project_4_DVDL_System_.Person
 
             if (_Mode == enMode.Update)
                 _LoadData();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (!_CheckCorrectData()) return;
-
-            if (!ValidateChildren())
-            {
-                clsMessages.ValidationErrorMessage();
-                return;
-            }
-
-            _Save();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void llSetImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -272,5 +266,24 @@ namespace Project_4_DVDL_System_.Person
                 errorProvider1.SetError(txtNationalNo, null);
             }
         }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if (!_CheckCorrectData()) return;
+
+            if (!ValidateChildren())
+            {
+                clsMessages.ValidationErrorMessage();
+                return;
+            }
+
+            _Save();
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

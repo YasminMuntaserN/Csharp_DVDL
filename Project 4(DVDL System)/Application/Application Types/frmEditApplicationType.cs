@@ -68,11 +68,6 @@ namespace Project_4_DVDL_System_.Application.Application_Types
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            _Save();
-        }
-
         private void ValidateEmptyTextBox(object sender, CancelEventArgs e)
         {
 
@@ -91,11 +86,6 @@ namespace Project_4_DVDL_System_.Application.Application_Types
 
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();   
-        }
-
         private void frmEditApplicationType_Load(object sender, EventArgs e)
         {
                 _LoadData();
@@ -104,6 +94,16 @@ namespace Project_4_DVDL_System_.Application.Application_Types
         private void txtFees_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            _Save();
         }
     }
 }

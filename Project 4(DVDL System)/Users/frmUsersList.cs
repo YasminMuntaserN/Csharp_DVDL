@@ -40,19 +40,19 @@ namespace Project_4_DVDL_System_.Users
             {
 
                 dgvUsers.Columns[0].HeaderText = "User ID";
-                dgvUsers.Columns[0].Width = 105;
+                dgvUsers.Columns[0].Width = 125;
 
                 dgvUsers.Columns[1].HeaderText = "Person ID";
-                dgvUsers.Columns[1].Width = 105;
+                dgvUsers.Columns[1].Width = 125;
 
                 dgvUsers.Columns[2].HeaderText = "Full Name";
-                dgvUsers.Columns[2].Width = 200;
+                dgvUsers.Columns[2].Width = 220;
 
                 dgvUsers.Columns[3].HeaderText = "UserName";
-                dgvUsers.Columns[3].Width = 105;
+                dgvUsers.Columns[3].Width = 125;
 
                 dgvUsers.Columns[4].HeaderText = "Is Active";
-                dgvUsers.Columns[4].Width = 105;
+                dgvUsers.Columns[4].Width = 125;
             }
 
         }
