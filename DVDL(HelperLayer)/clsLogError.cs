@@ -10,7 +10,7 @@ namespace DVDL_HelperLayer_
         ///   This Method For Loging Try Catch Exception From Data Access For This Project
         public static void LogError(Exception ex)
         {
-            string sourceName = "DVDLProject"; ;
+            string sourceName = "DVDLProject"; 
 
             if (!EventLog.SourceExists(sourceName))
             {

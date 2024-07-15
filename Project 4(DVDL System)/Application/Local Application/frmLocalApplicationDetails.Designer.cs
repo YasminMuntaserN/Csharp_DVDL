@@ -30,8 +30,8 @@
         {
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +40,7 @@
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.id_card;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(54, 3);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(128, 3);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(73, 67);
@@ -54,19 +54,12 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(144, 22);
+            this.lblTitle.Location = new System.Drawing.Point(208, 22);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(639, 35);
             this.lblTitle.TabIndex = 165;
             this.lblTitle.Text = "Show Local Driving License Application Info Details";
-            // 
-            // ctrlLocalApplication1
-            // 
-            this.ctrlLocalApplication1.Location = new System.Drawing.Point(21, 85);
-            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
-            this.ctrlLocalApplication1.Size = new System.Drawing.Size(832, 436);
-            this.ctrlLocalApplication1.TabIndex = 3;
             // 
             // btnClose
             // 
@@ -83,17 +76,25 @@
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.Location = new System.Drawing.Point(337, 527);
+            this.btnClose.Location = new System.Drawing.Point(387, 522);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 45);
             this.btnClose.TabIndex = 266;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // ctrlLocalApplication1
+            // 
+            this.ctrlLocalApplication1.Location = new System.Drawing.Point(12, 76);
+            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
+            this.ctrlLocalApplication1.Size = new System.Drawing.Size(964, 436);
+            this.ctrlLocalApplication1.TabIndex = 3;
             // 
             // frmLocalApplicationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 579);
+            this.ClientSize = new System.Drawing.Size(966, 579);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2CirclePictureBox2);
             this.Controls.Add(this.lblTitle);

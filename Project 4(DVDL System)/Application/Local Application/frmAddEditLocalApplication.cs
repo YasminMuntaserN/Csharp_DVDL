@@ -106,7 +106,7 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             _LocalApplication.ApplicationStatus = (byte)clsApplication.enStatus.New;
             _LocalApplication.LastStatusDate = DateTime.Now;
             _LocalApplication.PaidFees = Convert.ToDecimal(lblFees.Text);
-            _LocalApplication.CreatedByUserID = 3;
+            _LocalApplication.CreatedByUserID = clsGlobal.CurrentUser.UserID;
             _LocalApplication.LicenseClassID = clsLicenseClass.Find(cbLicenseClass.Text).LicenseClassID;
         }
 
@@ -164,21 +164,6 @@ namespace Project_4_DVDL_System_.Application.Local_Application
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (!_CheckForCorrectData())
-            {
-                return;
-            }
-
-            _Save();
-        }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             TcApplication.SelectedTab = TcApplication.TabPages["tpApplicationInfo"];
@@ -190,6 +175,21 @@ namespace Project_4_DVDL_System_.Application.Local_Application
 
             if (_Mode == enMode.Update)
                 _LoadData();
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if (!_CheckForCorrectData())
+            {
+                return;
+            }
+
+            _Save();
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -52,10 +52,10 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
-            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2GroupBox2.BorderColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Controls.Add(this.tcDriverLicenses);
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.FillColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(3, 3);
@@ -71,12 +71,12 @@
             this.tcDriverLicenses.Location = new System.Drawing.Point(3, 43);
             this.tcDriverLicenses.Name = "tcDriverLicenses";
             this.tcDriverLicenses.SelectedIndex = 0;
-            this.tcDriverLicenses.Size = new System.Drawing.Size(1032, 287);
+            this.tcDriverLicenses.Size = new System.Drawing.Size(1013, 287);
             this.tcDriverLicenses.TabIndex = 132;
             // 
             // tpLocalLicenses
             // 
-            this.tpLocalLicenses.BackColor = System.Drawing.Color.Linen;
+            this.tpLocalLicenses.BackColor = System.Drawing.SystemColors.Control;
             this.tpLocalLicenses.Controls.Add(this.label1);
             this.tpLocalLicenses.Controls.Add(this.lblLocalLicensesRecords);
             this.tpLocalLicenses.Controls.Add(this.label2);
@@ -84,7 +84,7 @@
             this.tpLocalLicenses.Location = new System.Drawing.Point(4, 37);
             this.tpLocalLicenses.Name = "tpLocalLicenses";
             this.tpLocalLicenses.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLocalLicenses.Size = new System.Drawing.Size(1024, 246);
+            this.tpLocalLicenses.Size = new System.Drawing.Size(1005, 246);
             this.tpLocalLicenses.TabIndex = 0;
             this.tpLocalLicenses.Text = "Local";
             // 
@@ -156,7 +156,7 @@
             this.tbInternationalLicenses.Location = new System.Drawing.Point(4, 37);
             this.tbInternationalLicenses.Name = "tbInternationalLicenses";
             this.tbInternationalLicenses.Padding = new System.Windows.Forms.Padding(3);
-            this.tbInternationalLicenses.Size = new System.Drawing.Size(1024, 247);
+            this.tbInternationalLicenses.Size = new System.Drawing.Size(1024, 246);
             this.tbInternationalLicenses.TabIndex = 1;
             this.tbInternationalLicenses.Text = "International";
             this.tbInternationalLicenses.UseVisualStyleBackColor = true;

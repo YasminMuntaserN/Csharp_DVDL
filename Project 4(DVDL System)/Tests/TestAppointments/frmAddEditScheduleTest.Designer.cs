@@ -42,14 +42,14 @@
             // 
             // btnClose
             // 
-            this.btnClose.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnClose.BorderColor = System.Drawing.Color.Goldenrod;
             this.btnClose.BorderRadius = 10;
             this.btnClose.BorderThickness = 3;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnClose.FillColor = System.Drawing.Color.Goldenrod;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
@@ -70,6 +70,7 @@
             this.Controls.Add(this.ctrlScheduleTest1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAddEditScheduleTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Edit Scheduale Test";
             this.Load += new System.EventHandler(this.frmAddEditScheduleTest_Load);
             this.ResumeLayout(false);

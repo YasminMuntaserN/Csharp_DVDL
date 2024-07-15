@@ -90,9 +90,9 @@
             // rbPass
             // 
             this.rbPass.AutoSize = true;
-            this.rbPass.CheckedState.BorderColor = System.Drawing.Color.Green;
+            this.rbPass.CheckedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.rbPass.CheckedState.BorderThickness = 0;
-            this.rbPass.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.rbPass.CheckedState.FillColor = System.Drawing.Color.Goldenrod;
             this.rbPass.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rbPass.CheckedState.InnerOffset = -4;
             this.rbPass.Font = new System.Drawing.Font("Trebuchet MS", 12F);
@@ -109,9 +109,9 @@
             // rbFail
             // 
             this.rbFail.AutoSize = true;
-            this.rbFail.CheckedState.BorderColor = System.Drawing.Color.Green;
+            this.rbFail.CheckedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.rbFail.CheckedState.BorderThickness = 0;
-            this.rbFail.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.rbFail.CheckedState.FillColor = System.Drawing.Color.Goldenrod;
             this.rbFail.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rbFail.CheckedState.InnerOffset = -4;
             this.rbFail.Font = new System.Drawing.Font("Trebuchet MS", 12F);
@@ -149,14 +149,14 @@
             // 
             // btnClose
             // 
-            this.btnClose.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnClose.BorderColor = System.Drawing.Color.Goldenrod;
             this.btnClose.BorderRadius = 10;
             this.btnClose.BorderThickness = 3;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnClose.FillColor = System.Drawing.Color.Goldenrod;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
@@ -170,14 +170,14 @@
             // 
             // btnSave
             // 
-            this.btnSave.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.BorderColor = System.Drawing.Color.Goldenrod;
             this.btnSave.BorderRadius = 10;
             this.btnSave.BorderThickness = 3;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FillColor = System.Drawing.Color.Goldenrod;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::Project_4_DVDL_System_.Properties.Resources.bookmark;
@@ -213,6 +213,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ctrlScheduledTest1);
             this.Name = "frmTakeTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Take Test";
             this.Load += new System.EventHandler(this.frmTakeTest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

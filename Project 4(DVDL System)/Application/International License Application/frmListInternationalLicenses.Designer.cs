@@ -36,18 +36,18 @@
             this.cbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvInternationalLicenses = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.cmsShowDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsShowLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsShowpersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.Menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -177,39 +177,6 @@
             this.dgvInternationalLicenses.Size = new System.Drawing.Size(996, 359);
             this.dgvInternationalLicenses.TabIndex = 378;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(33, 269);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 32);
-            this.label1.TabIndex = 377;
-            this.label1.Text = "Filter By :";
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.FillThickness = 3;
-            this.guna2Separator1.Location = new System.Drawing.Point(27, 189);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(968, 31);
-            this.guna2Separator1.TabIndex = 376;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.countries;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(385, -1);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(268, 120);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 375;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.Linen;
@@ -280,11 +247,44 @@
             this.cmsShowpersonLicenseHistory.Text = "       Show person License History";
             this.cmsShowpersonLicenseHistory.Click += new System.EventHandler(this.cmsShowpersonLicenseHistory_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(33, 269);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 32);
+            this.label1.TabIndex = 377;
+            this.label1.Text = "Filter By :";
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
+            this.guna2Separator1.FillThickness = 3;
+            this.guna2Separator1.Location = new System.Drawing.Point(27, 189);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(968, 31);
+            this.guna2Separator1.TabIndex = 376;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.countries;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(385, -1);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(268, 120);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 375;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // frmListInternationalLicenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1026, 714);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFilterValue);
@@ -294,13 +294,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmListInternationalLicenses";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListInternationalLicenses";
             this.Load += new System.EventHandler(this.frmListInternationalLicenses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.Menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

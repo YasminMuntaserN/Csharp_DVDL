@@ -106,14 +106,14 @@
             // 
             // btnSave
             // 
-            this.btnSave.BorderColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.BorderColor = System.Drawing.Color.Goldenrod;
             this.btnSave.BorderRadius = 10;
             this.btnSave.BorderThickness = 3;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FillColor = System.Drawing.Color.Goldenrod;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::Project_4_DVDL_System_.Properties.Resources.bookmark;
@@ -224,8 +224,8 @@
             // 
             this.lblUserMessage.AutoSize = true;
             this.lblUserMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblUserMessage.Location = new System.Drawing.Point(-2, 224);
+            this.lblUserMessage.ForeColor = System.Drawing.Color.Chocolate;
+            this.lblUserMessage.Location = new System.Drawing.Point(2, 225);
             this.lblUserMessage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUserMessage.Name = "lblUserMessage";
             this.lblUserMessage.Size = new System.Drawing.Size(524, 25);
@@ -433,7 +433,7 @@
             // lblTitle
             // 
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Green;
+            this.lblTitle.ForeColor = System.Drawing.Color.Goldenrod;
             this.lblTitle.Location = new System.Drawing.Point(68, 175);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";

@@ -88,7 +88,7 @@ namespace Project_4_DVDL_System_
             this.btnApplications.FillColor = System.Drawing.Color.Transparent;
             this.btnApplications.Font = new System.Drawing.Font("Palatino Linotype", 15.8F, System.Drawing.FontStyle.Bold);
             this.btnApplications.ForeColor = System.Drawing.Color.White;
-            this.btnApplications.Location = new System.Drawing.Point(25, 53);
+            this.btnApplications.Location = new System.Drawing.Point(37, 71);
             this.btnApplications.Name = "btnApplications";
             this.btnApplications.Size = new System.Drawing.Size(228, 55);
             this.btnApplications.TabIndex = 0;
@@ -120,7 +120,7 @@ namespace Project_4_DVDL_System_
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 246);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(382, 218);
             // 
             // drivingLicenseServicesToolStripMenuItem
             // 
@@ -346,7 +346,7 @@ namespace Project_4_DVDL_System_
             this.btnPeople.FillColor = System.Drawing.Color.Transparent;
             this.btnPeople.Font = new System.Drawing.Font("Palatino Linotype", 15.8F, System.Drawing.FontStyle.Bold);
             this.btnPeople.ForeColor = System.Drawing.Color.White;
-            this.btnPeople.Location = new System.Drawing.Point(283, 53);
+            this.btnPeople.Location = new System.Drawing.Point(295, 71);
             this.btnPeople.Name = "btnPeople";
             this.btnPeople.Size = new System.Drawing.Size(228, 55);
             this.btnPeople.TabIndex = 1;
@@ -366,7 +366,7 @@ namespace Project_4_DVDL_System_
             this.btnUsers.FillColor = System.Drawing.Color.Transparent;
             this.btnUsers.Font = new System.Drawing.Font("Palatino Linotype", 15.8F, System.Drawing.FontStyle.Bold);
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(543, 53);
+            this.btnUsers.Location = new System.Drawing.Point(555, 71);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(228, 55);
             this.btnUsers.TabIndex = 2;
@@ -386,7 +386,7 @@ namespace Project_4_DVDL_System_
             this.btnDrivers.FillColor = System.Drawing.Color.Transparent;
             this.btnDrivers.Font = new System.Drawing.Font("Palatino Linotype", 15.8F, System.Drawing.FontStyle.Bold);
             this.btnDrivers.ForeColor = System.Drawing.Color.White;
-            this.btnDrivers.Location = new System.Drawing.Point(810, 53);
+            this.btnDrivers.Location = new System.Drawing.Point(822, 71);
             this.btnDrivers.Name = "btnDrivers";
             this.btnDrivers.Size = new System.Drawing.Size(228, 55);
             this.btnDrivers.TabIndex = 3;
@@ -407,7 +407,7 @@ namespace Project_4_DVDL_System_
             this.btnAccountSettings.FillColor = System.Drawing.Color.Transparent;
             this.btnAccountSettings.Font = new System.Drawing.Font("Palatino Linotype", 15.8F, System.Drawing.FontStyle.Bold);
             this.btnAccountSettings.ForeColor = System.Drawing.Color.White;
-            this.btnAccountSettings.Location = new System.Drawing.Point(1064, 53);
+            this.btnAccountSettings.Location = new System.Drawing.Point(1076, 71);
             this.btnAccountSettings.Name = "btnAccountSettings";
             this.btnAccountSettings.Size = new System.Drawing.Size(228, 55);
             this.btnAccountSettings.TabIndex = 4;

@@ -99,7 +99,7 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Controls.Add(this.pictureBox11);
             this.guna2GroupBox2.Controls.Add(this.label3);
             this.guna2GroupBox2.Controls.Add(this.txtNotes);
@@ -133,7 +133,7 @@
             this.guna2GroupBox2.Controls.Add(this.label5);
             this.guna2GroupBox2.Controls.Add(this.lblApplicationID);
             this.guna2GroupBox2.Controls.Add(this.label4);
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.FillColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(2, 475);
@@ -600,7 +600,7 @@
             // 
             // ctrlDrivingLicenseCardWithFilter1
             // 
-            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.Color.Linen;
+            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.SystemColors.Control;
             this.ctrlDrivingLicenseCardWithFilter1.FilterEnabled = true;
             this.ctrlDrivingLicenseCardWithFilter1.Location = new System.Drawing.Point(5, 66);
             this.ctrlDrivingLicenseCardWithFilter1.Name = "ctrlDrivingLicenseCardWithFilter1";

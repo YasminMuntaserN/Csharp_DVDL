@@ -61,7 +61,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewTestAppointment(int TestTypeID, int? LocalDrivingLicenseApplicationID, DateTime AppointmentDate, decimal PaidFees, int CreatedByUserID, bool IsLocked, int? RetakeTestApplicationID)
+        public static int? AddNewTestAppointment(int TestTypeID, int? LocalDrivingLicenseApplicationID, DateTime AppointmentDate, decimal PaidFees, int? CreatedByUserID, bool IsLocked, int? RetakeTestApplicationID)
         {
             // This function will return the new person id if succeeded and null if not
             int? TestAppointmentID = null;
@@ -106,7 +106,7 @@ namespace DVDL_DataAccess_
             return TestAppointmentID;
         }
 
-        public static bool UpdateTestAppointment(int? TestAppointmentID, int TestTypeID, int? LocalDrivingLicenseApplicationID, DateTime AppointmentDate, decimal PaidFees, int CreatedByUserID, bool IsLocked, int? RetakeTestApplicationID)
+        public static bool UpdateTestAppointment(int? TestAppointmentID, int TestTypeID, int? LocalDrivingLicenseApplicationID, DateTime AppointmentDate, decimal PaidFees, int? CreatedByUserID, bool IsLocked, int? RetakeTestApplicationID)
         {
             int RowAffected = 0;
 

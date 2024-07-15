@@ -58,7 +58,7 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
-        public static int? AddNewTest(int? TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
+        public static int? AddNewTest(int? TestAppointmentID, bool TestResult, string Notes, int? CreatedByUserID)
         {
             // This function will return the new person id if succeeded and null if not
             int? TestID = null;
@@ -97,7 +97,7 @@ namespace DVDL_DataAccess_
             return TestID;
         }
 
-        public static bool UpdateTest(int? TestID, int? TestAppointmentID, bool TestResult, string Notes, int CreatedByUserID)
+        public static bool UpdateTest(int? TestID, int? TestAppointmentID, bool TestResult, string Notes, int? CreatedByUserID)
         {
             int RowAffected = 0;
 
@@ -197,16 +197,18 @@ namespace DVDL_DataAccess_
             {
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-
+                    connection.Open();  
                     string query = @"SELECT  top 1 Tests.TestID, 
                 Tests.TestAppointmentID, Tests.TestResult, 
-			    Tests.Notes, Tests.CreatedByUserID, Applications.ApplicantPersonID
-                FROM            LocalDrivingLicenseApplications INNER JOIN
+			    Tests.Notes, Tests.CreatedByUserID, Application.ApplicationPersonID
+                FROM            LocalDrivingLicenseApplication INNER JOIN
                                          Tests INNER JOIN
-                                         TestAppointments ON Tests.TestAppointmentID = TestAppointments.TestAppointmentID ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
-                                         Applications ON LocalDrivingLicenseApplications.ApplicationID = Applications.ApplicationID
-                WHERE        (Applications.ApplicantPersonID = @PersonID) 
-                        AND (LocalDrivingLicenseApplications.LicenseClassID = @LicenseClassID)
+                                         TestAppointments ON Tests.TestAppointmentID = TestAppointments.TestAppointmentID
+                                         ON LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
+                                          INNER JOIN
+                                         Application ON LocalDrivingLicenseApplication.ApplicationID = Application.ApplicationID
+                WHERE        (Application.ApplicationPersonID = @PersonID) 
+                        AND (LocalDrivingLicenseApplication.LicenseClassID = @LicenseClassID)
                         AND ( TestAppointments.TestTypeID=@TestTypeID)
                 ORDER BY Tests.TestAppointmentID DESC";
 

@@ -427,7 +427,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1049, 754);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFilterValue);
@@ -437,8 +437,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmListLocalApplications";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListLocalApplications";
             this.Load += new System.EventHandler(this.frmListLocalApplications_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplications)).EndInit();

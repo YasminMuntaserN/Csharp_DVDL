@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.gbTestType = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblTestID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
@@ -44,13 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
             this.gbTestType.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -97,6 +97,81 @@
             this.gbTestType.TabIndex = 154;
             this.gbTestType.TabStop = false;
             this.gbTestType.Text = "Test Type";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
+            this.pictureBox5.Location = new System.Drawing.Point(190, 511);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 198;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
+            this.pictureBox7.Location = new System.Drawing.Point(190, 304);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 197;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Project_4_DVDL_System_.Properties.Resources.id;
+            this.pictureBox4.Location = new System.Drawing.Point(190, 268);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 196;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.user__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(190, 340);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 195;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 385);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 194;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Project_4_DVDL_System_.Properties.Resources.money__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(190, 469);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 193;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Project_4_DVDL_System_.Properties.Resources.appointment;
+            this.pictureBox8.Location = new System.Drawing.Point(190, 427);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 192;
+            this.pictureBox8.TabStop = false;
             // 
             // lblTestID
             // 
@@ -255,89 +330,14 @@
             // lblTitle
             // 
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblTitle.Location = new System.Drawing.Point(118, 205);
+            this.lblTitle.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblTitle.Location = new System.Drawing.Point(142, 207);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(304, 58);
             this.lblTitle.TabIndex = 153;
             this.lblTitle.Text = "Scheduled Test";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(190, 511);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 198;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
-            this.pictureBox7.Location = new System.Drawing.Point(190, 304);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 197;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Project_4_DVDL_System_.Properties.Resources.id;
-            this.pictureBox4.Location = new System.Drawing.Point(190, 268);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 196;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.user__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(190, 340);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 195;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.Written_Test_32_Sechdule;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 385);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 194;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Project_4_DVDL_System_.Properties.Resources.money__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(190, 469);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 193;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Project_4_DVDL_System_.Properties.Resources.appointment;
-            this.pictureBox8.Location = new System.Drawing.Point(190, 427);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 192;
-            this.pictureBox8.TabStop = false;
             // 
             // pbTestTypeImage
             // 

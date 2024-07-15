@@ -88,8 +88,8 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
-            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2GroupBox2.BorderColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Controls.Add(this.pbPersonImage);
             this.guna2GroupBox2.Controls.Add(this.pictureBox13);
             this.guna2GroupBox2.Controls.Add(this.lblDriverID);
@@ -130,7 +130,7 @@
             this.guna2GroupBox2.Controls.Add(this.pictureBox3);
             this.guna2GroupBox2.Controls.Add(this.lblLicenseID);
             this.guna2GroupBox2.Controls.Add(this.label4);
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.FillColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(3, 3);

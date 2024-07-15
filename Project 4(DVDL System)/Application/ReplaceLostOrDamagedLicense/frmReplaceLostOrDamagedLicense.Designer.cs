@@ -70,7 +70,7 @@
             // 
             // ctrlDrivingLicenseCardWithFilter1
             // 
-            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.Color.Linen;
+            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.SystemColors.Control;
             this.ctrlDrivingLicenseCardWithFilter1.FilterEnabled = true;
             this.ctrlDrivingLicenseCardWithFilter1.Location = new System.Drawing.Point(12, 81);
             this.ctrlDrivingLicenseCardWithFilter1.Name = "ctrlDrivingLicenseCardWithFilter1";
@@ -80,7 +80,7 @@
             // 
             // gbReplacementFor
             // 
-            this.gbReplacementFor.BackColor = System.Drawing.Color.Linen;
+            this.gbReplacementFor.BackColor = System.Drawing.SystemColors.Control;
             this.gbReplacementFor.Controls.Add(this.rbDamagedLicense);
             this.gbReplacementFor.Controls.Add(this.rbLostLicense);
             this.gbReplacementFor.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +136,7 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Controls.Add(this.pictureBox2);
             this.guna2GroupBox2.Controls.Add(this.lblApplicationFees);
             this.guna2GroupBox2.Controls.Add(this.label2);
@@ -155,7 +155,7 @@
             this.guna2GroupBox2.Controls.Add(this.pictureBox1);
             this.guna2GroupBox2.Controls.Add(this.label1);
             this.guna2GroupBox2.Controls.Add(this.lblCreatedByUser);
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.FillColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(-2, 509);

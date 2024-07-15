@@ -186,10 +186,10 @@
             // cbIsActive
             // 
             this.cbIsActive.AutoSize = true;
-            this.cbIsActive.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.cbIsActive.CheckedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.cbIsActive.CheckedState.BorderRadius = 0;
             this.cbIsActive.CheckedState.BorderThickness = 0;
-            this.cbIsActive.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.cbIsActive.CheckedState.FillColor = System.Drawing.Color.Goldenrod;
             this.cbIsActive.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbIsActive.Location = new System.Drawing.Point(155, 309);
             this.cbIsActive.Name = "cbIsActive";
@@ -225,7 +225,7 @@
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Green;
+            this.guna2Separator1.FillColor = System.Drawing.Color.Goldenrod;
             this.guna2Separator1.FillThickness = 2;
             this.guna2Separator1.Location = new System.Drawing.Point(47, 55);
             this.guna2Separator1.Name = "guna2Separator1";
@@ -245,10 +245,10 @@
             this.txtConfirmPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtConfirmPassword.FillColor = System.Drawing.Color.LightGray;
-            this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtConfirmPassword.Location = new System.Drawing.Point(208, 245);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
@@ -284,10 +284,10 @@
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FillColor = System.Drawing.Color.LightGray;
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtPassword.Location = new System.Drawing.Point(208, 173);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
@@ -323,10 +323,10 @@
             this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.FillColor = System.Drawing.Color.LightGray;
-            this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.ForeColor = System.Drawing.Color.Black;
-            this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtUserName.HoverState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtUserName.Location = new System.Drawing.Point(208, 108);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";

@@ -63,13 +63,13 @@
             this.txtNationalNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pbPersonImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pbPersonImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -632,18 +632,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
-            // pbPersonImage
-            // 
-            this.pbPersonImage.Image = global::Project_4_DVDL_System_.Properties.Resources.user__1_;
-            this.pbPersonImage.ImageRotate = 0F;
-            this.pbPersonImage.Location = new System.Drawing.Point(558, 239);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbPersonImage.Size = new System.Drawing.Size(178, 163);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 166;
-            this.pbPersonImage.TabStop = false;
-            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
@@ -667,19 +655,33 @@
             this.guna2CirclePictureBox2.TabIndex = 245;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
+            // pbPersonImage
+            // 
+            this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbPersonImage.Image = global::Project_4_DVDL_System_.Properties.Resources.user__1_;
+            this.pbPersonImage.InitialImage = null;
+            this.pbPersonImage.Location = new System.Drawing.Point(569, 239);
+            this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbPersonImage.Name = "pbPersonImage";
+            this.pbPersonImage.Size = new System.Drawing.Size(169, 167);
+            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPersonImage.TabIndex = 277;
+            this.pbPersonImage.TabStop = false;
+            // 
             // frmAddEditPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(788, 729);
+            this.Controls.Add(this.pbPersonImage);
             this.Controls.Add(this.guna2CirclePictureBox2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtNationalNo);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.pbPersonImage);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label22);
@@ -714,9 +716,9 @@
             this.Text = "Add Edit Person";
             this.Load += new System.EventHandler(this.frmAddEditPerson_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -751,7 +753,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label lblPersonID;
         private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox pbPersonImage;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
@@ -760,5 +761,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
+        private System.Windows.Forms.PictureBox pbPersonImage;
     }
 }

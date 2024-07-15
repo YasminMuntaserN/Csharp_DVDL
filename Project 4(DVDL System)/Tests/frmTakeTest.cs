@@ -57,7 +57,7 @@ namespace Project_4_DVDL_System_.Tests
             _Test.TestAppointmentID = _AppointmentID;
             _Test.TestResult = rbPass.Checked;
             _Test.Notes = txtNotes.Text.Trim();
-            _Test.CreatedByUserID = 3;
+            _Test.CreatedByUserID = clsGlobal.CurrentUser.UserID;
         }
 
         public frmTakeTest(int? AppointmentID, clsTestType.enTestType TestType)

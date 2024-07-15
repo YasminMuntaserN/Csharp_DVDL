@@ -48,7 +48,7 @@
             // 
             // gbFilters
             // 
-            this.gbFilters.BackColor = System.Drawing.Color.Linen;
+            this.gbFilters.BackColor = System.Drawing.SystemColors.Control;
             this.gbFilters.Controls.Add(this.btnFind);
             this.gbFilters.Controls.Add(this.txtLicenseID);
             this.gbFilters.Controls.Add(this.label1);
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Linen;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.gbFilters);
             this.Controls.Add(this.ctrlDriverLicenseInfo1);
             this.Name = "ctrlDrivingLicenseCardWithFilter";

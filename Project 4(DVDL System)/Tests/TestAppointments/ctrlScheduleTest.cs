@@ -322,7 +322,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
             _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
             _TestAppointment.AppointmentDate = dtpTestDate.Value;
             _TestAppointment.PaidFees = Convert.ToDecimal(lblFees.Text);
-            _TestAppointment.CreatedByUserID = 3;
+            _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.UserID;
 
             if (_TestAppointment.Save())
             {

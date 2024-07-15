@@ -102,10 +102,10 @@
             this.txtFilterValue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFilterValue.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFilterValue.FillColor = System.Drawing.Color.LightGray;
-            this.txtFilterValue.FocusedState.BorderColor = System.Drawing.Color.Green;
+            this.txtFilterValue.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtFilterValue.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilterValue.ForeColor = System.Drawing.Color.Black;
-            this.txtFilterValue.HoverState.BorderColor = System.Drawing.Color.Green;
+            this.txtFilterValue.HoverState.BorderColor = System.Drawing.Color.Goldenrod;
             this.txtFilterValue.Location = new System.Drawing.Point(368, 19);
             this.txtFilterValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilterValue.Name = "txtFilterValue";

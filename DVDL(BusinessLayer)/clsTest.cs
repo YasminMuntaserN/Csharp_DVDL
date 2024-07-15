@@ -19,7 +19,7 @@ namespace DVDL_BusinessLayer_
         public int? TestAppointmentID { get; set; }
         public bool TestResult { get; set; }
         public string Notes { get; set; }
-        public int CreatedByUserID { get; set; }
+        public int? CreatedByUserID { get; set; }
 
         public clsTest()
         {
