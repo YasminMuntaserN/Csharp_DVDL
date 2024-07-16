@@ -128,7 +128,7 @@ namespace Project_4_DVDL_System_.Application.International_License_Application
 
         private void cmsShowLicense_Click(object sender, EventArgs e)
         {
-            frmShowIssueDrivingLicenseDetails details=new frmShowIssueDrivingLicenseDetails((int)dgvInternationalLicenses.CurrentRow.Cells[0].Value);
+            frmShowInternationalLicenseInfo details=new frmShowInternationalLicenseInfo((int)dgvInternationalLicenses.CurrentRow.Cells[0].Value);
             details.ShowDialog();
         }
 

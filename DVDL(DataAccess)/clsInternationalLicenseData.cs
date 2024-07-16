@@ -21,11 +21,11 @@ namespace DVDL_DataAccess_
                 {
                     connection.Open();
 
-                    string query = @"select * from InternationalLicenses where InternationalLicenseID = @InternationalLicenseID";
+                    string query = @"select * from InternationalLicenses where InternationlLicenseID = @InternationlLicenseID";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@InternationalLicenseID", (object)InternationalLicenseID ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@InternationlLicenseID", (object)InternationalLicenseID ?? DBNull.Value);
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {

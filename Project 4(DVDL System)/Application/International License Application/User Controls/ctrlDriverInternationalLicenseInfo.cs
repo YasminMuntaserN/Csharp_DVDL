@@ -16,10 +16,10 @@ namespace Project_4_DVDL_System_.Application.International_License_Application.U
 {
     public partial class ctrlDriverInternationalLicenseInfo : UserControl
     {
-        private int _InternationalLicenseID;
+        private int? _InternationalLicenseID;
         private clsInternationalLicense _InternationalLicense;
 
-        public int InternationalLicenseID => _InternationalLicenseID;
+        public int? InternationalLicenseID => _InternationalLicenseID;
 
         public ctrlDriverInternationalLicenseInfo()
         {
@@ -43,7 +43,7 @@ namespace Project_4_DVDL_System_.Application.International_License_Application.U
 
         }
 
-        public void LoadInfo(int InternationalLicenseID)
+        public void LoadInfo(int? InternationalLicenseID)
         {
             _InternationalLicenseID = InternationalLicenseID;
             _InternationalLicense = clsInternationalLicense.Find(_InternationalLicenseID);
@@ -69,5 +69,6 @@ namespace Project_4_DVDL_System_.Application.International_License_Application.U
 
             _LoadPersonImage();
         }
+
     }
 }

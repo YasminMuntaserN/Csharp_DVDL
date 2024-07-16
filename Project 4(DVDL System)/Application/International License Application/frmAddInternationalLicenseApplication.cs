@@ -110,7 +110,7 @@ namespace Project_4_DVDL_System_.Application.International_License_Application
     
         private void llShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmShowIssueDrivingLicenseDetails frm = new frmShowIssueDrivingLicenseDetails(_InternationalLicenseID);
+            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo(_InternationalLicenseID);
             frm.ShowDialog();
         }
 

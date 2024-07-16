@@ -109,3 +109,5 @@ G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.D
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.Detain_License.frmReleaseDetainedLicense.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.International_License_Application.frmAddInternationalLicenseApplication.resources
 G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.International_License_Application.frmListInternationalLicenses.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.International_License_Application.frmShowInternationalLicenseInfo.resources
+G:\C#\DVDL\Project 4(DVDL System)\obj\Debug\Project_4_DVDL_System_.Application.International_License_Application.User_Controls.ctrlDriverInternationalLicenseInfo.resources

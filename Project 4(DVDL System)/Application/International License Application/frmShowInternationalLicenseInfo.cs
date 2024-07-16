@@ -12,9 +12,22 @@ namespace Project_4_DVDL_System_.Application.International_License_Application
 {
     public partial class frmShowInternationalLicenseInfo : Form
     {
-        public frmShowInternationalLicenseInfo()
+        private int? _InternationalLicenseID;
+    
+        public frmShowInternationalLicenseInfo(int? InternationalID)
         {
+            _InternationalLicenseID = InternationalID;   
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmShowInternationalLicenseInfo_Load(object sender, EventArgs e)
+        {
+            ctrlDriverInternationalLicenseInfo1.LoadInfo(_InternationalLicenseID);
         }
     }
 }
