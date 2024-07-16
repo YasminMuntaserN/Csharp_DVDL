@@ -103,7 +103,5 @@ namespace Project_4_DVDL_System_.License
 
         public void txtLicenseIDFocus() => txtLicenseID.Focus();
 
-    
-
     }
 }

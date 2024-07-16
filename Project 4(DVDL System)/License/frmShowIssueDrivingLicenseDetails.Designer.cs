@@ -101,6 +101,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.ctrlDriverLicenseInfo1);
             this.Name = "frmShowIssueDrivingLicenseDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Show Issue Driving License";
             this.Load += new System.EventHandler(this.frmShowIssueDrivingLicenseDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();

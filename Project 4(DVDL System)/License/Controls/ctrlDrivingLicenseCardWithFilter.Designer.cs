@@ -111,7 +111,7 @@
             this.Controls.Add(this.gbFilters);
             this.Controls.Add(this.ctrlDriverLicenseInfo1);
             this.Name = "ctrlDrivingLicenseCardWithFilter";
-            this.Size = new System.Drawing.Size(1045, 397);
+            this.Size = new System.Drawing.Size(1048, 435);
             this.gbFilters.ResumeLayout(false);
             this.gbFilters.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

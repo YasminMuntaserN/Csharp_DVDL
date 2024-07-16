@@ -21,6 +21,7 @@ namespace DVDL_BusinessLayer_
         public DateTime IssueDate { get; set; }
         public DateTime ExpirationDate { get; set; }
         public bool IsActive { get; set; }
+        public clsDriver DriverInfo => clsDriver.Find(DriverID);
 
         public clsInternationalLicense()
         {

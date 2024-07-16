@@ -102,9 +102,9 @@
             // 
             // ctrlDrivingLicenseCardWithFilter1
             // 
-            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.Color.Linen;
+            this.ctrlDrivingLicenseCardWithFilter1.BackColor = System.Drawing.SystemColors.Control;
             this.ctrlDrivingLicenseCardWithFilter1.FilterEnabled = true;
-            this.ctrlDrivingLicenseCardWithFilter1.Location = new System.Drawing.Point(19, 71);
+            this.ctrlDrivingLicenseCardWithFilter1.Location = new System.Drawing.Point(12, 65);
             this.ctrlDrivingLicenseCardWithFilter1.Name = "ctrlDrivingLicenseCardWithFilter1";
             this.ctrlDrivingLicenseCardWithFilter1.Size = new System.Drawing.Size(1045, 403);
             this.ctrlDrivingLicenseCardWithFilter1.TabIndex = 280;
@@ -112,7 +112,7 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Controls.Add(this.lblFineFees);
             this.guna2GroupBox2.Controls.Add(this.pictureBox7);
             this.guna2GroupBox2.Controls.Add(this.lblApplicationID);
@@ -137,12 +137,12 @@
             this.guna2GroupBox2.Controls.Add(this.label5);
             this.guna2GroupBox2.Controls.Add(this.lblDetainID);
             this.guna2GroupBox2.Controls.Add(this.label4);
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Linen;
+            this.guna2GroupBox2.FillColor = System.Drawing.SystemColors.Control;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(19, 501);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(19, 493);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(1058, 209);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(1058, 217);
             this.guna2GroupBox2.TabIndex = 279;
             // 
             // lblFineFees
@@ -160,7 +160,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox7.Location = new System.Drawing.Point(664, 170);
+            this.pictureBox7.Location = new System.Drawing.Point(664, 180);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +172,7 @@
             this.lblApplicationID.AutoSize = true;
             this.lblApplicationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationID.ForeColor = System.Drawing.Color.Black;
-            this.lblApplicationID.Location = new System.Drawing.Point(702, 169);
+            this.lblApplicationID.Location = new System.Drawing.Point(702, 179);
             this.lblApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApplicationID.Name = "lblApplicationID";
             this.lblApplicationID.Size = new System.Drawing.Size(74, 25);
@@ -184,7 +184,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(493, 169);
+            this.label8.Location = new System.Drawing.Point(493, 179);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(153, 25);
@@ -196,7 +196,7 @@
             this.lblTotalFees.AutoSize = true;
             this.lblTotalFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalFees.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalFees.Location = new System.Drawing.Point(233, 169);
+            this.lblTotalFees.Location = new System.Drawing.Point(233, 180);
             this.lblTotalFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalFees.Name = "lblTotalFees";
             this.lblTotalFees.Size = new System.Drawing.Size(74, 25);
@@ -206,7 +206,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.wallet;
-            this.pictureBox6.Location = new System.Drawing.Point(195, 168);
+            this.pictureBox6.Location = new System.Drawing.Point(195, 179);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,7 +218,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(14, 170);
+            this.label7.Location = new System.Drawing.Point(14, 181);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 25);
@@ -230,7 +230,7 @@
             this.lblApplicationFees.AutoSize = true;
             this.lblApplicationFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationFees.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblApplicationFees.Location = new System.Drawing.Point(233, 125);
+            this.lblApplicationFees.Location = new System.Drawing.Point(233, 131);
             this.lblApplicationFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApplicationFees.Name = "lblApplicationFees";
             this.lblApplicationFees.Size = new System.Drawing.Size(74, 25);
@@ -242,7 +242,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(14, 129);
+            this.label6.Location = new System.Drawing.Point(14, 135);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 25);
@@ -252,7 +252,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Project_4_DVDL_System_.Properties.Resources.money__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(195, 129);
+            this.pictureBox5.Location = new System.Drawing.Point(195, 135);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(31, 26);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +262,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox8.Location = new System.Drawing.Point(664, 61);
+            this.pictureBox8.Location = new System.Drawing.Point(664, 52);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(31, 26);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -274,7 +274,7 @@
             this.lblLicenseID.AutoSize = true;
             this.lblLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLicenseID.ForeColor = System.Drawing.Color.Black;
-            this.lblLicenseID.Location = new System.Drawing.Point(702, 61);
+            this.lblLicenseID.Location = new System.Drawing.Point(702, 52);
             this.lblLicenseID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLicenseID.Name = "lblLicenseID";
             this.lblLicenseID.Size = new System.Drawing.Size(62, 25);
@@ -286,7 +286,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(493, 61);
+            this.label10.Location = new System.Drawing.Point(493, 52);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(121, 25);
@@ -296,7 +296,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.id;
-            this.pictureBox2.Location = new System.Drawing.Point(195, 61);
+            this.pictureBox2.Location = new System.Drawing.Point(195, 52);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -398,7 +398,7 @@
             this.lblDetainID.AutoSize = true;
             this.lblDetainID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDetainID.ForeColor = System.Drawing.Color.Black;
-            this.lblDetainID.Location = new System.Drawing.Point(233, 61);
+            this.lblDetainID.Location = new System.Drawing.Point(233, 52);
             this.lblDetainID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDetainID.Name = "lblDetainID";
             this.lblDetainID.Size = new System.Drawing.Size(62, 25);
@@ -410,7 +410,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(14, 61);
+            this.label4.Location = new System.Drawing.Point(14, 52);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 25);

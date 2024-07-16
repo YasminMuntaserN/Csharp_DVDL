@@ -112,6 +112,7 @@
             this.Controls.Add(this.ctrlDriverLicensesHistory1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDriverLicenseHistory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Driver License History";
             this.Load += new System.EventHandler(this.frmDriverLicenseHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();

@@ -18,6 +18,7 @@ namespace DVDL_BusinessLayer_
         public int? PersonID { get; set; }
         public int? CreatedByUserID { get; set; }
         public DateTime CreatedDate { get; set; }
+        public clsPerson PersonInfo => clsPerson.Find(PersonID);
 
         public clsDriver()
         {

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "G:\\C#\\DVDL\\Project 4(DVDL System)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\local application\\frmlistlocalapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\local application\\frmlistlocalapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\frmaddinternationallicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\frmaddinternationallicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\detain license\\frmdetainlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\detain license\\frmdetainlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,20 +33,32 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmAddInternationalLicenseApplication.cs [Design]",
+              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmAddInternationalLicenseApplication.cs",
+              "RelativeDocumentMoniker": "Application\\International License Application\\frmAddInternationalLicenseApplication.cs",
+              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmAddInternationalLicenseApplication.cs [Design]",
+              "RelativeToolTip": "Application\\International License Application\\frmAddInternationalLicenseApplication.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:50:59.62Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmListLocalApplications.cs [Design]",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\Local Application\\frmListLocalApplications.cs",
-              "RelativeDocumentMoniker": "Application\\Local Application\\frmListLocalApplications.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\Local Application\\frmListLocalApplications.cs [Design]",
-              "RelativeToolTip": "Application\\Local Application\\frmListLocalApplications.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmDetainList.cs [Design]",
+              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\Detain License\\frmDetainList.cs",
+              "RelativeDocumentMoniker": "Application\\Detain License\\frmDetainList.cs",
+              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\Detain License\\frmDetainList.cs [Design]",
+              "RelativeToolTip": "Application\\Detain License\\frmDetainList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T06:13:41.809Z",
+              "WhenOpened": "2024-07-16T06:50:00.411Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
