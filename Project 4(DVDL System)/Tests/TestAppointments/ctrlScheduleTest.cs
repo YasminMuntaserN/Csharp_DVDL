@@ -120,7 +120,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
 
             dtpTestDate.Value = _TestAppointment.AppointmentDate;
 
-            if (_TestAppointment.RetakeTestApplicationID == -1)
+            if (_TestAppointment.RetakeTestApplicationID == null)
             {
                 lblRetakeAppFees.Text = "0";
                 lblRetakeTestAppID.Text = "N/A";
@@ -206,7 +206,7 @@ namespace Project_4_DVDL_System_.Tests.TestAppointments
                 Application.ApplicationStatus = (byte)clsApplication.enStatus.Completed;
                 Application.LastStatusDate = DateTime.Now;
                 Application.PaidFees = clsApplicationType.Find((int)clsApplication.enApplicationType.RetakeTest).ApplicationFees;
-                Application.CreatedByUserID = 3;
+                Application.CreatedByUserID = clsGlobal.CurrentUser.UserID;
 
                 if (!Application.Save())
                 {

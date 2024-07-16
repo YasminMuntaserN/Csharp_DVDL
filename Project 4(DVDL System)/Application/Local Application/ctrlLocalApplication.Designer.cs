@@ -85,7 +85,7 @@
             this.lblPassedTests.AutoSize = true;
             this.lblPassedTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassedTests.ForeColor = System.Drawing.Color.Black;
-            this.lblPassedTests.Location = new System.Drawing.Point(795, 102);
+            this.lblPassedTests.Location = new System.Drawing.Point(730, 103);
             this.lblPassedTests.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassedTests.Name = "lblPassedTests";
             this.lblPassedTests.Size = new System.Drawing.Size(24, 25);
@@ -97,7 +97,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(599, 102);
+            this.label2.Location = new System.Drawing.Point(534, 103);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 25);
@@ -107,7 +107,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.certified;
-            this.pictureBox7.Location = new System.Drawing.Point(757, 102);
+            this.pictureBox7.Location = new System.Drawing.Point(692, 103);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,7 +119,7 @@
             this.lblAppliedFor.AutoSize = true;
             this.lblAppliedFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppliedFor.ForeColor = System.Drawing.Color.Black;
-            this.lblAppliedFor.Location = new System.Drawing.Point(788, 60);
+            this.lblAppliedFor.Location = new System.Drawing.Point(723, 61);
             this.lblAppliedFor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppliedFor.Name = "lblAppliedFor";
             this.lblAppliedFor.Size = new System.Drawing.Size(62, 25);
@@ -131,7 +131,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(539, 60);
+            this.label10.Location = new System.Drawing.Point(474, 61);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(211, 25);
@@ -165,7 +165,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
-            this.pictureBox6.Location = new System.Drawing.Point(757, 60);
+            this.pictureBox6.Location = new System.Drawing.Point(692, 61);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -184,7 +184,7 @@
             // 
             // ctrlApplication1
             // 
-            this.ctrlApplication1.Location = new System.Drawing.Point(-2, 169);
+            this.ctrlApplication1.Location = new System.Drawing.Point(0, 164);
             this.ctrlApplication1.Name = "ctrlApplication1";
             this.ctrlApplication1.Size = new System.Drawing.Size(973, 265);
             this.ctrlApplication1.TabIndex = 4;

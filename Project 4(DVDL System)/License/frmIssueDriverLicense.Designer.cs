@@ -44,15 +44,15 @@
             // 
             this.ctrlLocalApplication1.Location = new System.Drawing.Point(9, 76);
             this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
-            this.ctrlLocalApplication1.Size = new System.Drawing.Size(860, 514);
+            this.ctrlLocalApplication1.Size = new System.Drawing.Size(951, 411);
             this.ctrlLocalApplication1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 504);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 503);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(12, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 178;
             this.pictureBox1.TabStop = false;
@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 504);
+            this.label1.Location = new System.Drawing.Point(58, 503);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 25);
@@ -70,11 +70,11 @@
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(143, 504);
+            this.txtNotes.Location = new System.Drawing.Point(182, 493);
             this.txtNotes.MaxLength = 500;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(697, 127);
+            this.txtNotes.Size = new System.Drawing.Size(767, 127);
             this.txtNotes.TabIndex = 176;
             // 
             // guna2CirclePictureBox2
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 710);
+            this.ClientSize = new System.Drawing.Size(972, 710);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnIssue);
             this.Controls.Add(this.guna2CirclePictureBox2);

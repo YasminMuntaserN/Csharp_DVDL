@@ -51,11 +51,15 @@ namespace Project_4_DVDL_System_.Application.Local_Application
                 dgvApplications.Columns[3].HeaderText = "Full Name";
                 dgvApplications.Columns[3].Width = 170;
 
-                dgvApplications.Columns[4].HeaderText = "Passed Test";
+
+                dgvApplications.Columns[4].HeaderText = "Application Date";
                 dgvApplications.Columns[4].Width = 130;
 
-                dgvApplications.Columns[5].HeaderText = "Status";
-                dgvApplications.Columns[5].Width = 110;
+                dgvApplications.Columns[5].HeaderText = "Passed Test";
+                dgvApplications.Columns[5].Width = 130;
+
+                dgvApplications.Columns[6].HeaderText = "Status";
+                dgvApplications.Columns[6].Width = 110;
             }
 
         }

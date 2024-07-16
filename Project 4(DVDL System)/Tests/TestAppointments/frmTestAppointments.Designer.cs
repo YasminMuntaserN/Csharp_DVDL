@@ -36,8 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLicenseTestAppointments = new System.Windows.Forms.DataGridView();
             this.btnAddNewAppointment = new System.Windows.Forms.Button();
-            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ctrlLocalApplication1 = new Project_4_DVDL_System_.Application.Local_Application.ctrlLocalApplication();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
@@ -129,26 +129,19 @@
             this.dgvLicenseTestAppointments.Name = "dgvLicenseTestAppointments";
             this.dgvLicenseTestAppointments.RowHeadersWidth = 51;
             this.dgvLicenseTestAppointments.RowTemplate.Height = 26;
-            this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(888, 157);
+            this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(960, 157);
             this.dgvLicenseTestAppointments.TabIndex = 247;
             // 
             // btnAddNewAppointment
             // 
             this.btnAddNewAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewAppointment.Image = global::Project_4_DVDL_System_.Properties.Resources.appointments__1_;
-            this.btnAddNewAppointment.Location = new System.Drawing.Point(800, 514);
+            this.btnAddNewAppointment.Location = new System.Drawing.Point(894, 514);
             this.btnAddNewAppointment.Name = "btnAddNewAppointment";
             this.btnAddNewAppointment.Size = new System.Drawing.Size(78, 44);
             this.btnAddNewAppointment.TabIndex = 249;
             this.btnAddNewAppointment.UseVisualStyleBackColor = true;
             this.btnAddNewAppointment.Click += new System.EventHandler(this.btnAddNewAppointment_Click_1);
-            // 
-            // ctrlLocalApplication1
-            // 
-            this.ctrlLocalApplication1.Location = new System.Drawing.Point(12, 75);
-            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
-            this.ctrlLocalApplication1.Size = new System.Drawing.Size(900, 421);
-            this.ctrlLocalApplication1.TabIndex = 246;
             // 
             // btnClose
             // 
@@ -172,11 +165,18 @@
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
+            // ctrlLocalApplication1
+            // 
+            this.ctrlLocalApplication1.Location = new System.Drawing.Point(12, 75);
+            this.ctrlLocalApplication1.Name = "ctrlLocalApplication1";
+            this.ctrlLocalApplication1.Size = new System.Drawing.Size(986, 421);
+            this.ctrlLocalApplication1.TabIndex = 246;
+            // 
             // frmTestAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 781);
+            this.ClientSize = new System.Drawing.Size(998, 781);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddNewAppointment);
             this.Controls.Add(this.label1);
