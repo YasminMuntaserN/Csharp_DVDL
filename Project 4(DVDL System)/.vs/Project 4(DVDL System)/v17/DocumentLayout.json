@@ -1,31 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\C#\\DVDL\\Project 4(DVDL System)\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2851580A-8E0F-43BB-943E-2D26B84EA277}|..\\DVDL(DataAccess)\\DVDL(DataAccessLayer).csproj|g:\\c#\\dvdl\\dvdl(dataaccess)\\clsinternationallicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\user controls\\ctrldriverinternationallicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\frmlistinternationallicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\frmlistinternationallicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|g:\\c#\\dvdl\\project 4(dvdl system)\\application\\international license application\\frmlistinternationallicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E06B1106-D9F7-4040-A6F9-2C2D2E1977E3}|Project 4(DVDL System).csproj|solutionrelative:application\\international license application\\frmlistinternationallicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -33,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsInternationalLicenseData.cs",
-              "DocumentMoniker": "G:\\C#\\DVDL\\DVDL(DataAccess)\\clsInternationalLicenseData.cs",
-              "RelativeDocumentMoniker": "..\\DVDL(DataAccess)\\clsInternationalLicenseData.cs",
-              "ToolTip": "G:\\C#\\DVDL\\DVDL(DataAccess)\\clsInternationalLicenseData.cs*",
-              "RelativeToolTip": "..\\DVDL(DataAccess)\\clsInternationalLicenseData.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABsAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:38:14.615Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -63,69 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ctrlDriverInternationalLicenseInfo.Designer.cs",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.Designer.cs",
-              "RelativeDocumentMoniker": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.Designer.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.Designer.cs",
-              "RelativeToolTip": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.Designer.cs",
-              "ViewState": "AQIAAPsBAAAAAAAAAAAWwAwCAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:36:35.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ctrlDriverInternationalLicenseInfo.cs",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "RelativeDocumentMoniker": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "RelativeToolTip": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:40:54.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ctrlDriverInternationalLicenseInfo.cs [Design]",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "RelativeDocumentMoniker": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs [Design]",
-              "RelativeToolTip": "Application\\International License Application\\User Controls\\ctrlDriverInternationalLicenseInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:40:52.894Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmListInternationalLicenses.cs",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmListInternationalLicenses.cs",
-              "RelativeDocumentMoniker": "Application\\International License Application\\frmListInternationalLicenses.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmListInternationalLicenses.cs",
-              "RelativeToolTip": "Application\\International License Application\\frmListInternationalLicenses.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:36:29.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmListInternationalLicenses.cs [Design]",
-              "DocumentMoniker": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmListInternationalLicenses.cs",
-              "RelativeDocumentMoniker": "Application\\International License Application\\frmListInternationalLicenses.cs",
-              "ToolTip": "G:\\C#\\DVDL\\Project 4(DVDL System)\\Application\\International License Application\\frmListInternationalLicenses.cs [Design]",
-              "RelativeToolTip": "Application\\International License Application\\frmListInternationalLicenses.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:36:25.148Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

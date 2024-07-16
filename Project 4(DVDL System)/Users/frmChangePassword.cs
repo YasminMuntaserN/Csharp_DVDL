@@ -79,11 +79,11 @@ namespace Project_4_DVDL_System_.Users
             {
                 errorProvider1.SetError(txtCurrentPassword, null);
             };
-            // Validate the current password against the stored hash
-            if (_User.Password != clsGlobal.Encrypt(currentPassword))
+            if (_User.Password != clsGlobal.ComputeHash(txtCurrentPassword.Text.Trim()))
             {
                 e.Cancel = true;
-                errorProvider1.SetError(txtCurrentPassword, "The entered password is incorrect. Please try again.");
+                errorProvider1.SetError(txtCurrentPassword, "Current password is wrong!");
+                return;
             }
             else
             {

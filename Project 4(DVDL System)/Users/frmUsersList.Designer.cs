@@ -45,6 +45,7 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -157,11 +158,12 @@
             // 
             // Menu
             // 
-            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Menu.BackColor = System.Drawing.Color.Linen;
             this.Menu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu.ImageScalingSize = new System.Drawing.Size(30, 30);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsAddUser,
+            this.toolStripSeparator1,
             this.cmsEdit,
             this.cmsShowDetails,
             this.cmsDelete,
@@ -176,54 +178,64 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(237, 154);
+            this.Menu.Size = new System.Drawing.Size(276, 218);
             // 
             // cmsAddUser
             // 
-            this.cmsAddUser.ForeColor = System.Drawing.Color.White;
+            this.cmsAddUser.BackColor = System.Drawing.Color.Linen;
+            this.cmsAddUser.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAddUser.ForeColor = System.Drawing.Color.Black;
             this.cmsAddUser.Image = global::Project_4_DVDL_System_.Properties.Resources._new;
             this.cmsAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmsAddUser.Name = "cmsAddUser";
-            this.cmsAddUser.Size = new System.Drawing.Size(236, 30);
-            this.cmsAddUser.Text = "Add New User";
+            this.cmsAddUser.Size = new System.Drawing.Size(275, 36);
+            this.cmsAddUser.Text = "    Add New User";
             this.cmsAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsAddUser.Click += new System.EventHandler(this.cmsAddUser_Click);
             // 
             // cmsEdit
             // 
-            this.cmsEdit.ForeColor = System.Drawing.Color.White;
+            this.cmsEdit.BackColor = System.Drawing.Color.Linen;
+            this.cmsEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsEdit.ForeColor = System.Drawing.Color.Black;
             this.cmsEdit.Image = global::Project_4_DVDL_System_.Properties.Resources.crm;
             this.cmsEdit.Name = "cmsEdit";
-            this.cmsEdit.Size = new System.Drawing.Size(236, 30);
-            this.cmsEdit.Text = "Edit";
+            this.cmsEdit.Size = new System.Drawing.Size(275, 36);
+            this.cmsEdit.Text = "    Edit";
             this.cmsEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmsEdit.Click += new System.EventHandler(this.cmsEdit_Click);
             // 
             // cmsShowDetails
             // 
-            this.cmsShowDetails.ForeColor = System.Drawing.Color.White;
+            this.cmsShowDetails.BackColor = System.Drawing.Color.Linen;
+            this.cmsShowDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsShowDetails.ForeColor = System.Drawing.Color.Black;
             this.cmsShowDetails.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
             this.cmsShowDetails.Name = "cmsShowDetails";
-            this.cmsShowDetails.Size = new System.Drawing.Size(236, 30);
-            this.cmsShowDetails.Text = "Show User Detatils";
+            this.cmsShowDetails.Size = new System.Drawing.Size(275, 36);
+            this.cmsShowDetails.Text = "    Show User Detatils";
             this.cmsShowDetails.Click += new System.EventHandler(this.cmsShowDetails_Click);
             // 
             // cmsDelete
             // 
-            this.cmsDelete.ForeColor = System.Drawing.Color.White;
+            this.cmsDelete.BackColor = System.Drawing.Color.Linen;
+            this.cmsDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsDelete.ForeColor = System.Drawing.Color.Black;
             this.cmsDelete.Image = global::Project_4_DVDL_System_.Properties.Resources.bin;
             this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(236, 30);
-            this.cmsDelete.Text = "Delete";
+            this.cmsDelete.Size = new System.Drawing.Size(275, 36);
+            this.cmsDelete.Text = "    Delete";
             this.cmsDelete.Click += new System.EventHandler(this.cmsDelete_Click);
             // 
             // stmChangePassword
             // 
-            this.stmChangePassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.stmChangePassword.BackColor = System.Drawing.Color.Linen;
+            this.stmChangePassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stmChangePassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.stmChangePassword.Image = global::Project_4_DVDL_System_.Properties.Resources.setting;
             this.stmChangePassword.Name = "stmChangePassword";
-            this.stmChangePassword.Size = new System.Drawing.Size(236, 30);
-            this.stmChangePassword.Text = "Change Password ";
+            this.stmChangePassword.Size = new System.Drawing.Size(275, 36);
+            this.stmChangePassword.Text = "   Change Password ";
             this.stmChangePassword.Click += new System.EventHandler(this.stmChangePassword_Click);
             // 
             // label1
@@ -278,6 +290,11 @@
             this.btnAdd.Text = "Add New User";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(272, 6);
+            // 
             // frmUsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -319,5 +336,6 @@
         private System.Windows.Forms.ToolStripMenuItem cmsShowDetails;
         private System.Windows.Forms.ToolStripMenuItem cmsDelete;
         private System.Windows.Forms.ToolStripMenuItem stmChangePassword;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

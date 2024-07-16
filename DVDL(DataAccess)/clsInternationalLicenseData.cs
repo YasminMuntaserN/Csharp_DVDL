@@ -61,6 +61,57 @@ namespace DVDL_DataAccess_
             return IsFound;
         }
 
+        public static bool GetInternationalLicenseInfoByDriverID(int? DriverID, ref int ApplicationID, ref int InternationalLicenseID, ref int IssuedUsingLocalLicenseID, ref DateTime IssueDate, ref DateTime ExpirationDate, ref bool IsActive, ref int CreatedByUserID)
+        {
+            bool IsFound = false;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = @"select * from InternationalLicenses where DriverID = @DriverID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@DriverID", (object)DriverID ?? DBNull.Value);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // The record was found
+                                IsFound = true;
+
+                                ApplicationID = (int)reader["ApplicationID"];
+                                InternationalLicenseID = (int)reader["InternationalLicenseID"];
+                                IssuedUsingLocalLicenseID = (int)reader["IssuedUsingLocalLicenseID"];
+                                IssueDate = (DateTime)reader["IssueDate"];
+                                ExpirationDate = (DateTime)reader["ExpirationDate"];
+                                IsActive = (bool)reader["IsActive"];
+                                CreatedByUserID = (int)reader["CreatedByUserID"];
+                            }
+                            else
+                            {
+                                // The record was not found
+                                IsFound = false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                IsFound = false;
+
+                clsLogError.LogError(ex);
+            }
+
+            return IsFound;
+        }
+
+
         public static int? AddNewInternationalLicense(int? ApplicationID, int ?DriverID, int ?IssuedUsingLocalLicenseID, DateTime IssueDate, DateTime ExpirationDate, bool IsActive, int? CreatedByUserID)
         {
             // This function will return the new person id if succeeded and null if not

@@ -138,14 +138,14 @@
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Goldenrod;
             this.guna2GroupBox2.Location = new System.Drawing.Point(2, 475);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(1045, 293);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(1045, 328);
             this.guna2GroupBox2.TabIndex = 263;
             this.guna2GroupBox2.Text = " Renew Applications Info :";
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Project_4_DVDL_System_.Properties.Resources.test;
-            this.pictureBox11.Location = new System.Drawing.Point(220, 223);
+            this.pictureBox11.Location = new System.Drawing.Point(220, 261);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(31, 26);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(23, 225);
+            this.label3.Location = new System.Drawing.Point(23, 263);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 25);
@@ -166,7 +166,7 @@
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(253, 224);
+            this.txtNotes.Location = new System.Drawing.Point(261, 261);
             this.txtNotes.MaxLength = 500;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
@@ -178,7 +178,7 @@
             this.lblTotalFees.AutoSize = true;
             this.lblTotalFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalFees.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalFees.Location = new System.Drawing.Point(879, 192);
+            this.lblTotalFees.Location = new System.Drawing.Point(879, 213);
             this.lblTotalFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalFees.Name = "lblTotalFees";
             this.lblTotalFees.Size = new System.Drawing.Size(62, 25);
@@ -190,7 +190,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(658, 192);
+            this.label9.Location = new System.Drawing.Point(658, 213);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 25);
@@ -200,7 +200,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Project_4_DVDL_System_.Properties.Resources.wallet;
-            this.pictureBox10.Location = new System.Drawing.Point(843, 192);
+            this.pictureBox10.Location = new System.Drawing.Point(843, 213);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(31, 26);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,7 +212,7 @@
             this.lblLicenseFees.AutoSize = true;
             this.lblLicenseFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLicenseFees.ForeColor = System.Drawing.Color.Black;
-            this.lblLicenseFees.Location = new System.Drawing.Point(269, 192);
+            this.lblLicenseFees.Location = new System.Drawing.Point(269, 214);
             this.lblLicenseFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLicenseFees.Name = "lblLicenseFees";
             this.lblLicenseFees.Size = new System.Drawing.Size(62, 25);
@@ -224,7 +224,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(23, 193);
+            this.label7.Location = new System.Drawing.Point(23, 215);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 25);
@@ -234,7 +234,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Project_4_DVDL_System_.Properties.Resources.wallet;
-            this.pictureBox9.Location = new System.Drawing.Point(221, 191);
+            this.pictureBox9.Location = new System.Drawing.Point(221, 213);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(31, 26);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,7 +278,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Project_4_DVDL_System_.Properties.Resources.id;
-            this.pictureBox7.Location = new System.Drawing.Point(843, 63);
+            this.pictureBox7.Location = new System.Drawing.Point(841, 51);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 26);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -290,7 +290,7 @@
             this.lblRenewedLicenseID.AutoSize = true;
             this.lblRenewedLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRenewedLicenseID.ForeColor = System.Drawing.Color.Black;
-            this.lblRenewedLicenseID.Location = new System.Drawing.Point(881, 63);
+            this.lblRenewedLicenseID.Location = new System.Drawing.Point(879, 51);
             this.lblRenewedLicenseID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRenewedLicenseID.Name = "lblRenewedLicenseID";
             this.lblRenewedLicenseID.Size = new System.Drawing.Size(62, 25);
@@ -302,7 +302,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(620, 63);
+            this.label10.Location = new System.Drawing.Point(618, 51);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(216, 25);
@@ -314,7 +314,7 @@
             this.lblExpirationDate.AutoSize = true;
             this.lblExpirationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExpirationDate.ForeColor = System.Drawing.Color.Black;
-            this.lblExpirationDate.Location = new System.Drawing.Point(881, 127);
+            this.lblExpirationDate.Location = new System.Drawing.Point(881, 137);
             this.lblExpirationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblExpirationDate.Name = "lblExpirationDate";
             this.lblExpirationDate.Size = new System.Drawing.Size(136, 25);
@@ -324,7 +324,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Project_4_DVDL_System_.Properties.Resources.appointment;
-            this.pictureBox6.Location = new System.Drawing.Point(843, 127);
+            this.pictureBox6.Location = new System.Drawing.Point(843, 137);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -336,7 +336,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(658, 127);
+            this.label8.Location = new System.Drawing.Point(658, 137);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 25);
@@ -348,7 +348,7 @@
             this.lblIssueDate.AutoSize = true;
             this.lblIssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIssueDate.ForeColor = System.Drawing.Color.Black;
-            this.lblIssueDate.Location = new System.Drawing.Point(269, 127);
+            this.lblIssueDate.Location = new System.Drawing.Point(269, 137);
             this.lblIssueDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIssueDate.Name = "lblIssueDate";
             this.lblIssueDate.Size = new System.Drawing.Size(136, 25);
@@ -358,7 +358,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Project_4_DVDL_System_.Properties.Resources.appointments;
-            this.pictureBox5.Location = new System.Drawing.Point(220, 126);
+            this.pictureBox5.Location = new System.Drawing.Point(220, 136);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(31, 26);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -370,7 +370,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(23, 128);
+            this.label6.Location = new System.Drawing.Point(23, 138);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 25);
@@ -380,7 +380,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.id__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(221, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(221, 51);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -390,7 +390,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_4_DVDL_System_.Properties.Resources.user__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(843, 159);
+            this.pictureBox1.Location = new System.Drawing.Point(844, 175);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -402,7 +402,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(658, 159);
+            this.label1.Location = new System.Drawing.Point(659, 175);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 25);
@@ -414,7 +414,7 @@
             this.lblCreatedByUser.AutoSize = true;
             this.lblCreatedByUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedByUser.ForeColor = System.Drawing.Color.Black;
-            this.lblCreatedByUser.Location = new System.Drawing.Point(881, 159);
+            this.lblCreatedByUser.Location = new System.Drawing.Point(882, 175);
             this.lblCreatedByUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreatedByUser.Name = "lblCreatedByUser";
             this.lblCreatedByUser.Size = new System.Drawing.Size(74, 25);
@@ -426,7 +426,7 @@
             this.lblApplicationFees.AutoSize = true;
             this.lblApplicationFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationFees.ForeColor = System.Drawing.Color.Black;
-            this.lblApplicationFees.Location = new System.Drawing.Point(269, 159);
+            this.lblApplicationFees.Location = new System.Drawing.Point(269, 174);
             this.lblApplicationFees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApplicationFees.Name = "lblApplicationFees";
             this.lblApplicationFees.Size = new System.Drawing.Size(62, 25);
@@ -438,7 +438,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(23, 160);
+            this.label2.Location = new System.Drawing.Point(23, 175);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 25);
@@ -448,7 +448,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Project_4_DVDL_System_.Properties.Resources.money__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(221, 158);
+            this.pictureBox3.Location = new System.Drawing.Point(221, 173);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(31, 26);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -494,7 +494,7 @@
             this.lblApplicationID.AutoSize = true;
             this.lblApplicationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationID.ForeColor = System.Drawing.Color.Black;
-            this.lblApplicationID.Location = new System.Drawing.Point(269, 63);
+            this.lblApplicationID.Location = new System.Drawing.Point(269, 52);
             this.lblApplicationID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApplicationID.Name = "lblApplicationID";
             this.lblApplicationID.Size = new System.Drawing.Size(62, 25);
@@ -506,7 +506,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(23, 64);
+            this.label4.Location = new System.Drawing.Point(23, 53);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(191, 25);
@@ -541,7 +541,7 @@
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.Location = new System.Drawing.Point(627, 774);
+            this.btnClose.Location = new System.Drawing.Point(665, 809);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 45);
             this.btnClose.TabIndex = 265;
@@ -563,7 +563,7 @@
             this.btnRenew.Image = global::Project_4_DVDL_System_.Properties.Resources.IssueDrivingLicense_32;
             this.btnRenew.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRenew.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnRenew.Location = new System.Drawing.Point(818, 774);
+            this.btnRenew.Location = new System.Drawing.Point(856, 809);
             this.btnRenew.Name = "btnRenew";
             this.btnRenew.Size = new System.Drawing.Size(180, 45);
             this.btnRenew.TabIndex = 264;
@@ -576,7 +576,7 @@
             this.llShowLicenseInfo.Enabled = false;
             this.llShowLicenseInfo.Font = new System.Drawing.Font("Tahoma", 12F);
             this.llShowLicenseInfo.LinkColor = System.Drawing.Color.Black;
-            this.llShowLicenseInfo.Location = new System.Drawing.Point(249, 778);
+            this.llShowLicenseInfo.Location = new System.Drawing.Point(259, 830);
             this.llShowLicenseInfo.Name = "llShowLicenseInfo";
             this.llShowLicenseInfo.Size = new System.Drawing.Size(225, 24);
             this.llShowLicenseInfo.TabIndex = 267;
@@ -590,7 +590,7 @@
             this.llShowLicenseHistory.Enabled = false;
             this.llShowLicenseHistory.Font = new System.Drawing.Font("Tahoma", 12F);
             this.llShowLicenseHistory.LinkColor = System.Drawing.Color.Black;
-            this.llShowLicenseHistory.Location = new System.Drawing.Point(26, 778);
+            this.llShowLicenseHistory.Location = new System.Drawing.Point(26, 830);
             this.llShowLicenseHistory.Name = "llShowLicenseHistory";
             this.llShowLicenseHistory.Size = new System.Drawing.Size(208, 24);
             this.llShowLicenseHistory.TabIndex = 266;
@@ -612,7 +612,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 830);
+            this.ClientSize = new System.Drawing.Size(1067, 866);
             this.Controls.Add(this.ctrlDrivingLicenseCardWithFilter1);
             this.Controls.Add(this.llShowLicenseInfo);
             this.Controls.Add(this.llShowLicenseHistory);

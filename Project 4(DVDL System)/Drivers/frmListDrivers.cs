@@ -1,4 +1,6 @@
 ﻿using DVDL_BusinessLayer_;
+using Project_4_DVDL_System_.Application.International_License_Application;
+using Project_4_DVDL_System_.License.Controls;
 using Project_4_DVDL_System_.Person;
 using System;
 using System.Collections.Generic;
@@ -76,11 +78,6 @@ namespace Project_4_DVDL_System_.Drivers
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmListDrivers_Load(object sender, EventArgs e)
         {
             _RefreshList();
@@ -143,6 +140,27 @@ namespace Project_4_DVDL_System_.Drivers
         {
             frmShowDetails frmListDrivers = new frmShowDetails((int?)dgvDriviers.CurrentRow.Cells[1].Value);
             frmListDrivers.ShowDialog();    
+        }
+
+        private void sShowInternationalLicense_Click(object sender, EventArgs e)
+        {
+            clsInternationalLicense internationalLicense = clsInternationalLicense.FindByDriverID(_DriverIDFromDGV);
+            if (internationalLicense != null)
+            {
+                frmShowInternationalLicenseInfo info = new frmShowInternationalLicenseInfo(internationalLicense.InternationalLicenseID);
+                info.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Not implemented yet.");
+            }
+        }
+
+        private void smShowPersonLicenseHistory_Click(object sender, EventArgs e)
+        {
+            frmDriverLicenseHistory frmDriverLicenseHistory = new frmDriverLicenseHistory
+                ((int)dgvDriviers.CurrentRow.Cells[1].Value);
+            frmDriverLicenseHistory.ShowDialog();   
         }
     }
 }

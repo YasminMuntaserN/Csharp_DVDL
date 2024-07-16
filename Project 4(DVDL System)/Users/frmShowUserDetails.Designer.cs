@@ -37,9 +37,9 @@
             // 
             // ctrlUserCard1
             // 
-            this.ctrlUserCard1.Location = new System.Drawing.Point(-1, 70);
+            this.ctrlUserCard1.Location = new System.Drawing.Point(21, 70);
             this.ctrlUserCard1.Name = "ctrlUserCard1";
-            this.ctrlUserCard1.Size = new System.Drawing.Size(1014, 408);
+            this.ctrlUserCard1.Size = new System.Drawing.Size(1014, 428);
             this.ctrlUserCard1.TabIndex = 0;
             // 
             // lblTitle
@@ -48,7 +48,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(123, 9);
+            this.lblTitle.Location = new System.Drawing.Point(209, 9);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(314, 45);
@@ -60,7 +60,7 @@
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox2.Image = global::Project_4_DVDL_System_.Properties.Resources.details;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(21, 1);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(107, 1);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(95, 63);
@@ -83,7 +83,7 @@
             this.btnClose.Image = global::Project_4_DVDL_System_.Properties.Resources.close__2_;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.Location = new System.Drawing.Point(784, 500);
+            this.btnClose.Location = new System.Drawing.Point(810, 504);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 45);
             this.btnClose.TabIndex = 279;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 563);
+            this.ClientSize = new System.Drawing.Size(1072, 573);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2CirclePictureBox2);
             this.Controls.Add(this.lblTitle);
